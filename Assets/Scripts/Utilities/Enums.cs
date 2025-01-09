@@ -21,3 +21,8 @@ public enum ItemType
     ReapableScenery
 }
 
+public enum SlotType
+{
+    Bag,Box,Shop
+}
+
