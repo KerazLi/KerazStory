@@ -2,11 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace KFarm.Inventory
 {
     public class InventoryUI : MonoBehaviour
     {
+        [Header("拖拽图片")] 
+        public Image dragItem;
         [Header("玩家背包")]
         [SerializeField] private GameObject bagUI;
 

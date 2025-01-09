@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace KFarm.Inventory
 {
-    public class SlotUI : MonoBehaviour,IPointerClickHandler
+    public class SlotUI : MonoBehaviour,IPointerClickHandler,IBeginDragHandler,IDragHandler,IEndDragHandler
     {
         [Header("组件获取")] [SerializeField] private Image slotImage;
         [SerializeField] private TextMeshProUGUI amountText;
@@ -71,6 +71,29 @@ namespace KFarm.Inventory
             isSelected = !isSelected;
             inventoryUI.UpdateSlotHightlight(slotIndex);
             //slotHightLight.gameObject.SetActive(isSelected);
+        }
+
+        public void OnBeginDrag(PointerEventData eventData)
+        {
+            if (itemAmount !=0)
+            {
+                inventoryUI.dragItem.enabled = true;
+                inventoryUI.dragItem.sprite = slotImage.sprite;
+                inventoryUI.dragItem.SetNativeSize();
+                isSelected = true;
+                inventoryUI.UpdateSlotHightlight(slotIndex);
+            }
+        }
+
+        public void OnDrag(PointerEventData eventData)
+        {
+            inventoryUI.dragItem.transform.position = Input.mousePosition;
+        }
+
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            inventoryUI.dragItem.enabled = false;
+            Debug.Log(eventData.pointerCurrentRaycast.gameObject);
         }
     }
 }
