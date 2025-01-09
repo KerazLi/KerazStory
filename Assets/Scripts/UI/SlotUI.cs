@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace KFarm.Inventory
 {
-    public class SlotUI : MonoBehaviour
+    public class SlotUI : MonoBehaviour,IPointerClickHandler
     {
         [Header("组件获取")] [SerializeField] private Image slotImage;
         [SerializeField] private TextMeshProUGUI amountText;
-        [SerializeField] private Image slotHightLight;
+        public Image slotHightLight;
         [SerializeField] private Button button;
         [Header("格子类型")] public SlotType slotType;
         public bool isSelected;
@@ -19,6 +20,7 @@ namespace KFarm.Inventory
         public ItemDetails itemDetails;
         public int itemAmount;
         public int slotIndex;
+        private InventoryUI inventoryUI=>GetComponentInParent<InventoryUI>();
 
 
         private void Start()
@@ -58,6 +60,17 @@ namespace KFarm.Inventory
             slotImage.enabled = false;
             amountText.text = string.Empty;
             button.interactable = false;
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            if (itemAmount==0)
+            {
+                return;
+            }
+            isSelected = !isSelected;
+            inventoryUI.UpdateSlotHightlight(slotIndex);
+            //slotHightLight.gameObject.SetActive(isSelected);
         }
     }
 }

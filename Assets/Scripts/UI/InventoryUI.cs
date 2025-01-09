@@ -65,11 +65,32 @@ namespace KFarm.Inventory
                     throw new ArgumentOutOfRangeException(nameof(location), location, null);
             }
         }
-
+        /// <summary>
+        /// 打开背包UI
+        /// </summary>
         public void OpenBagUI()
         {
             bagOpen = !bagOpen;
             bagUI.SetActive(bagOpen);
+        }
+        /// <summary>
+        /// 更新装备栏高亮
+        /// </summary>
+        /// <param name="index"></param>
+        public void UpdateSlotHightlight(int index)
+        {
+            foreach (var slot in playerSlots)
+            {
+                if (slot.isSelected&&slot.slotIndex==index)
+                {
+                    slot.slotHightLight.gameObject.SetActive(true);
+                }
+                else
+                {
+                    slot.isSelected = false;
+                    slot.slotHightLight.gameObject.SetActive(false);
+                }
+            }
         }
 
     } 
