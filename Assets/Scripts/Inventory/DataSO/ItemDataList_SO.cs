@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ItemDataList_SO",menuName = "Inventory/ItemDataList")]
 public class ItemDataList_SO : ScriptableObject
 {
-    public List<ItemDetails> itemDetails;
+    public List<ItemDetails> itemDetailsList;
 }
