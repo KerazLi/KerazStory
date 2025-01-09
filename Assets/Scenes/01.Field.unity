@@ -69295,6 +69295,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Yellow
       objectReference: {fileID: 0}
+    - target: {fileID: 6603538651996703652, guid: 21418c97e7ad67e4f8fab6c1bf540ec6, type: 3}
+      propertyPath: m_Size.y
+      value: 2.0672452
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603538651996703652, guid: 21418c97e7ad67e4f8fab6c1bf540ec6, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.4839686
+      objectReference: {fileID: 0}
     - target: {fileID: 8931305629941455702, guid: 21418c97e7ad67e4f8fab6c1bf540ec6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.4
