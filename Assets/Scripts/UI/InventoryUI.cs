@@ -7,6 +7,10 @@ namespace KFarm.Inventory
 {
     public class InventoryUI : MonoBehaviour
     {
+        [Header("玩家背包")]
+        [SerializeField] private GameObject bagUI;
+
+        private bool bagOpen;
         [SerializeField] private SlotUI[] playerSlots;
 
         private void OnEnable()
@@ -25,7 +29,18 @@ namespace KFarm.Inventory
             {
                 playerSlots[i].slotIndex = i;
             }
+
+            bagOpen = bagUI.activeInHierarchy;
         }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                OpenBagUI();
+            }
+        }
+
         private void OnUpdateInventoryUI(InventoryLocation location, List<InventoryItem> lists)
         {
             switch (location)
@@ -50,7 +65,13 @@ namespace KFarm.Inventory
                     throw new ArgumentOutOfRangeException(nameof(location), location, null);
             }
         }
-        
+
+        public void OpenBagUI()
+        {
+            bagOpen = !bagOpen;
+            bagUI.SetActive(bagOpen);
+        }
+
     } 
 }
 
