@@ -29,7 +29,7 @@ public class ItemEditor : EditorWindow
     private ListView itemListView;
 
     // 菜单项，显示编辑器窗口
-    [MenuItem("M STUDIO/ItemEditor")]
+    [MenuItem("Keraz/ItemEditor")]
     public static void ShowExample()
     {
         ItemEditor wnd = GetWindow<ItemEditor>();
