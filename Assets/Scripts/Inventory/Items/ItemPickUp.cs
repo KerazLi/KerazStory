@@ -1,20 +1,22 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Inventory.Logic;
 using UnityEngine;
 
-public class ItemPickUp : MonoBehaviour
+namespace KFarm.Inventory
 {
-    private void OnTriggerStay2D(Collider2D other)
+    public class ItemPickUp : MonoBehaviour
     {
-        Item item = other.GetComponent<Item>();
-        if (item != null)
+        private void OnTriggerStay2D(Collider2D other)
         {
-            if (item.itemDetails.canPickedup)
+            Item item = other.GetComponent<Item>();
+            if (item != null)
             {
-                //拾取物添加到背包
-                InventoryManager.Instance.AddItem(item, true);
+                if (item.itemDetails.canPickedup)
+                {
+                    //拾取物添加到背包
+                    InventoryManager.Instance.AddItem(item, true);
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-namespace Inventory.Logic
+namespace KFarm.Inventory
 {
     /// <summary>
     /// 背包物品管理函数
@@ -9,7 +10,12 @@ namespace Inventory.Logic
     {
         public ItemDataList_SO itemDataList_SO;
         public InventoryBag_SO playerBag;
-        
+
+        private void Start()
+        {
+            EventHandle.CallUpdateInventoryUI(InventoryLocation.Player,playerBag.itemList);
+        }
+
         public ItemDetails GetItemDetails(int ID)
         {
             return itemDataList_SO.itemDetailsList.Find(x => x.itemID == ID);
@@ -36,6 +42,8 @@ namespace Inventory.Logic
             {
                 Destroy(item.gameObject);
             }
+            //更新UI
+            EventHandle.CallUpdateInventoryUI(InventoryLocation.Player,playerBag.itemList);
         }
         
         /// <summary>

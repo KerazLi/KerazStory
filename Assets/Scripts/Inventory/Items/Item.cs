@@ -1,79 +1,79 @@
-using System.Collections;
-using System.Collections.Generic;
-using Inventory.Logic;
 using UnityEngine;
 
-/// <summary>
-/// 代表游戏中的一个物品。
-/// 该类包含了物品的详细信息、显示和碰撞处理。
-/// </summary>
-public class Item : MonoBehaviour
+namespace KFarm.Inventory
 {
     /// <summary>
-    /// 物品的唯一标识符。
+    /// 代表游戏中的一个物品。
+    /// 该类包含了物品的详细信息、显示和碰撞处理。
     /// </summary>
-    public int itemID;
-
-    /// <summary>
-    /// 用于渲染物品的精灵渲染器。
-    /// </summary>
-    private SpriteRenderer spriteRenderer;
-    
-    /// <summary>
-    /// 物品的碰撞器，用于物理交互。
-    /// </summary>
-    private BoxCollider2D coll;
-
-    /// <summary>
-    /// 物品的详细信息，如名称、描述等。
-    /// </summary>
-    public ItemDetails itemDetails;
-
-    /// <summary>
-    /// 初始化物品组件。
-    /// </summary>
-    private void Awake()
+    public class Item : MonoBehaviour
     {
-        // 获取子对象上的精灵渲染器
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        // 获取当前对象上的2D盒碰撞器
-        coll = GetComponent<BoxCollider2D>();
-    }
+        /// <summary>
+        /// 物品的唯一标识符。
+        /// </summary>
+        public int itemID;
 
-    /// <summary>
-    /// 在物品创建时进行初始化。
-    /// </summary>
-    private void Start()
-    {
-        // 如果物品ID非零，则初始化物品
-        if (itemID != 0)
+        /// <summary>
+        /// 用于渲染物品的精灵渲染器。
+        /// </summary>
+        private SpriteRenderer spriteRenderer;
+
+        /// <summary>
+        /// 物品的碰撞器，用于物理交互。
+        /// </summary>
+        private BoxCollider2D coll;
+
+        /// <summary>
+        /// 物品的详细信息，如名称、描述等。
+        /// </summary>
+        public ItemDetails itemDetails;
+
+        /// <summary>
+        /// 初始化物品组件。
+        /// </summary>
+        private void Awake()
         {
-            Init(itemID);
+            // 获取子对象上的精灵渲染器
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            // 获取当前对象上的2D盒碰撞器
+            coll = GetComponent<BoxCollider2D>();
         }
-    }
 
-    /// <summary>
-    /// 初始化物品的详细信息。
-    /// </summary>
-    /// <param name="ID">物品的唯一标识符。</param>
-    public void Init(int ID)
-    {
-        itemID = ID;
-
-        // 从InventoryManager中获取当前物品的数据
-        itemDetails = InventoryManager.Instance.GetItemDetails(itemID);
-
-        if (itemDetails != null)
+        /// <summary>
+        /// 在物品创建时进行初始化。
+        /// </summary>
+        private void Start()
         {
-            // 设置物品的显示精灵
-            spriteRenderer.sprite = itemDetails.itemOnWorldSprite != null
-                ? itemDetails.itemOnWorldSprite
-                : itemDetails.itemIcon;
+            // 如果物品ID非零，则初始化物品
+            if (itemID != 0)
+            {
+                Init(itemID);
+            }
+        }
 
-            // 根据精灵渲染器的精灵调整碰撞器的大小和偏移
-            Vector2 newSize = new Vector2(spriteRenderer.sprite.bounds.size.x, spriteRenderer.sprite.bounds.size.y);
-            coll.size = newSize;
-            coll.offset = new Vector2(0, spriteRenderer.sprite.bounds.center.y);
+        /// <summary>
+        /// 初始化物品的详细信息。
+        /// </summary>
+        /// <param name="ID">物品的唯一标识符。</param>
+        public void Init(int ID)
+        {
+            itemID = ID;
+
+            // 从InventoryManager中获取当前物品的数据
+            itemDetails = InventoryManager.Instance.GetItemDetails(itemID);
+
+            if (itemDetails != null)
+            {
+                // 设置物品的显示精灵
+                spriteRenderer.sprite = itemDetails.itemOnWorldSprite != null
+                    ? itemDetails.itemOnWorldSprite
+                    : itemDetails.itemIcon;
+
+                // 根据精灵渲染器的精灵调整碰撞器的大小和偏移
+                Vector2 newSize = new Vector2(spriteRenderer.sprite.bounds.size.x, spriteRenderer.sprite.bounds.size.y);
+                coll.size = newSize;
+                coll.offset = new Vector2(0, spriteRenderer.sprite.bounds.center.y);
+            }
         }
     }
 }
