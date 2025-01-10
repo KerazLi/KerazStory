@@ -8,6 +8,7 @@ namespace KFarm.Inventory
 {
     public class InventoryUI : MonoBehaviour
     {
+        public ItemToolTip itemToolTip;
         [Header("拖拽图片")] 
         public Image dragItem;
         [Header("玩家背包")]

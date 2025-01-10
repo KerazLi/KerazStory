@@ -13,11 +13,12 @@ public enum ItemType
     Furniture,
     // 工具类别，包含农耕和采集资源所需的各种工具
     HoeTool,   // 用于耕地
-    ChopToop,  // 用于砍伐树木
+    ChopTool,  // 用于砍伐树木
     BreakTool, // 用于破坏岩石
     WaterTool, // 用于浇水
     CollectTool, // 用于采集资源
     // 可收获的景观物品，用于增加游戏环境的丰富性
+    ReapTool,
     ReapableScenery
 }
 
