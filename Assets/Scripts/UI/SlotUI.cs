@@ -113,7 +113,7 @@ namespace KFarm.Inventory
                 //清空所有高亮显示
                 inventoryUI.UpdateSlotHightlight(-1);
             }
-            else    //测试扔在地上
+            /*else    //测试扔在地上
             {
                 if (itemDetails.canDropped)
                 {
@@ -122,7 +122,7 @@ namespace KFarm.Inventory
 
                     EventHandler.CallInstantiateItemInScene(itemDetails.itemID, pos);
                 }
-            }
+            }*/
         }
     }
 }
