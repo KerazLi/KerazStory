@@ -18,11 +18,11 @@ namespace KFarm.Inventory
 
         private void OnEnable()
         {
-            EventHandle.UpdateInventoryUI += OnUpdateInventoryUI;
+            EventHandler.UpdateInventoryUI += OnUpdateInventoryUI;
         }
         private void OnDisable()
         {
-            EventHandle.UpdateInventoryUI -= OnUpdateInventoryUI;
+            EventHandler.UpdateInventoryUI -= OnUpdateInventoryUI;
         }
         
         private void Start()

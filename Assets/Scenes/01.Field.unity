@@ -33738,7 +33738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343010687007661225, guid: 8cb036159e83ea74c9a41398ca05c981, type: 3}
       propertyPath: itemID
-      value: 1007
+      value: 1015
       objectReference: {fileID: 0}
     - target: {fileID: 7893770937818831100, guid: 8cb036159e83ea74c9a41398ca05c981, type: 3}
       propertyPath: m_Name
@@ -34247,6 +34247,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1649760097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1649760098}
+  m_Layer: 0
+  m_Name: ItemParent
+  m_TagString: ItemParent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1649760098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649760097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1675231835
 GameObject:
   m_ObjectHideFlags: 0
@@ -69352,3 +69383,4 @@ SceneRoots:
   - {fileID: 1271135424}
   - {fileID: 7904436523382479612}
   - {fileID: 1234549131}
+  - {fileID: 1649760098}
