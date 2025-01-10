@@ -5,19 +5,27 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private static readonly int IsMoving = Animator.StringToHash("isMoving");
+    private static readonly int InputX = Animator.StringToHash("InputX");
+    private static readonly int InputY = Animator.StringToHash("InputY");
     private Rigidbody2D rb;
     public float speed;
     private float inputX;
     private float inputY;
     private Vector2 movementInput;
+    private Animator[] animators;
+    private bool isMoving;
+    
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animators = GetComponentsInChildren<Animator>();
     }
     private void Update()
     {
         PlayerInput();
+        SwitchAnimation();
     }
     private void FixedUpdate()
     {
@@ -33,10 +41,30 @@ public class PlayerController : MonoBehaviour
             inputX *= 0.6f;
             inputY *= 0.6f;
         }
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            inputX *= 0.5f;
+            inputY *= 0.5f;
+        }
         movementInput = new Vector2(inputX, inputY);
+        isMoving = movementInput != Vector2.zero;
     } 
     private void Movement()
     {
         rb.MovePosition(rb.position + movementInput * speed * Time.fixedDeltaTime);
+    }
+
+    private void SwitchAnimation()
+    {
+        foreach (var animator in animators)
+        {
+            animator.SetBool(IsMoving, isMoving);
+            if (isMoving)
+            {
+                animator.SetFloat(InputX, inputX);
+                animator.SetFloat(InputY, inputY);
+            }
+        }
     }
 }
