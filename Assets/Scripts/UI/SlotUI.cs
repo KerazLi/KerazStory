@@ -70,7 +70,10 @@ namespace KFarm.Inventory
             }
             isSelected = !isSelected;
             inventoryUI.UpdateSlotHightlight(slotIndex);
-            //slotHightLight.gameObject.SetActive(isSelected);
+            if (slotType==SlotType.Bag)
+            {
+                EventHandler.CallItemSelectedEvent(itemDetails, isSelected);
+            }
         }
 
         public void OnBeginDrag(PointerEventData eventData)
