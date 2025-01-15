@@ -20,10 +20,18 @@ namespace KFarm.Inventory
         private void OnEnable()
         {
             EventHandler.UpdateInventoryUI += OnUpdateInventoryUI;
+            EventHandler.BeforeSceneUnloadEvent+= OnBeforeSceneUnloadEvent;
+        }
+        
+
+        private void OnBeforeSceneUnloadEvent()
+        {
+            UpdateSlotHightlight(-1);
         }
         private void OnDisable()
         {
             EventHandler.UpdateInventoryUI -= OnUpdateInventoryUI;
+            EventHandler.BeforeSceneUnloadEvent-= OnBeforeSceneUnloadEvent;
         }
         
         private void Start()

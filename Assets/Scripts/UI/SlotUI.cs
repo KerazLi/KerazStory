@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -22,6 +23,7 @@ namespace KFarm.Inventory
         public int slotIndex;
         private InventoryUI inventoryUI=>GetComponentInParent<InventoryUI>();
 
+        
 
         private void Start()
         {
