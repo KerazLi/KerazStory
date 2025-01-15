@@ -22,4 +22,14 @@ public static class EventHandler
     {
         ItemSelectedEvent?.Invoke(itemDetails, isSelected);
     }
+    public static event Action<int,int> GameMinuteEvent;
+    public static void CallGameMinuteEvent(int min, int hour)
+    {
+        GameMinuteEvent?.Invoke(min, hour);
+    }
+    public static event Action<int,int,int,int,Season> GameDataEvent;
+    public static void CallGameDataEvent(int hour, int day,  int month,int year, Season season)
+    {
+        GameDataEvent?.Invoke(hour, day,  month,year, season);
+    }
 }

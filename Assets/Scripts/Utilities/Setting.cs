@@ -4,7 +4,7 @@ namespace Utilities
     {
         public const float fadeDuration = 0.35f;
         public const float targetAlpha = 0.3f;
-        public const float secondThreshold = 0.1f;
+        public const float secondThreshold = 0.0012f;
         public const int secondHold = 59;
         public const int minuteHold = 59;
         public const int hourHold = 23;

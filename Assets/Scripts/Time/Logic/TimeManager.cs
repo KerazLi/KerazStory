@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Utilities;
 
@@ -18,6 +19,12 @@ public class TimeManager : MonoBehaviour
     private void Awake()
     {
         NewGameTime();
+    }
+
+    private void Start()
+    {
+        EventHandler.CallGameMinuteEvent(gameMinute,gameHour);
+        EventHandler.CallGameDataEvent(gameHour,gameDay,gameMonth,gameYear, gameSeason); 
     }
 
     // 每帧调用，用于更新游戏时间
@@ -50,11 +57,13 @@ public class TimeManager : MonoBehaviour
         gameMonth = 1;
         gameYear = 2022;
         gameSeason = Season.春天;
+        
     }
 
     // 更新游戏时间，根据当前时间递增并处理时间进位
     private void UpdateGameTime()
     {
+        
         // 增加游戏时间的秒数
         gameSecond++;
         // 检查秒数是否超过设定的上限
@@ -125,9 +134,12 @@ public class TimeManager : MonoBehaviour
                         }
                     }
                 }
+                EventHandler.CallGameDataEvent(gameHour,gameDay,  gameMonth,gameYear, gameSeason); 
             }
+            EventHandler.CallGameMinuteEvent(gameMinute, gameHour);
         }
-        Debug.Log("Second: " + gameSecond + " Minute: " + gameMinute);
+        
+        //Debug.Log("Second: " + gameSecond + " Minute: " + gameMinute);
     }
 
         
