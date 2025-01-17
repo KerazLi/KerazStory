@@ -55,8 +55,10 @@ namespace MFarm.Transition
             
             //移动人物坐标
             EventHandler.CallMoveToPosition(targetPosition);
-            yield return Fade(0f);
+            // 调用AfterSceneLoadEvent()
             EventHandler.CallAfterSceneLoadEvent();
+            yield return Fade(0f);
+            
             //Debug.Log("调用EventHandler.CallAfterSceneLoadEvent()");
         }
 
