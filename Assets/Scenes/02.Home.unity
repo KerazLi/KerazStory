@@ -553,12 +553,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2, y: 12}
-      - {x: -10, y: 12}
-      - {x: -10, y: -9}
-      - {x: 13, y: -9}
-      - {x: 13, y: -2}
-      - {x: 13, y: 12}
+    - - {x: -10, y: 24}
+      - {x: -15, y: 24}
+      - {x: -15, y: -20}
+      - {x: 26, y: -20}
+      - {x: 26, y: -2}
+      - {x: 26, y: 24}
   m_UseDelaunayMesh: 0
 --- !u!4 &273552555
 Transform:
