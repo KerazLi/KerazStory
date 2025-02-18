@@ -11,7 +11,7 @@ public class AnimatorOverride : MonoBehaviour
     [Header("各部分动画列表")]
     public List<AnimatorType> animatorTypes;
 
-    private Dictionary<string, Animator> animatorNameDict = new Dictionary<string, Animator>();
+    private Dictionary<string, Animator> animatorNameDict = new ();
 
     private void Awake()
     {
