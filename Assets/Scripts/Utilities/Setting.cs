@@ -1,3 +1,10 @@
+/*
+* @Program:Setting.cs
+* @Author: Keraz
+* @Description:一些常量的设置
+* @Date: 2025年02月19日 星期三 20:03:10
+*/
+
 namespace Utilities
 {
     public class Setting

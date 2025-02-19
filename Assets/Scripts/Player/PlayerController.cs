@@ -3,6 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* @Program:PlayerController.cs
+* @Author: Keraz
+* @Description: 主角的控制功能
+* @Date: 2025年02月19日 星期三 19:37:47
+*/
+
+
 public class PlayerController : MonoBehaviour
 {
     // Animator参数的哈希值，用于提高性能

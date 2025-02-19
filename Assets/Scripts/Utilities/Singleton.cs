@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 单例模式的基类，用于继承以创建单例模式的游戏对象
-/// </summary>
-/// <typeparam name="T">继承自Singleton<T>的单例类类型</typeparam>
+/*
+* @Program:Singleton.cs
+* @Author: Keraz
+* @Description:单例类
+* @Date: 2025年02月19日 星期三 20:02:07
+*/
+
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
     // 存储单例实例的静态字段

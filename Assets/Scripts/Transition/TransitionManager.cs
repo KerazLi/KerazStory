@@ -3,6 +3,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utilities;
 
+/*
+* @Program:TransitionManager.cs
+* @Author: Keraz
+* @Description:场景切换的功能
+* @Date: 2025年02月19日 星期三 19:49:31
+*/
+
 namespace MFarm.Transition
 {
     public class TransitionManager : MonoBehaviour

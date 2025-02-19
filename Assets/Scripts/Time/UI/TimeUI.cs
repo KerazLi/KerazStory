@@ -5,6 +5,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+* @Program:TimeUI.cs
+* @Author: Keraz
+* @Description:时间的UI
+* @Date: 2025年02月19日 星期三 19:47:15
+*/
+
 public class TimeUI : MonoBehaviour
 {
     public RectTransform dayNightImage;

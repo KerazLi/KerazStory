@@ -6,10 +6,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
+/*
+* @Program:ItemManager.cs
+* @Author: Keraz
+* @Description:物品管理器，负责在场景中实例化和管理物品
+* @Date: 2025年02月19日 星期三 19:46:08
+*/
 
 namespace KFarm.Inventory
 {
-    // 物品管理器，负责在场景中实例化和管理物品
+    
     public class ItemManager : MonoBehaviour
     {
         // 物品的预设，用于实例化新的物品

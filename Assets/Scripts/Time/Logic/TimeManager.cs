@@ -2,6 +2,13 @@ using System;
 using UnityEngine;
 using Utilities;
 
+/*
+* @Program:TimeManager.cs
+* @Author: Keraz
+* @Description: 时间管理功能
+* @Date: 2025年02月19日 星期三 19:46:52
+*/
+
 
 public class TimeManager : MonoBehaviour
 {

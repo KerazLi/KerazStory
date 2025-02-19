@@ -5,6 +5,13 @@ using Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/*
+* @Program:SwitchBounds.cs
+* @Author: Keraz
+* @Description:不同场景转换不同的摄像机的边界
+* @Date: 2025年02月19日 星期三 20:02:18
+*/
+
 public class SwitchBounds : MonoBehaviour
 {
     // 获取当前对象上的CinemachineConfiner组件

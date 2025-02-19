@@ -3,6 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* @Program:ItemPickUp.cs
+* @Author: Keraz
+* @Description:拾取功能
+* @Date: 2025年02月19日 星期三 19:44:31
+*/
+
 namespace KFarm.Inventory
 {
     public class ItemPickUp : MonoBehaviour

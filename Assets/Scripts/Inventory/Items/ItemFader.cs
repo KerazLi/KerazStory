@@ -5,6 +5,13 @@ using DG.Tweening;
 using UnityEngine;
 using Utilities;
 
+/*
+* @Program:ItemFader.cs
+* @Author: Keraz
+* @Description:触碰树木变透明的功能
+* @Date: 2025年02月19日 星期三 19:42:49
+*/
+
 [RequireComponent(typeof(SpriteRenderer))]
 public class ItemFader : MonoBehaviour
 {

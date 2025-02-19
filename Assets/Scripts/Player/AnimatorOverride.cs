@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* @Program:AnimatorOverride.cs
+* @Author: Keraz
+* @Description:主角的动画功能
+* @Date: 2025年02月19日 星期三 19:38:52
+*/
+
 public class AnimatorOverride : MonoBehaviour
 {
     private Animator[] animators;

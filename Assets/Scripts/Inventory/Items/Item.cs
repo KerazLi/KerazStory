@@ -1,11 +1,15 @@
 using UnityEngine;
 
+/*
+* @Program:Item.cs
+* @Author: Keraz
+* @Description:物品的详细信息
+* @Date: 2025年02月19日 星期三 19:40:28
+*/
+
 namespace KFarm.Inventory
 {
-    /// <summary>
-    /// 代表游戏中的一个物品。
-    /// 该类包含了物品的详细信息、显示和碰撞处理。
-    /// </summary>
+    
     public class Item : MonoBehaviour
     {
         /// <summary>

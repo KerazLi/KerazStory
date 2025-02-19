@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-// 定义一个静态类EventHandler来集中处理游戏中的各种事件
+ /*
+* @Program:EventHandler.cs
+* @Author: Keraz
+* @Description:广播的一些类
+* @Date: 2025年02月19日 星期三 20:01:32
+*/
+
 public static class EventHandler 
 {
     // 定义一个事件，用于更新库存UI
@@ -114,7 +120,21 @@ public static class EventHandler
     {
         AfterSceneLoadEvent?.Invoke();
     }
+    /// <summary>
+    /// 定义一个静态事件，当对象需要移动到特定位置时触发。
+    /// </summary>
+    /// <remarks>
+    /// 该事件允许订阅者响应对象的移动事件，从而同步其位置。
+    /// </remarks>
     public static event Action<Vector3> MoveToPosition;
+    
+    /// <summary>
+    /// 静态方法，用于触发MoveToPosition事件。
+    /// </summary>
+    /// <param name="position">对象需要移动到的三维位置。</param>
+    /// <remarks>
+    /// 该方法确保只有当有订阅者时才调用事件，避免了空引用异常。
+    /// </remarks>
     public static void CallMoveToPosition(Vector3 position)
     {
         MoveToPosition?.Invoke(position);

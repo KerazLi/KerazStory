@@ -1,5 +1,12 @@
 using UnityEngine;
 
+/*
+* @Program:DataCollection.cs
+* @Author: Keraz
+* @Description:一些数据收集类
+* @Date: 2025年02月19日 星期三 20:00:18
+*/
+
 [System.Serializable]
 public class ItemDetails
 {
@@ -88,3 +95,10 @@ public class SceneItem
     public SerializableVector3 position;
 }
 
+[System.Serializable]
+public class TileProperty
+{
+    public Vector2Int tileCoordinate;
+    public GridType gridType;
+    public bool boolTypeValue;
+}

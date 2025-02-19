@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+* @Program:InventoryUI.cs
+* @Author: Keraz
+* @Description:背包的UI
+* @Date: 2025年02月19日 星期三 19:49:58
+*/
+
 namespace KFarm.Inventory
 {
     public class InventoryUI : MonoBehaviour
@@ -53,26 +60,38 @@ namespace KFarm.Inventory
             }
         }
 
+        /// <summary>
+        /// 更新库存界面的事件处理方法。
+        /// </summary>
+        /// <param name="location">库存位置，可以是玩家背包或箱子。</param>
+        /// <param name="lists">库存中的物品列表。</param>
         private void OnUpdateInventoryUI(InventoryLocation location, List<InventoryItem> lists)
         {
+            // 根据不同的库存位置更新界面
             switch (location)
             {
+                // 当库存位置为玩家背包时
                 case InventoryLocation.Player:
+                    // 遍历玩家背包中的每个槽位
                     for (int i = 0; i < playerSlots.Length; i++)
                     {
-                        if (lists[i].ItemAmount>0)
+                        // 如果物品数量大于0，则更新槽位显示物品和数量
+                        if (lists[i].ItemAmount > 0)
                         {
-                            var item=InventoryManager.Instance.GetItemDetails(lists[i].itemID);
-                            playerSlots[i].UpdateSlot(item,lists[i].ItemAmount);
+                            var item = InventoryManager.Instance.GetItemDetails(lists[i].itemID);
+                            playerSlots[i].UpdateSlot(item, lists[i].ItemAmount);
                         }
                         else
                         {
+                            // 如果物品数量为0，则更新槽位为空槽位
                             playerSlots[i].UpdateEmptySlot();
                         }
                     }
                     break;
+                // 当库存位置为箱子时，暂无操作
                 case InventoryLocation.Box:
                     break;
+                // 如果库存位置不在预期范围内，抛出异常
                 default:
                     throw new ArgumentOutOfRangeException(nameof(location), location, null);
             }

@@ -1,6 +1,13 @@
 using System;
 using UnityEngine;
 
+/*
+* @Program:InventoryManager.cs
+* @Author: Keraz
+* @Description:背包物品管理功能
+* @Date: 2025年02月19日 星期三 19:44:54
+*/
+
 namespace KFarm.Inventory
 {
     /// <summary>
