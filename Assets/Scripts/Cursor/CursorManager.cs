@@ -11,21 +11,26 @@ public class CursorManager : MonoBehaviour
     private Sprite currentSprite;
     private Image cursorImage;
     private RectTransform cursorCanvas;
+    private Camera mainCamera;
+    private Grid currentGrid;
+    private Vector3 mouseWorldPos;
+    private Vector3Int mouseGridPos;
 
     private void OnEnable()
     {
         EventHandler.ItemSelectedEvent += OnItemSelectedEvent;
+        EventHandler.AfterSceneLoadEvent += OnAfterSceneUnloadEvent;
     }
 
     private void OnDisable()
     {
         EventHandler.ItemSelectedEvent -= OnItemSelectedEvent;
+        EventHandler.AfterSceneLoadEvent -= OnAfterSceneUnloadEvent;
     }
-
     
-
     private void Start()
     {
+        mainCamera = Camera.main;
         cursorCanvas = GameObject.FindGameObjectWithTag("CursorCanvas").GetComponent<RectTransform>();
         cursorImage = cursorCanvas.Find("CursorImage").GetComponent<Image>();
         currentSprite = normal;
@@ -41,16 +46,17 @@ public class CursorManager : MonoBehaviour
         }
         cursorImage.transform.position = Input.mousePosition;
         // 检查当前是否有UI元素被用户交互
-        /*if (!InteractWithUI())
+        if (!InteractWithUI())
         {
             SetCursorImage(currentSprite);
+            CheckCursorValid();
         }
         else
         {
             SetCursorImage(normal);
-        }*/
+        }
         // 检查当前是否有UI元素被用户交互、
-        SetCursorImage(InteractWithUI()?normal:currentSprite);
+        //SetCursorImage(InteractWithUI()?normal:currentSprite);
     }
 
     private void SetCursorImage(Sprite sprite)
@@ -101,5 +107,17 @@ public class CursorManager : MonoBehaviour
             // 如果条件不满足，返回false，表示当前没有UI元素被交互
             return false;
         }
+    }
+
+    private void CheckCursorValid()
+    {
+        mouseWorldPos = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -mainCamera.transform.position.z));
+        mouseGridPos = currentGrid.WorldToCell(mouseWorldPos);
+        Debug.Log("WorldPos: "+mouseWorldPos+" GridPos"+mouseGridPos);
+    }
+
+    private void OnAfterSceneUnloadEvent()
+    {
+        currentGrid = FindObjectOfType<Grid>();
     }
 }

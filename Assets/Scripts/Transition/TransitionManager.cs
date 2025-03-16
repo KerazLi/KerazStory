@@ -31,10 +31,11 @@ namespace MFarm.Transition
         }
         
 
-        private void Start()
+        private IEnumerator Start()
         {
-            StartCoroutine(LoadSceneSetActive(startSceneName));
             fadeCanvasGroup = FindObjectOfType<CanvasGroup>();
+            yield return LoadSceneSetActive(startSceneName);
+            EventHandler.CallAfterSceneLoadEvent();
         }
 
 
