@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MFarm.Map
 {
-    public class GridMapManager : MonoBehaviour
+    public class GridMapManager : Singleton<GridMapManager>
     {
         [Header("地图信息")]
         public List<MapData_SO> MapDataList;
@@ -77,6 +78,19 @@ namespace MFarm.Map
         
             // 如果未找到，则返回null
             return null;
+        }
+        /// <summary>
+        /// 根据鼠标在网格上的位置获取瓷砖详细信息。
+        /// </summary>
+        /// <param name="mouseGridPos">鼠标在网格上的位置，使用三维整数表示。</param>
+        /// <returns>返回对应位置的瓷砖详细信息。</returns>
+        public TileDetails GetTileDetailsOnMousePosition(Vector3Int mouseGridPos)
+        {
+            // 构造一个唯一的键，包含鼠标位置的x和y坐标以及当前场景的名称。
+            string key=mouseGridPos.x+"X"+mouseGridPos.y+"Y"+SceneManager.GetActiveScene().name;
+            
+            // 调用GetTileDetails方法，使用构造的键来获取瓷砖详细信息并返回。
+            return GetTileDetails(key);
         }
     }
 }
