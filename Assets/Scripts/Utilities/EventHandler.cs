@@ -40,6 +40,12 @@ public static class EventHandler
         InstantiateItemInScene?.Invoke(ID, position);
     }
 
+    public static event Action<int, Vector3> DropItemEvent;
+    public static void CallDropItemEvent(int ID, Vector3 position)
+    {
+        DropItemEvent?.Invoke(ID, position);
+    }
+
     // 定义一个事件，用于响应物品选择状态的变化
     // 该事件的处理程序将接收一个ItemDetails对象和一个布尔值作为参数，表示物品详情和是否选中
     public static event Action<ItemDetails,bool> ItemSelectedEvent;
@@ -139,5 +145,17 @@ public static class EventHandler
     {
         MoveToPosition?.Invoke(position);
     }
-    
+
+    public static event Action<Vector3, ItemDetails> MouseClickedEvent;
+    public static void CallMouseClickedEvent(Vector3 position, ItemDetails itemDetails)
+    {
+        MouseClickedEvent?.Invoke(position, itemDetails);
+    }
+
+    public static event Action<Vector3, ItemDetails> ExecuteActionAfterAnimation;
+    public static void CallExecuteActionAfterAnimation(Vector3 position, ItemDetails itemDetails)
+    {
+        ExecuteActionAfterAnimation?.Invoke(position, itemDetails);
+    }
+
 }

@@ -55,6 +55,7 @@ public class CursorManager : MonoBehaviour
         {
             SetCursorImage(currentSprite);
             CheckCursorValid();
+            CheckPlayerInput();
         }
         else
         {
@@ -62,6 +63,15 @@ public class CursorManager : MonoBehaviour
         }
         // 检查当前是否有UI元素被用户交互、
         //SetCursorImage(InteractWithUI()?normal:currentSprite);
+    }
+
+    private void CheckPlayerInput()
+    {
+        if (Input.GetMouseButtonDown(0)&&cursorPositionValid)
+        {
+            //执行方法
+            EventHandler.CallMouseClickedEvent(mouseWorldPos,currentItem);
+        }
     }
 
     #region 鼠标样式

@@ -8,10 +8,7 @@
 
 >ItemManager中的预制体丢失了，重新赋值就可以了
 #### 3.46节生成地图数据中获取地图瓦片信息报空指针的问题，无法获取到地图瓦片信息
->事件通知方法写错了，EventHandler.AfterSceneLoadEvent -= OnAfterSceneUnloadEvent;写成了EventHandler.BeforeSceneLoadEvent -= OnBeforeSceneLoadEvent;
-> 所以一直报空指针的错误,因为没有加载场景，所以没有获取到地图瓦片信息,但是有些时候还是空指针异常，但是不影响运行。
-> 直接Try{}catch{}捕获就没有问题了,45节最后的内容没看完，在场景加载之前鼠标要禁止，忘记在if (!InteractWithUI())
-{
-SetCursorImage(currentSprite);
-CheckCursorValid();
-}加入一个cursorEnable确保场景加载后才允许鼠标操作。
+>事件通知方法写错了，EventHandler.AfterSceneLoadEvent -= OnAfterSceneUnloadEvent;写成了EventHandler.BeforeSceneLoadEvent -= OnBeforeSceneLoadEvent; 所以一直报空指针的错误,因为没有加载场景，所以鼠标没有获取到地图瓦片信息 加入一个cursorEnable确保场景加载后才允许鼠标操作。
+#### 4.47节中鼠标在能建造的地方和不能建造的地方的鼠标切换问题
+>原因：无论是能建造和不能建造的地方，鼠标都显示不能建造的图标（）
+> 解决：Grid瓦片地图读取数据的SO文件丢失了，导致瓦片数据为空，重新添加就可以了

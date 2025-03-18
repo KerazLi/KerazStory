@@ -55,6 +55,14 @@ public class PlayerController : MonoBehaviour
         EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadedEvent;
         // 注册移动到指定位置的事件处理函数
         EventHandler.MoveToPosition += OnMoveToPosition;
+
+        EventHandler.MouseClickedEvent += OnMouseClickedEvent;
+    }
+
+    private void OnMouseClickedEvent(Vector3 pos, ItemDetails item)
+    {
+        //TODO：执行点击事件动画
+        EventHandler.CallExecuteActionAfterAnimation(pos, item);
     }
 
     /// <summary>
@@ -94,6 +102,7 @@ public class PlayerController : MonoBehaviour
         EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadedEvent;
         // 取消订阅移动到指定位置的事件处理函数
         EventHandler.MoveToPosition -= OnMoveToPosition;
+        EventHandler.MouseClickedEvent += OnMouseClickedEvent;
     }
     /// <summary>
     /// 在每帧更新时调用，处理玩家输入和动画状态切换。

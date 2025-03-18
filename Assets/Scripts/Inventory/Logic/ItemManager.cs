@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MFram.Inventory;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -22,6 +23,9 @@ namespace KFarm.Inventory
         public Item itemPrefab;
         // 所有物品的父对象，用于组织物品在场景中的层级关系
         private Transform itemParent;
+
+        public Item bounceItemPrefab;
+        private Transform playerTransform=> FindObjectOfType<PlayerController>().transform;
         //记录场景的Item
         private Dictionary<string, List<SceneItem>> sceneItemDict = new();
 
@@ -31,8 +35,8 @@ namespace KFarm.Inventory
             EventHandler.InstantiateItemInScene += OnInstantiateItemInScene;
             EventHandler.BeforeSceneUnloadEvent += OnBeforeSceneUnloadEvent;
             EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadEvent;
+            EventHandler.DropItemEvent+= OnDropItemEvent;
         }
-
         // 场景加载完成后，获取物品父对象的Transform
         private void OnAfterSceneLoadEvent()
         {
@@ -46,6 +50,15 @@ namespace KFarm.Inventory
             EventHandler.InstantiateItemInScene -= OnInstantiateItemInScene;
             EventHandler.BeforeSceneUnloadEvent -= OnBeforeSceneUnloadEvent;
             EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
+            EventHandler.DropItemEvent -= OnDropItemEvent;
+        }
+        private void OnDropItemEvent(int ID, Vector3 mousePos)
+        {
+            //TODO:扔东西的效果
+            var item = Instantiate(bounceItemPrefab, playerTransform.position, Quaternion.identity, itemParent);
+            item.itemID = ID;
+            var dir = (mousePos - playerTransform.position).normalized;
+            item.GetComponent<ItemBounce>().InitBounceItem(mousePos,dir);
         }
 
         private void OnBeforeSceneUnloadEvent()

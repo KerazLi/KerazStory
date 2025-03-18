@@ -18,9 +18,24 @@ namespace KFarm.Inventory
         public ItemDataList_SO itemDataList_SO;
         public InventoryBag_SO playerBag;
 
+        private void OnEnable()
+        {
+            EventHandler.DropItemEvent += OnDropItemEvent;
+        }
+
         private void Start()
         {
             EventHandler.CallUpdateInventoryUI(InventoryLocation.Player,playerBag.itemList);
+        }
+
+        private void OnDisable()
+        {
+            EventHandler.DropItemEvent -= OnDropItemEvent;
+        }
+
+        private void OnDropItemEvent(int ID, Vector3 pos)
+        {
+            RemoveItem(ID,1);
         }
 
         public ItemDetails GetItemDetails(int ID)
@@ -52,7 +67,23 @@ namespace KFarm.Inventory
             //更新UI
             EventHandler.CallUpdateInventoryUI(InventoryLocation.Player,playerBag.itemList);
         }
-        
+
+        private void RemoveItem(int ID,int removeAmount)
+        {
+            var index = GetItemIndexInBag(ID);
+            if (playerBag.itemList[index].ItemAmount>removeAmount)
+            {
+                var amount=playerBag.itemList[index].ItemAmount-removeAmount;
+                var item = new InventoryItem { itemID = ID, ItemAmount = amount };
+                playerBag.itemList[index] = item;
+            }else if (playerBag.itemList[index].ItemAmount==removeAmount)
+            {
+                var item=new InventoryItem();
+                playerBag.itemList[index] = item;
+            }
+            EventHandler.CallUpdateInventoryUI(InventoryLocation.Player,playerBag.itemList);
+        }
+
         /// <summary>
         /// 检查背包是否还有空位
         /// </summary>

@@ -33,7 +33,7 @@ namespace KFarm.Inventory
         // 该方法检查物品槽中是否有物品，如果有则显示工具提示，否则隐藏工具提示
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (slotUI.itemAmount!=0)
+            if (slotUI.itemDetails!=null)
             {
                 // 激活工具提示对象并设置其内容和位置
                 inventoryUI.itemToolTip.gameObject.SetActive(true);

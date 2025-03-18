@@ -10,6 +10,60 @@ namespace MFarm.Map
         [Header("地图信息")]
         public List<MapData_SO> MapDataList;
         private Dictionary<string,TileDetails> tileDetailsDict=new();
+        private Grid currentGrid;
+
+        private void OnEnable()
+        {
+            EventHandler.ExecuteActionAfterAnimation += OnExecuteActionAfterAnimation;
+            EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadEvent;
+        }
+
+        private void OnDisable()
+        {
+            EventHandler.ExecuteActionAfterAnimation -= OnExecuteActionAfterAnimation;
+            EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
+        }
+
+        private void OnAfterSceneLoadEvent()
+        {
+            currentGrid = FindObjectOfType<Grid>();
+        }
+
+        private void OnExecuteActionAfterAnimation(Vector3 mouseWorldPos, ItemDetails itemDetails)
+        {
+            var mouseGridPos = currentGrid.WorldToCell(mouseWorldPos);
+            var currentTile = GetTileDetailsOnMousePosition(mouseGridPos);
+            if (currentTile!=null)
+            {
+                //WORKFLOW:物品使用实际功能
+                switch (itemDetails.itemType)
+                {
+                    case ItemType.Seed:
+                        break;
+                    case ItemType.Commodity:
+                        EventHandler.CallDropItemEvent(itemDetails.itemID, mouseWorldPos);
+                        break;
+                    case ItemType.Furniture:
+                        break;
+                    case ItemType.HoeTool:
+                        break;
+                    case ItemType.ChopTool:
+                        break;
+                    case ItemType.BreakTool:
+                        break;
+                    case ItemType.WaterTool:
+                        break;
+                    case ItemType.CollectTool:
+                        break;
+                    case ItemType.ReapTool:
+                        break;
+                    case ItemType.ReapableScenery:
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
 
         private void Start()
         {
