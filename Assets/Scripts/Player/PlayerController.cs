@@ -17,7 +17,10 @@ public class PlayerController : MonoBehaviour
     private static readonly int IsMoving = Animator.StringToHash("isMoving");
     private static readonly int InputX = Animator.StringToHash("InputX");
     private static readonly int InputY = Animator.StringToHash("InputY");
-    
+    private static readonly int UseTool = Animator.StringToHash("useTool");
+    private static readonly int MouseX = Animator.StringToHash("MousePosX");
+    private static readonly int MouseY = Animator.StringToHash("MousePosY");
+
     // 角色的刚体组件，用于物理模拟
     private Rigidbody2D rb;
     
@@ -27,6 +30,9 @@ public class PlayerController : MonoBehaviour
     // 存储每帧的输入值
     private float inputX;
     private float inputY;
+    private float mouseX;
+    private float mouseY;
+    private bool useTool;
     
     // 存储每帧的移动输入向量
     private Vector2 movementInput;
@@ -59,10 +65,49 @@ public class PlayerController : MonoBehaviour
         EventHandler.MouseClickedEvent += OnMouseClickedEvent;
     }
 
-    private void OnMouseClickedEvent(Vector3 pos, ItemDetails item)
+    private void OnMouseClickedEvent(Vector3 mouseWorldPos, ItemDetails itemDetails)
     {
+        if (useTool)
+        {
+            return;
+        }
         //TODO：执行点击事件动画
-        EventHandler.CallExecuteActionAfterAnimation(pos, item);
+        if (itemDetails.itemType!=ItemType.Seed && itemDetails.itemType!=ItemType.Commodity && itemDetails.itemType!=ItemType.Furniture)
+        {
+            mouseX = mouseWorldPos.x - transform.position.x;
+            mouseY = mouseWorldPos.y - transform.position.y;
+            if (Mathf.Abs(mouseX)>Mathf.Abs(mouseY))
+            {
+                mouseY = 0;
+            }
+            else
+            {
+                mouseX = 0;
+            }
+            StartCoroutine(UseToolRoutine(mouseWorldPos, itemDetails));
+        }
+        else
+        {
+            EventHandler.CallExecuteActionAfterAnimation(mouseWorldPos, itemDetails);
+        }
+    }
+
+    private IEnumerator UseToolRoutine(Vector3 mouseWorldPos,ItemDetails itemDetails)
+    {
+        useTool = true;
+        inputDisable = true;
+        yield return null;
+        foreach (var anim in animators)
+        {
+            anim.SetTrigger(UseTool);
+            anim.SetFloat(InputX, mouseX);
+            anim.SetFloat(InputY, mouseY);
+        }
+        yield return new WaitForSeconds(0.45f);
+        EventHandler.CallExecuteActionAfterAnimation(mouseWorldPos, itemDetails);
+        yield return new WaitForSeconds(0.25f);
+        useTool = false;
+        inputDisable = false;
     }
 
     /// <summary>
@@ -182,6 +227,8 @@ public class PlayerController : MonoBehaviour
         foreach (var animator in animators)
         {
             animator.SetBool(IsMoving, isMoving);
+            animator.SetFloat(MouseX, mouseX);
+            animator.SetFloat(MouseY, mouseY);
             // 如果玩家在移动，更新动画控制器的移动方向
             if (isMoving)
             {
