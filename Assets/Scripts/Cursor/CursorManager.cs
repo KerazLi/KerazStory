@@ -154,15 +154,6 @@ public class CursorManager : MonoBehaviour
     {
         mouseWorldPos = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -mainCamera.transform.position.z));
         mouseGridPos = currentGrid.WorldToCell(mouseWorldPos);
-        /*try
-        {
-            mouseGridPos = currentGrid.WorldToCell(mouseWorldPos);
-        }
-        catch (Exception e)
-        {
-            Debug.LogWarning("空指针异常不影响");
-        }*/
-        //Debug.Log("WorldPos: "+mouseWorldPos+" GridPos"+mouseGridPos);
         var playerGridPos=currentGrid.WorldToCell(PlayerTransform.position);
         if (Mathf.Abs(playerGridPos.x-mouseGridPos.x)>currentItem.itemUseRadius||Mathf.Abs(playerGridPos.y-mouseGridPos.y)>currentItem.itemUseRadius)
         {
@@ -180,24 +171,37 @@ public class CursorManager : MonoBehaviour
                     if (currentTile.canDropItem&&currentItem.canDropped)
                     {
                         SetCursorValid();
-                        //Debug.Log("6666");
                     }
                     else
                     {
                         SetCursorInvalid();
-                        //Debug.Log("9999");
                     }
-
                     break;
                 case ItemType.Furniture:
                     break;
                 case ItemType.HoeTool:
+                    if (currentTile.canDig)
+                    {
+                        SetCursorValid();
+                    }
+                    else
+                    {
+                        SetCursorInvalid();
+                    }
                     break;
                 case ItemType.ChopTool:
                     break;
                 case ItemType.BreakTool:
                     break;
                 case ItemType.WaterTool:
+                    if (currentTile.daysSinceDug>-1&&currentTile.daysSinceWatered==-1)
+                    {
+                        SetCursorValid();
+                    }
+                    else
+                    {
+                        SetCursorInvalid();
+                    }
                     break;
                 case ItemType.CollectTool:
                     break;

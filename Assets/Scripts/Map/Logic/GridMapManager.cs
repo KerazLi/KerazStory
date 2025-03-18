@@ -2,13 +2,21 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 namespace MFarm.Map
 {
     public class GridMapManager : Singleton<GridMapManager>
     {
+        [Header("种地的瓦片信息切换")] 
+        public RuleTile digTile;
+        public RuleTile waterTile;
+        private Tilemap digTilemap;
+        private Tilemap waterTilemap;
+        
         [Header("地图信息")]
         public List<MapData_SO> MapDataList;
+        
         private Dictionary<string,TileDetails> tileDetailsDict=new();
         private Grid currentGrid;
 
@@ -27,6 +35,8 @@ namespace MFarm.Map
         private void OnAfterSceneLoadEvent()
         {
             currentGrid = FindObjectOfType<Grid>();
+            digTilemap = GameObject.FindWithTag("Dig").GetComponent<Tilemap>();
+            waterTilemap = GameObject.FindWithTag("Water").GetComponent<Tilemap>();
         }
 
         private void OnExecuteActionAfterAnimation(Vector3 mouseWorldPos, ItemDetails itemDetails)
@@ -46,12 +56,19 @@ namespace MFarm.Map
                     case ItemType.Furniture:
                         break;
                     case ItemType.HoeTool:
+                        SetDigGround(currentTile);
+                        currentTile.daysSinceDug = 0;
+                        currentTile.canDig = false;
+                        currentTile.canDropItem = false;
+                        //TODO：音效
                         break;
                     case ItemType.ChopTool:
                         break;
                     case ItemType.BreakTool:
                         break;
                     case ItemType.WaterTool:
+                        SetWaterGround(currentTile);
+                        currentTile.daysSinceWatered = 0;
                         break;
                     case ItemType.CollectTool:
                         break;
@@ -145,6 +162,23 @@ namespace MFarm.Map
             
             // 调用GetTileDetails方法，使用构造的键来获取瓷砖详细信息并返回。
             return GetTileDetails(key);
+        }
+
+        private void SetDigGround(TileDetails tileDetails)
+        {
+            Vector3Int pos = new Vector3Int(tileDetails.gridX, tileDetails.gridY, 0);
+            if (digTilemap!=null)
+            {
+                digTilemap.SetTile(pos,digTile);
+            }
+        }
+        private void SetWaterGround(TileDetails tileDetails)
+        {
+            Vector3Int pos = new Vector3Int(tileDetails.gridX, tileDetails.gridY, 0);
+            if (waterTilemap!=null)
+            {
+                waterTilemap.SetTile(pos,waterTile);
+            }
         }
     }
 }
