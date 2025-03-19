@@ -40,10 +40,10 @@ public static class EventHandler
         InstantiateItemInScene?.Invoke(ID, position);
     }
 
-    public static event Action<int, Vector3> DropItemEvent;
-    public static void CallDropItemEvent(int ID, Vector3 position)
+    public static event Action<int, Vector3,ItemType> DropItemEvent;
+    public static void CallDropItemEvent(int ID, Vector3 position,ItemType itemType)
     {
-        DropItemEvent?.Invoke(ID, position);
+        DropItemEvent?.Invoke(ID, position,itemType);
     }
 
     // 定义一个事件，用于响应物品选择状态的变化

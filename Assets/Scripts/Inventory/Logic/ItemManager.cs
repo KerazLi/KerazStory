@@ -52,8 +52,12 @@ namespace KFarm.Inventory
             EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
             EventHandler.DropItemEvent -= OnDropItemEvent;
         }
-        private void OnDropItemEvent(int ID, Vector3 mousePos)
+        private void OnDropItemEvent(int ID, Vector3 mousePos,ItemType itemType)
         {
+            if (itemType==ItemType.Seed)
+            {
+                return;
+            }
             //TODO:扔东西的效果
             var item = Instantiate(bounceItemPrefab, playerTransform.position, Quaternion.identity, itemParent);
             item.itemID = ID;

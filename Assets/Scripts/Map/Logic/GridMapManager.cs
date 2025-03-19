@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using MFarm.CropPlant;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
@@ -53,6 +54,12 @@ namespace MFarm.Map
                 if (tile.Value.daysSinceDug>5&&tile.Value.seedItemID==-1)
                 {
                     tile.Value.daysSinceDug = -1;
+                    tile.Value.canDig = true;
+                    tile.Value.growthDays = -1;
+                }
+                if (tile.Value.seedItemID!=-1)
+                {
+                    tile.Value.growthDays++;
                 }
             }
             RefreshMap();
@@ -79,9 +86,10 @@ namespace MFarm.Map
                 {
                     case ItemType.Seed:
                         EventHandler.CallPlantSeedEvent(itemDetails.itemID, currentTile);
+                        EventHandler.CallDropItemEvent(itemDetails.itemID, mouseWorldPos, itemDetails.itemType );
                         break;
                     case ItemType.Commodity:
-                        EventHandler.CallDropItemEvent(itemDetails.itemID, mouseWorldPos);
+                        EventHandler.CallDropItemEvent(itemDetails.itemID, mouseWorldPos, itemDetails.itemType);
                         break;
                     case ItemType.Furniture:
                         break;
@@ -221,6 +229,7 @@ namespace MFarm.Map
             }
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         private void RefreshMap()
         {
             if (digTilemap!=null)
@@ -231,6 +240,11 @@ namespace MFarm.Map
             if (waterTilemap!=null)
             {
                 waterTilemap.ClearAllTiles();
+            }
+
+            foreach (var crop in FindObjectsOfType<Crop>())
+            {
+                Destroy(crop.gameObject);
             }
             DisplayMap(SceneManager.GetActiveScene().name);
         }
@@ -250,6 +264,11 @@ namespace MFarm.Map
                     if (tileDetaails.daysSinceWatered>-1)
                     {
                         SetWaterGround(tileDetaails);
+                    }
+
+                    if (tileDetaails.seedItemID>-1)
+                    {
+                        EventHandler.CallPlantSeedEvent(tileDetaails.seedItemID,tileDetaails);
                     }
                     //TODO：种子
                 }
