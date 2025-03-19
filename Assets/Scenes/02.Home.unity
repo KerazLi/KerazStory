@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 135722611}
   - component: {fileID: 135722613}
   - component: {fileID: 135722612}
+  - component: {fileID: 135722614}
   m_Layer: 0
   m_Name: CanDig
   m_TagString: Untagged
@@ -372,6 +373,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &135722614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135722610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b61e8595438f74996832071413cf60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapData: {fileID: 11400000, guid: 02c9485d6d6676c4f9832c6b7284481d, type: 2}
+  gridType: 0
 --- !u!1 &175586093
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +603,7 @@ GameObject:
   - component: {fileID: 286147478}
   m_Layer: 0
   m_Name: Water
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1614,7 +1629,7 @@ GameObject:
   - component: {fileID: 607560016}
   m_Layer: 0
   m_Name: Dig
-  m_TagString: Untagged
+  m_TagString: Dig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2065,6 +2080,7 @@ GameObject:
   - component: {fileID: 897151137}
   - component: {fileID: 897151139}
   - component: {fileID: 897151138}
+  - component: {fileID: 897151140}
   m_Layer: 0
   m_Name: CanPlaceFurmiture
   m_TagString: Untagged
@@ -2174,6 +2190,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &897151140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897151136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b61e8595438f74996832071413cf60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapData: {fileID: 11400000, guid: 02c9485d6d6676c4f9832c6b7284481d, type: 2}
+  gridType: 2
 --- !u!1 &950176822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +2511,7 @@ GameObject:
   - component: {fileID: 1046297454}
   - component: {fileID: 1046297456}
   - component: {fileID: 1046297455}
+  - component: {fileID: 1046297457}
   m_Layer: 0
   m_Name: CanDropItem
   m_TagString: Untagged
@@ -2590,6 +2621,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1046297457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046297453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b61e8595438f74996832071413cf60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapData: {fileID: 11400000, guid: 02c9485d6d6676c4f9832c6b7284481d, type: 2}
+  gridType: 1
 --- !u!1 &1156445663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3101,6 +3146,7 @@ GameObject:
   - component: {fileID: 1465838420}
   - component: {fileID: 1465838422}
   - component: {fileID: 1465838421}
+  - component: {fileID: 1465838423}
   m_Layer: 0
   m_Name: NPCObstacle
   m_TagString: Untagged
@@ -3210,6 +3256,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1465838423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465838419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b61e8595438f74996832071413cf60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapData: {fileID: 11400000, guid: 02c9485d6d6676c4f9832c6b7284481d, type: 2}
+  gridType: 3
 --- !u!1 &1499265249
 GameObject:
   m_ObjectHideFlags: 0
@@ -10541,7 +10601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2141633525
 Transform:
   m_ObjectHideFlags: 0

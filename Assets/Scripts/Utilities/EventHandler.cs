@@ -74,6 +74,12 @@ public static class EventHandler
         GameMinuteEvent?.Invoke(min, hour);
     }
 
+    public static event Action<int, Season> GameDayEvent;
+    public static void CallGameDayEvent(int day, Season season)
+    {
+        GameDayEvent?.Invoke(day, season);
+    }
+
     // 定义一个事件，用于通知观察者游戏数据发生变化
     // 该事件的处理程序将接收小时、天、月、年和季节作为参数
     public static event Action<int,int,int,int,Season> GameDataEvent;

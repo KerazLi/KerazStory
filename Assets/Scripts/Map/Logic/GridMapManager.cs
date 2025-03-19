@@ -16,6 +16,8 @@ namespace MFarm.Map
         
         [Header("地图信息")]
         public List<MapData_SO> MapDataList;
+
+        private Season currentSeason;
         
         private Dictionary<string,TileDetails> tileDetailsDict=new();
         private Grid currentGrid;
@@ -24,19 +26,46 @@ namespace MFarm.Map
         {
             EventHandler.ExecuteActionAfterAnimation += OnExecuteActionAfterAnimation;
             EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadEvent;
+            EventHandler.GameDayEvent+= OnGameDayEvent;
         }
-
+        
         private void OnDisable()
         {
             EventHandler.ExecuteActionAfterAnimation -= OnExecuteActionAfterAnimation;
             EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
+            EventHandler.GameDayEvent-= OnGameDayEvent;
         }
+
+        private void OnGameDayEvent(int day, Season season)
+        {
+            currentSeason = season;
+            foreach (var tile in tileDetailsDict)
+            {
+                if (tile.Value.daysSinceWatered > -1)
+                {
+                    tile.Value.daysSinceWatered = -1;
+                }
+                if (tile.Value.daysSinceDug > -1)
+                {
+                    tile.Value.daysSinceDug ++;
+                }
+                //超期消除挖坑
+                if (tile.Value.daysSinceDug>5&&tile.Value.seedItemID==-1)
+                {
+                    tile.Value.daysSinceDug = -1;
+                }
+            }
+            RefreshMap();
+        }
+
 
         private void OnAfterSceneLoadEvent()
         {
             currentGrid = FindObjectOfType<Grid>();
             digTilemap = GameObject.FindWithTag("Dig").GetComponent<Tilemap>();
             waterTilemap = GameObject.FindWithTag("Water").GetComponent<Tilemap>();
+            //DisplayMap(SceneManager.GetActiveScene().name);
+            RefreshMap();
         }
 
         private void OnExecuteActionAfterAnimation(Vector3 mouseWorldPos, ItemDetails itemDetails)
@@ -80,6 +109,7 @@ namespace MFarm.Map
                         throw new ArgumentOutOfRangeException();
                 }
             }
+            UpdateTileDetails(currentTile);
         }
 
         private void Start()
@@ -178,6 +208,50 @@ namespace MFarm.Map
             if (waterTilemap!=null)
             {
                 waterTilemap.SetTile(pos,waterTile);
+            }
+        }
+
+        private void UpdateTileDetails(TileDetails tileDetails)
+        {
+            string key=tileDetails.gridX+"X"+tileDetails.gridY+"Y"+SceneManager.GetActiveScene().name;
+            if (tileDetailsDict.ContainsKey(key))
+            {
+                tileDetailsDict[key]=tileDetails;
+            }
+        }
+
+        private void RefreshMap()
+        {
+            if (digTilemap!=null)
+            {
+                digTilemap.ClearAllTiles();
+            }
+
+            if (waterTilemap!=null)
+            {
+                waterTilemap.ClearAllTiles();
+            }
+            DisplayMap(SceneManager.GetActiveScene().name);
+        }
+
+        private void DisplayMap(string sceneName)
+        {
+            foreach (var tile in tileDetailsDict)
+            {
+                var key=tile.Key;
+                var tileDetaails = tile.Value;
+                if (key.Contains(sceneName))
+                {
+                    if (tileDetaails.daysSinceDug>-1)
+                    {
+                        SetDigGround(tileDetaails);
+                    }
+                    if (tileDetaails.daysSinceWatered>-1)
+                    {
+                        SetWaterGround(tileDetaails);
+                    }
+                    //TODO：种子
+                }
             }
         }
     }

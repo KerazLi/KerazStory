@@ -52,6 +52,21 @@ public class TimeManager : MonoBehaviour
                 UpdateGameTime();
             }
         }
+
+        if (Input.GetKey(KeyCode.T))
+        {
+            for (int i = 0; i < 60; i++)
+            {
+                UpdateGameTime();
+            }
+        }
+        //测试使用的，不然月份不增加
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            gameDay++;
+            EventHandler.CallGameDayEvent(gameDay, gameSeason);
+            EventHandler.CallGameDataEvent(gameHour,gameDay,  gameMonth,gameYear, gameSeason);
+        }
     }
 
     // 初始化游戏时间
@@ -70,85 +85,62 @@ public class TimeManager : MonoBehaviour
     // 更新游戏时间，根据当前时间递增并处理时间进位
     private void UpdateGameTime()
     {
-        
-        // 增加游戏时间的秒数
         gameSecond++;
-        // 检查秒数是否超过设定的上限
         if (gameSecond > Setting.secondHold)
         {
-            // 增加游戏时间的分钟数
             gameMinute++;
-            // 重置秒数为0
             gameSecond = 0;
-        
-            // 检查分钟数是否超过设定的上限
+
             if (gameMinute > Setting.minuteHold)
             {
-                // 增加游戏时间的小时数
                 gameHour++;
-                // 重置分钟数为0
                 gameMinute = 0;
-        
-                // 检查小时数是否超过设定的上限
+
                 if (gameHour > Setting.hourHold)
                 {
-                    // 增加游戏时间的天数
                     gameDay++;
-                    // 重置小时数为0
                     gameHour = 0;
-        
-                    // 检查天数是否超过设定的上限
+
                     if (gameDay > Setting.dayHold)
                     {
-                        // 重置天数为1，增加游戏时间的月数
                         gameDay = 1;
                         gameMonth++;
-        
-                        // 检查月数是否超过12个月
+
                         if (gameMonth > 12)
-                            // 重置月数为1
-                            gameMonth = 1;
-        
-                        // 减少季节内的月数计数
+                        {
+                            gameMonth = 1; 
+                        }
                         monthInSeason--;
-                        // 检查季节内的月数是否用完
                         if (monthInSeason == 0)
                         {
-                            // 重置季节内的月数计数为3
                             monthInSeason = 3;
-        
-                            // 增加季节编号
+
                             int seasonNumber = (int)gameSeason;
                             seasonNumber++;
-        
-                            // 检查季节编号是否超过设定的上限
+
                             if (seasonNumber > Setting.seasonHold)
                             {
-                                // 重置季节编号为0，增加游戏时间的年数
                                 seasonNumber = 0;
                                 gameYear++;
                             }
-        
-                            // 更新当前季节
+
                             gameSeason = (Season)seasonNumber;
-        
-                            // 检查年数是否超过9999年
+
                             if (gameYear > 9999)
                             {
-                                // 重置年数为2022年
                                 gameYear = 2022;
                             }
                         }
+                        //用来刷新地图和农作物生长
+                        EventHandler.CallGameDayEvent(gameDay, gameSeason);
                     }
                 }
-                EventHandler.CallGameDataEvent(gameHour,gameDay,  gameMonth,gameYear, gameSeason); 
+                EventHandler.CallGameDataEvent(gameHour, gameDay, gameMonth, gameYear, gameSeason);
             }
             EventHandler.CallGameMinuteEvent(gameMinute, gameHour);
         }
-        
-        //Debug.Log("Second: " + gameSecond + " Minute: " + gameMinute);
     }
 
-        
-    
+
+
 }
