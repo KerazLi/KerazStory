@@ -51,7 +51,7 @@ public class CursorManager : MonoBehaviour
         }
         cursorImage.transform.position = Input.mousePosition;
         // 检查当前是否有UI元素被用户交互
-        if (!InteractWithUI()&& cursorEnable)
+        if (!InteractWithUI() && cursorEnable)
         {
             SetCursorImage(currentSprite);
             CheckCursorValid();
@@ -166,6 +166,14 @@ public class CursorManager : MonoBehaviour
             switch (currentItem.itemType)
             {
                 case ItemType.Seed:
+                    if (currentTile.daysSinceDug>-1&&currentTile.seedItemID==-1)
+                    {
+                        SetCursorValid();
+                    }
+                    else
+                    {
+                        SetCursorInvalid();
+                    }
                     break;
                 case ItemType.Commodity:
                     if (currentTile.canDropItem&&currentItem.canDropped)

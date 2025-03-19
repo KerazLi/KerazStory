@@ -78,6 +78,7 @@ namespace MFarm.Map
                 switch (itemDetails.itemType)
                 {
                     case ItemType.Seed:
+                        EventHandler.CallPlantSeedEvent(itemDetails.itemID, currentTile);
                         break;
                     case ItemType.Commodity:
                         EventHandler.CallDropItemEvent(itemDetails.itemID, mouseWorldPos);

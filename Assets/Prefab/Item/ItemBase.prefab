@@ -175,9 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850d6e62ea19aa3469d3a73f9d671776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemID: 1009
+  itemID: 0
   itemDetails:
-    itemID: 0
+    itemID: 1009
     itemName: 
     itemType: 0
     itemIcon: {fileID: 0}

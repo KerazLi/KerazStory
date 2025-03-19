@@ -163,5 +163,10 @@ public static class EventHandler
     {
         ExecuteActionAfterAnimation?.Invoke(position, itemDetails);
     }
+    public static event Action<int, TileDetails> PlantSeedEvent;
+    public static void CallPlantSeedEvent(int ID, TileDetails tileDetails)
+    {
+        PlantSeedEvent?.Invoke(ID, tileDetails);
+    }
 
 }
