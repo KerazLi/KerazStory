@@ -110,10 +110,7 @@ namespace MFarm.Map
                         break;
                     case ItemType.CollectTool:
                         Crop currentCrop = GetCropObject(mouseWorldPos);
-                        if (currentCrop!=null)
-                        {
-                            Debug.Log(currentCrop.cropDetails.seedItemID);
-                        }
+                        currentCrop.ProcessToolAction(itemDetails);
                         break;
                     case ItemType.ReapTool:
                         break;

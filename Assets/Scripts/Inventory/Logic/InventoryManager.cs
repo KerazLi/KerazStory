@@ -21,17 +21,28 @@ namespace KFarm.Inventory
         private void OnEnable()
         {
             EventHandler.DropItemEvent += OnDropItemEvent;
+            EventHandler.HarvestAtPlayerPosition += OnHarvestAtPlayerPosition;
         }
+        private void OnDisable()
+        {
+            EventHandler.DropItemEvent -= OnDropItemEvent;
+            EventHandler.HarvestAtPlayerPosition -= OnHarvestAtPlayerPosition;
+        }
+
+        
 
         private void Start()
         {
             EventHandler.CallUpdateInventoryUI(InventoryLocation.Player,playerBag.itemList);
         }
-
-        private void OnDisable()
+        private void OnHarvestAtPlayerPosition(int ID)
         {
-            EventHandler.DropItemEvent -= OnDropItemEvent;
+            var index = GetItemIndexInBag(ID);
+            AddItemAtindex(ID,index,1);
+            EventHandler.CallUpdateInventoryUI(InventoryLocation.Player,playerBag.itemList);
         }
+
+        
 
         private void OnDropItemEvent(int ID, Vector3 pos,ItemType itemType)
         {

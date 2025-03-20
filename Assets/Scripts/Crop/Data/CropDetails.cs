@@ -52,4 +52,30 @@ public class CropDetails
     public bool generateAtPlayerPosition;
     public bool hasAnimation;
     public bool hasParticalEffect;
+
+    public bool CheckToolAvailable(int toolID)
+    {
+        foreach (var tool in harvestToolItemID)
+        {
+            if (tool==toolID)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public int GetTotalRequireCount(int toolID)
+    {
+        for (int i = 0; i < harvestToolItemID.Length; i++)
+        {
+            if (harvestToolItemID[i]==toolID)
+            {
+                return requireActionCount[i];
+            }
+        }
+
+        return -1;
+    }
 }
