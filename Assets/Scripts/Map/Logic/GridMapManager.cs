@@ -109,6 +109,11 @@ namespace MFarm.Map
                         currentTile.daysSinceWatered = 0;
                         break;
                     case ItemType.CollectTool:
+                        Crop currentCrop = GetCropObject(mouseWorldPos);
+                        if (currentCrop!=null)
+                        {
+                            Debug.Log(currentCrop.cropDetails.seedItemID);
+                        }
                         break;
                     case ItemType.ReapTool:
                         break;
@@ -170,6 +175,20 @@ namespace MFarm.Map
                 }
             }
             
+        }
+
+        private Crop GetCropObject(Vector3 mouseWorldPos)
+        {
+            Collider2D[] collider2Ds = Physics2D.OverlapPointAll(mouseWorldPos);
+            Crop currentCrop = null;
+            for (int i = 0; i < collider2Ds.Length; i++)
+            {
+                if (collider2Ds[i].GetComponent<Crop>())
+                {
+                    currentCrop = collider2Ds[i].GetComponent<Crop>();
+                }
+            }
+            return currentCrop;
         }
 
         /// <summary>

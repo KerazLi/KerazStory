@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using MFarm.CropPlant;
 using UnityEngine;
 
 namespace MFram.CropPlant
 {
-    public class CropManager : MonoBehaviour
+    public class CropManager : Singleton<CropManager>
     {
         public CropDataList_SO cropData;
         private Transform cropParent;
@@ -83,9 +81,10 @@ namespace MFram.CropPlant
 
             GameObject cropInstance = Instantiate(cropPrefab, pos, Quaternion.identity, cropParent);
             cropInstance.GetComponentInChildren<SpriteRenderer>().sprite = cropSprite;
+            cropInstance.GetComponent<Crop>().cropDetails = cropDetails;
         }
 
-        private CropDetails GetCropDetails(int ID)
+        public CropDetails GetCropDetails(int ID)
         {
             return cropData.cropDetailsList.Find(x => x.seedItemID == ID);
         }

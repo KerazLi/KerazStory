@@ -6,6 +6,6 @@ namespace MFarm.CropPlant
 {
     public class Crop : MonoBehaviour
     {
-        private CropDetails cropDetails;
+       public CropDetails cropDetails;
     }
 }
