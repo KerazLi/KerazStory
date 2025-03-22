@@ -28,6 +28,7 @@ namespace MFarm.Map
             EventHandler.ExecuteActionAfterAnimation += OnExecuteActionAfterAnimation;
             EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadEvent;
             EventHandler.GameDayEvent+= OnGameDayEvent;
+            EventHandler.RefreshCurrentMap += RefreshMap;
         }
         
         private void OnDisable()
@@ -35,6 +36,7 @@ namespace MFarm.Map
             EventHandler.ExecuteActionAfterAnimation -= OnExecuteActionAfterAnimation;
             EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
             EventHandler.GameDayEvent-= OnGameDayEvent;
+            EventHandler.RefreshCurrentMap -= RefreshMap;
         }
 
         private void OnGameDayEvent(int day, Season season)
@@ -110,7 +112,7 @@ namespace MFarm.Map
                         break;
                     case ItemType.CollectTool:
                         Crop currentCrop = GetCropObject(mouseWorldPos);
-                        currentCrop.ProcessToolAction(itemDetails);
+                        currentCrop.ProcessToolAction(itemDetails,currentTile);
                         break;
                     case ItemType.ReapTool:
                         break;
