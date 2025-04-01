@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1169027615232759979}
   - component: {fileID: 4144172830836929761}
   - component: {fileID: 4971839224591587866}
+  - component: {fileID: 5703175576426239999}
   m_Layer: 0
   m_Name: Tree01_Top
   m_TagString: Untagged
@@ -97,6 +98,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a5294e411141784bbdaa944618f247e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5703175576426239999
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3423164956127182781}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57f9f1ef0371c4b48a633decb03894ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3905699968318251341
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +130,7 @@ GameObject:
   - component: {fileID: 5619017573481892734}
   - component: {fileID: 9124543998048105916}
   - component: {fileID: 495655284144577347}
+  - component: {fileID: 6864381110134655822}
   m_Layer: 0
   m_Name: Tree_Break
   m_TagString: Untagged
@@ -176,7 +199,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000011920929, y: 3.2344608}
+  m_Offset: {x: 0.09505081, y: 3.1048458}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -187,8 +210,50 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0255692, y: 6.9064074}
+  m_Size: {x: 1.5613117, y: 6.9236894}
   m_EdgeRadius: 0
+--- !u!114 &6864381110134655822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3905699968318251341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4b59a468c75614795a8e8b9e80bde3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropDetails:
+    seedItemID: 0
+    growthDays: 
+    growthPrefabs: []
+    growthSprites: []
+    seasons: 
+    harvestToolItemID: 
+    requireActionCount: 
+    transferItemID: 0
+    producedItemID: 
+    producedMinAmount: 
+    producedMaxAmount: 
+    spawnRadius: {x: 0, y: 0}
+    daysToRegrow: 0
+    regrowTimes: 0
+    generateAtPlayerPosition: 0
+    hasAnimation: 0
+    hasParticalEffect: 0
+  tileDetails:
+    gridX: 0
+    gridY: 0
+    canDig: 0
+    canDropItem: 0
+    canPlaceFurniture: 0
+    isNPCObstacle: 0
+    daysSinceDug: -1
+    daysSinceWatered: -1
+    seedItemID: -1
+    growthDays: -1
+    daysSinceLastHarvest: -1
 --- !u!1 &8032642940490671104
 GameObject:
   m_ObjectHideFlags: 0

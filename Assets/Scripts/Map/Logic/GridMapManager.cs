@@ -83,6 +83,7 @@ namespace MFarm.Map
             var currentTile = GetTileDetailsOnMousePosition(mouseGridPos);
             if (currentTile!=null)
             {
+                Crop currentCrop = GetCropObject(mouseWorldPos);
                 //WORKFLOW:物品使用实际功能
                 switch (itemDetails.itemType)
                 {
@@ -103,6 +104,7 @@ namespace MFarm.Map
                         //TODO：音效
                         break;
                     case ItemType.ChopTool:
+                        currentCrop.ProcessToolAction(itemDetails,currentCrop.tileDetails);
                         break;
                     case ItemType.BreakTool:
                         break;
@@ -111,7 +113,7 @@ namespace MFarm.Map
                         currentTile.daysSinceWatered = 0;
                         break;
                     case ItemType.CollectTool:
-                        Crop currentCrop = GetCropObject(mouseWorldPos);
+                        
                         currentCrop.ProcessToolAction(itemDetails,currentTile);
                         break;
                     case ItemType.ReapTool:
@@ -176,7 +178,7 @@ namespace MFarm.Map
             
         }
 
-        private Crop GetCropObject(Vector3 mouseWorldPos)
+        public Crop GetCropObject(Vector3 mouseWorldPos)
         {
             Collider2D[] collider2Ds = Physics2D.OverlapPointAll(mouseWorldPos);
             Crop currentCrop = null;

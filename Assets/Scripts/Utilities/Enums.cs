@@ -39,7 +39,7 @@ public enum InventoryLocation
     Player,Box
 }
 public enum PartType{
-    None,Carry,Hoe,Break,Water,Collect
+    None, Carry, Hoe, Break, Water, Chop, Collect, Reap
 }
 public enum PartName{
     Body,Hair,Arm,Tool

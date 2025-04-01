@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MFarm.CropPlant;
 using MFarm.Map;
 using MFram.CropPlant;
 using UnityEngine;
@@ -153,6 +154,7 @@ public class CursorManager : MonoBehaviour
 
     private void CheckCursorValid()
     {
+        TileDetails tileDetails = GridMapManager.Instance.GetTileDetailsOnMousePosition(mouseGridPos);
         mouseWorldPos = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -mainCamera.transform.position.z));
         mouseGridPos = currentGrid.WorldToCell(mouseWorldPos);
         var playerGridPos=currentGrid.WorldToCell(PlayerTransform.position);
@@ -165,6 +167,7 @@ public class CursorManager : MonoBehaviour
         if (currentTile!=null)
         {
             CropDetails currentCrop=CropManager.Instance.GetCropDetails(currentTile.seedItemID);
+            Crop crop = GridMapManager.Instance.GetCropObject(mouseWorldPos);
             switch (currentItem.itemType)
             {
                 case ItemType.Seed:
@@ -199,8 +202,7 @@ public class CursorManager : MonoBehaviour
                         SetCursorInvalid();
                     }
                     break;
-                case ItemType.ChopTool:
-                    break;
+                
                 case ItemType.BreakTool:
                     break;
                 case ItemType.WaterTool:
@@ -211,6 +213,18 @@ public class CursorManager : MonoBehaviour
                     else
                     {
                         SetCursorInvalid();
+                    }
+                    break;
+                case ItemType.ChopTool:
+                    if (crop!=null)
+                    {
+                        if (crop.CanHarvest && crop.cropDetails.CheckToolAvailable(currentItem.itemID))
+                        {
+                            SetCursorValid();
+                        }else
+                        {
+                            SetCursorInvalid();
+                        }
                     }
                     break;
                 case ItemType.CollectTool:

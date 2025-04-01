@@ -1244,7 +1244,7 @@ MonoBehaviour:
     overrideController: {fileID: 22100000, guid: 125e14994b3be384dbd436455b007865, type: 2}
   - partType: 5
     partName: 2
-    overrideController: {fileID: 22100000, guid: 2396927d42fd37948af9e134d8c43dff, type: 2}
+    overrideController: {fileID: 22100000, guid: 1b6cbdfd80b896e49866e82954793259, type: 2}
   - partType: 0
     partName: 3
     overrideController: {fileID: 22100000, guid: b2b38a72d8b7fba46b9c9e3f147c63b3, type: 2}
@@ -1259,7 +1259,7 @@ MonoBehaviour:
     overrideController: {fileID: 22100000, guid: 38db5f8dfcf48ba46967e2db1c418c98, type: 2}
   - partType: 5
     partName: 0
-    overrideController: {fileID: 22100000, guid: a32f17bef2c825344a5c800f94139390, type: 2}
+    overrideController: {fileID: 22100000, guid: 6dc3f8cc89464cc479a059bdcb933411, type: 2}
   - partType: 4
     partName: 0
     overrideController: {fileID: 22100000, guid: bd671fbad0a99534aa078a2aaa471c46, type: 2}
@@ -1268,10 +1268,25 @@ MonoBehaviour:
     overrideController: {fileID: 22100000, guid: cd69f0ef38115f44ea9c5825443e54d8, type: 2}
   - partType: 5
     partName: 1
-    overrideController: {fileID: 22100000, guid: 99f087ccfd357aa408586117902295fa, type: 2}
+    overrideController: {fileID: 22100000, guid: 79b7f12d2de69e24a9aa484bda4d60f2, type: 2}
   - partType: 5
     partName: 3
+    overrideController: {fileID: 22100000, guid: 3d0458518e65b09468d28647e1574a93, type: 2}
+  - partType: 6
+    partName: 3
     overrideController: {fileID: 22100000, guid: b2b38a72d8b7fba46b9c9e3f147c63b3, type: 2}
+  - partType: 0
+    partName: 3
+    overrideController: {fileID: 22100000, guid: b2b38a72d8b7fba46b9c9e3f147c63b3, type: 2}
+  - partType: 0
+    partName: 0
+    overrideController: {fileID: 22100000, guid: 6dc3f8cc89464cc479a059bdcb933411, type: 2}
+  - partType: 0
+    partName: 1
+    overrideController: {fileID: 22100000, guid: 79b7f12d2de69e24a9aa484bda4d60f2, type: 2}
+  - partType: 2
+    partName: 2
+    overrideController: {fileID: 22100000, guid: 1b6cbdfd80b896e49866e82954793259, type: 2}
 --- !u!1 &1613675340
 GameObject:
   m_ObjectHideFlags: 0

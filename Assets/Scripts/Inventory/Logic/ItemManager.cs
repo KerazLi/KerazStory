@@ -75,8 +75,9 @@ namespace KFarm.Inventory
         // pos: 物品在场景中的位置
         private void OnInstantiateItemInScene(int ID, Vector3 pos)
         {
-            var item = Instantiate(itemPrefab, pos, Quaternion.identity, itemParent);
+            var item = Instantiate(bounceItemPrefab, pos, Quaternion.identity, itemParent);
             item.itemID = ID;
+            item.GetComponent<ItemBounce>().InitBounceItem(pos, Vector3.up);
         }
 
         /// <summary>
