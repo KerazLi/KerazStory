@@ -52,6 +52,8 @@ public class CropDetails
     public bool generateAtPlayerPosition;
     public bool hasAnimation;
     public bool hasParticalEffect;
+    
+    public ParticaleEffectType particaleEffectType;
 
     public bool CheckToolAvailable(int toolID)
     {
