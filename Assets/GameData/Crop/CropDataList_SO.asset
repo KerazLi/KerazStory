@@ -41,6 +41,7 @@ MonoBehaviour:
     hasAnimation: 0
     hasParticalEffect: 0
     particaleEffectType: 0
+    effectPos: {x: 0, y: 0, z: 0}
   - seedItemID: 1006
     growthDays: 0100000001000000010000000100000001000000
     growthPrefabs:
@@ -69,6 +70,7 @@ MonoBehaviour:
     hasAnimation: 0
     hasParticalEffect: 0
     particaleEffectType: 0
+    effectPos: {x: 0, y: 0, z: 0}
   - seedItemID: 1019
     growthDays: 0100000001000000010000000100000001000000
     growthPrefabs:
@@ -97,6 +99,7 @@ MonoBehaviour:
     hasAnimation: 1
     hasParticalEffect: 0
     particaleEffectType: 1
+    effectPos: {x: 0, y: 2.5, z: 0}
   - seedItemID: 1020
     growthDays: 00000000
     growthPrefabs:
@@ -117,3 +120,4 @@ MonoBehaviour:
     hasAnimation: 0
     hasParticalEffect: 0
     particaleEffectType: 0
+    effectPos: {x: 0, y: 0, z: 0}

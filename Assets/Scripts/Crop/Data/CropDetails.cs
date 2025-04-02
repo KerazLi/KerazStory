@@ -54,6 +54,7 @@ public class CropDetails
     public bool hasParticalEffect;
     
     public ParticaleEffectType particaleEffectType;
+    public Vector3 effectPos;
 
     public bool CheckToolAvailable(int toolID)
     {

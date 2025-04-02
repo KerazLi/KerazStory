@@ -43,6 +43,13 @@ namespace MFarm.CropPlant
                        animator.SetTrigger(RotateLeft);
                    }
                }
+
+               if (cropDetails.hasParticalEffect)
+               {
+                   //播放粒子特效
+                   EventHandler.CallParticleEffectEvent(cropDetails.particaleEffectType,transform.position+cropDetails.effectPos); 
+               }
+               
            }
 
            if (harvestActioCount>=requireActionCount)
