@@ -35,7 +35,7 @@ namespace KFarm.Inventory
         public ItemDetails itemDetails; // 槽中物品的详细信息
         public int itemAmount; // 槽中物品的数量
         public int slotIndex; // 槽在库存中的索引
-        private InventoryUI inventoryUI => GetComponentInParent<InventoryUI>(); // 获取父对象的InventoryUI组件
+        public InventoryUI inventoryUI => GetComponentInParent<InventoryUI>(); // 获取父对象的InventoryUI组件
 
         // 初始化槽UI
         private void Start()
