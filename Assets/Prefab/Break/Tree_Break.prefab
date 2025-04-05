@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 9124543998048105916}
   - component: {fileID: 495655284144577347}
   - component: {fileID: 6864381110134655822}
+  - component: {fileID: 9051060153770627396}
   m_Layer: 0
   m_Name: Tree_Break
   m_TagString: Untagged
@@ -242,6 +243,8 @@ MonoBehaviour:
     generateAtPlayerPosition: 0
     hasAnimation: 0
     hasParticalEffect: 0
+    particaleEffectType: 0
+    effectPos: {x: 0, y: 0, z: 0}
   tileDetails:
     gridX: 0
     gridY: 0
@@ -254,6 +257,20 @@ MonoBehaviour:
     seedItemID: -1
     growthDays: -1
     daysSinceLastHarvest: -1
+--- !u!114 &9051060153770627396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3905699968318251341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1908b00fe7bfbba4991fcc03e38082e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seedItemID: 1019
+  growthDays: 15
 --- !u!1 &8032642940490671104
 GameObject:
   m_ObjectHideFlags: 0

@@ -202,9 +202,6 @@ public class CursorManager : MonoBehaviour
                         SetCursorInvalid();
                     }
                     break;
-                
-                case ItemType.BreakTool:
-                    break;
                 case ItemType.WaterTool:
                     if (currentTile.daysSinceDug>-1&&currentTile.daysSinceWatered==-1)
                     {
@@ -215,6 +212,7 @@ public class CursorManager : MonoBehaviour
                         SetCursorInvalid();
                     }
                     break;
+                case ItemType.BreakTool:
                 case ItemType.ChopTool:
                     if (crop!=null)
                     {

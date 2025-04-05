@@ -21,6 +21,8 @@ namespace MFarm.Map
         private Season currentSeason;
         
         private Dictionary<string,TileDetails> tileDetailsDict=new();
+        //场景第一次加载
+        private Dictionary<string, bool> firstLoadDict = new();
         private Grid currentGrid;
 
         private void OnEnable()
@@ -37,6 +39,14 @@ namespace MFarm.Map
             EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
             EventHandler.GameDayEvent-= OnGameDayEvent;
             EventHandler.RefreshCurrentMap -= RefreshMap;
+        }
+        private void Start()
+        {
+            foreach (var mapData in MapDataList)
+            {
+                firstLoadDict.Add(mapData.sceneName,true);
+                InitTileDetialsDict(mapData);
+            }
         }
 
         private void OnGameDayEvent(int day, Season season)
@@ -73,7 +83,12 @@ namespace MFarm.Map
             currentGrid = FindObjectOfType<Grid>();
             digTilemap = GameObject.FindWithTag("Dig").GetComponent<Tilemap>();
             waterTilemap = GameObject.FindWithTag("Water").GetComponent<Tilemap>();
-            //DisplayMap(SceneManager.GetActiveScene().name);
+            if (firstLoadDict[SceneManager.GetActiveScene().name])
+            {
+                EventHandler.CallGenerateCropEvent();
+                firstLoadDict[SceneManager.GetActiveScene().name] = false;
+            }
+            //EventHandler.CallGenerateCropEvent();
             RefreshMap();
         }
 
@@ -103,10 +118,9 @@ namespace MFarm.Map
                         currentTile.canDropItem = false;
                         //TODO：音效
                         break;
-                    case ItemType.ChopTool:
-                        currentCrop.ProcessToolAction(itemDetails,currentCrop.tileDetails);
-                        break;
                     case ItemType.BreakTool:
+                    case ItemType.ChopTool:
+                        currentCrop?.ProcessToolAction(itemDetails,currentCrop.tileDetails);
                         break;
                     case ItemType.WaterTool:
                         SetWaterGround(currentTile);
@@ -114,7 +128,7 @@ namespace MFarm.Map
                         break;
                     case ItemType.CollectTool:
                         
-                        currentCrop.ProcessToolAction(itemDetails,currentTile);
+                        currentCrop?.ProcessToolAction(itemDetails,currentTile);
                         break;
                     case ItemType.ReapTool:
                         break;
@@ -127,13 +141,7 @@ namespace MFarm.Map
             UpdateTileDetails(currentTile);
         }
 
-        private void Start()
-        {
-            foreach (var mapData in MapDataList)
-            {
-                InitTileDetialsDict(mapData);
-            }
-        }
+        
 
         private void InitTileDetialsDict(MapData_SO mapDataSo)
         {
@@ -240,12 +248,16 @@ namespace MFarm.Map
             }
         }
 
-        private void UpdateTileDetails(TileDetails tileDetails)
+        public void UpdateTileDetails(TileDetails tileDetails)
         {
             string key=tileDetails.gridX+"X"+tileDetails.gridY+"Y"+SceneManager.GetActiveScene().name;
             if (tileDetailsDict.ContainsKey(key))
             {
                 tileDetailsDict[key]=tileDetails;
+            }
+            else
+            {
+                tileDetailsDict.Add(key,tileDetails);
             }
         }
 
