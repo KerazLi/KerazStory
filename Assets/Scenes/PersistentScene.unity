@@ -938,6 +938,8 @@ MonoBehaviour:
   poolPrefabs:
   - {fileID: 8736470923494533077, guid: 988d0f78acac6b8498f45a879976e225, type: 3}
   - {fileID: 5143224752489360902, guid: 4bd56f5a9067707448a0128a38794017, type: 3}
+  - {fileID: 5903082130056890166, guid: a811eb4bf686d8c4791d62019c09785b, type: 3}
+  - {fileID: 5903082130056890166, guid: 36285d36a46a24048ba064715019a6bc, type: 3}
 --- !u!1 &1181512476
 GameObject:
   m_ObjectHideFlags: 0
