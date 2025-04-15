@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using MFarm.CropPlant;
+using MFrarm.CropPlant;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
@@ -24,6 +25,7 @@ namespace MFarm.Map
         //场景第一次加载
         private Dictionary<string, bool> firstLoadDict = new();
         private Grid currentGrid;
+        private List<ReapItem> itemsInRadius;
 
         private void OnEnable()
         {
@@ -141,7 +143,29 @@ namespace MFarm.Map
             UpdateTileDetails(currentTile);
         }
 
-        
+        /// <summary>
+        /// 返回工具范围内的杂草
+        /// </summary>
+        /// <param name="tool">物品</param>
+        /// <returns></returns>
+        public bool HaveReapableItemsInRadius(ItemDetails tool)
+        {
+            itemsInRadius = new List<ReapItem>();
+            Collider2D[] collider2Ds = new Collider2D[20];
+            Physics2D.OverlapCircleNonAlloc(Input.mousePosition, tool.itemUseRadius, collider2Ds);
+            if (collider2Ds.Length>0)
+            {
+                for (int i = 0; i < collider2Ds.Length; i++)
+                {
+                    if (collider2Ds[i].GetComponent<ReapItem>())
+                    {
+                        var item=collider2Ds[i].GetComponent<ReapItem>();
+                        itemsInRadius.Add(item);
+                    }
+                }
+            }
+            return itemsInRadius.Count>0;
+        }
 
         private void InitTileDetialsDict(MapData_SO mapDataSo)
         {

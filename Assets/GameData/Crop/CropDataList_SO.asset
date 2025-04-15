@@ -208,7 +208,7 @@ MonoBehaviour:
   - seedItemID: 1025
     growthDays: 00000000
     growthPrefabs:
-    - {fileID: 2334703778709268028, guid: e5d453c91d0985848ae296b20aa124d9, type: 3}
+    - {fileID: 1084367202260140579, guid: bbaac4ab4f110564fb6dfce75a1fd848, type: 3}
     growthSprites:
     - {fileID: 21300000, guid: 0c055f09a64a74805ad18c1f0b134fec, type: 3}
     seasons: 000000000100000002000000

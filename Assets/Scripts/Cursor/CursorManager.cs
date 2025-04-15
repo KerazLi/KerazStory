@@ -152,6 +152,7 @@ public class CursorManager : MonoBehaviour
         }
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     private void CheckCursorValid()
     {
         TileDetails tileDetails = GridMapManager.Instance.GetTileDetailsOnMousePosition(mouseGridPos);
@@ -247,6 +248,14 @@ public class CursorManager : MonoBehaviour
                     }
                     break;
                 case ItemType.ReapTool:
+                    if (GridMapManager.Instance.HaveReapableItemsInRadius(currentItem))
+                    {
+                        SetCursorValid();
+                    }
+                    else
+                    {
+                        SetCursorInvalid();
+                    }
                     break;
                 case ItemType.ReapableScenery:
                     break;
