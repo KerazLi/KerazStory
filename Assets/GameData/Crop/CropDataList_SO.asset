@@ -163,7 +163,7 @@ MonoBehaviour:
     hasParticalEffect: 1
     particaleEffectType: 3
     effectPos: {x: 0, y: 1.5, z: 0}
-  - seedItemID: 1023
+  - seedItemID: 1024
     growthDays: 00000000
     growthPrefabs:
     - {fileID: 5393178319111772729, guid: b7c45f0c27f4b24478da0d9ada130f20, type: 3}
@@ -184,7 +184,7 @@ MonoBehaviour:
     hasParticalEffect: 1
     particaleEffectType: 4
     effectPos: {x: 0, y: 0, z: 0}
-  - seedItemID: 1024
+  - seedItemID: 1025
     growthDays: 00000000
     growthPrefabs:
     - {fileID: 2334703778709268028, guid: e5d453c91d0985848ae296b20aa124d9, type: 3}
@@ -205,7 +205,7 @@ MonoBehaviour:
     hasParticalEffect: 1
     particaleEffectType: 4
     effectPos: {x: 0, y: 1, z: 0}
-  - seedItemID: 1025
+  - seedItemID: 1026
     growthDays: 00000000
     growthPrefabs:
     - {fileID: 1084367202260140579, guid: bbaac4ab4f110564fb6dfce75a1fd848, type: 3}
@@ -215,9 +215,9 @@ MonoBehaviour:
     harvestToolItemID: ec030000
     requireActionCount: 01000000
     transferItemID: 0
-    producedItemID: 02040000
+    producedItemID: 03040000
     producedMinAmount: 01000000
-    producedMaxAmount: 000000000000000000000000
+    producedMaxAmount: 03000000
     spawnRadius: {x: 0.5, y: 0.5}
     daysToRegrow: 0
     regrowTimes: 0

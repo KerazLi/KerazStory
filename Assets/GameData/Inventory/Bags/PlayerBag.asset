@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerBag
   m_EditorClassIdentifier: 
   itemList:
-  - itemID: 1003
+  - itemID: 1004
     ItemAmount: 1
   - itemID: 1002
     ItemAmount: 1
@@ -27,8 +27,8 @@ MonoBehaviour:
     ItemAmount: 1
   - itemID: 1019
     ItemAmount: 99
-  - itemID: 0
-    ItemAmount: 0
+  - itemID: 1023
+    ItemAmount: 3
   - itemID: 0
     ItemAmount: 0
   - itemID: 0

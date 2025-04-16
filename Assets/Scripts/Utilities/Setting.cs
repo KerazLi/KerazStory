@@ -27,5 +27,7 @@ namespace Utilities
         public const int seasonHold = 3;
         // 定义淡入淡出的总持续时间
         public const float fadeDuration = 1.5f;
+        //割草数量限制
+        public const int reapAmount = 2;
     }
 }

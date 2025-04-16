@@ -5,6 +5,7 @@ using MFrarm.CropPlant;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using Utilities;
 
 namespace MFarm.Map
 {
@@ -133,6 +134,18 @@ namespace MFarm.Map
                         currentCrop?.ProcessToolAction(itemDetails,currentTile);
                         break;
                     case ItemType.ReapTool:
+                        var reapCount = 0;
+                        for (int i = 0; i < itemsInRadius.Count; i++)
+                        {
+                            EventHandler.CallParticleEffectEvent(ParticaleEffectType.ReapableScenery,itemsInRadius[i].transform.position+Vector3.up);
+                            itemsInRadius[i].SpawnHarvestItems();
+                            Destroy(itemsInRadius[i].gameObject);
+                            reapCount++;
+                            if (reapCount>=Setting.reapAmount)
+                            {
+                                break;
+                            }
+                        }
                         break;
                     case ItemType.ReapableScenery:
                         break;
@@ -148,19 +161,22 @@ namespace MFarm.Map
         /// </summary>
         /// <param name="tool">物品</param>
         /// <returns></returns>
-        public bool HaveReapableItemsInRadius(ItemDetails tool)
+        public bool HaveReapableItemsInRadius(Vector3 mouseWorldPos,ItemDetails tool)
         {
             itemsInRadius = new List<ReapItem>();
             Collider2D[] collider2Ds = new Collider2D[20];
-            Physics2D.OverlapCircleNonAlloc(Input.mousePosition, tool.itemUseRadius, collider2Ds);
+            Physics2D.OverlapCircleNonAlloc(mouseWorldPos, tool.itemUseRadius, collider2Ds);
             if (collider2Ds.Length>0)
             {
                 for (int i = 0; i < collider2Ds.Length; i++)
                 {
-                    if (collider2Ds[i].GetComponent<ReapItem>())
+                    if (collider2Ds[i] != null)
                     {
-                        var item=collider2Ds[i].GetComponent<ReapItem>();
-                        itemsInRadius.Add(item);
+                        if (collider2Ds[i].GetComponent<ReapItem>())
+                        {
+                            var item = collider2Ds[i].GetComponent<ReapItem>();
+                            itemsInRadius.Add(item);
+                        }
                     }
                 }
             }

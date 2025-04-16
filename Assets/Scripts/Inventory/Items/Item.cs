@@ -84,6 +84,7 @@ namespace KFarm.Inventory
             {
                 gameObject.AddComponent<ReapItem>();
                 gameObject.GetComponent<ReapItem>().InitCropData(itemDetails.itemID);
+                gameObject.AddComponent<ItemInteractive>();
             }
         }
     }
