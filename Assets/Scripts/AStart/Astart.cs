@@ -31,6 +31,7 @@ public class Astart : MonoBehaviour
             }
         }
     }
+    
 
     /// <summary>
     /// 构建网格节点信息，初始化两个列表
@@ -77,6 +78,10 @@ public class Astart : MonoBehaviour
         }
         return true;
     }
+    /// <summary>
+    /// 找到最短路径node添加到closeNodeList列表
+    /// </summary>
+    /// <returns></returns>
     
     private bool FindShortestPath()
     {   
@@ -93,7 +98,77 @@ public class Astart : MonoBehaviour
                 break;
             }
             //计算周围8个节点
+            EvaluateNeighbourNodes(closNode);
         }
         return pathFound;
+    }
+    /// <summary>
+    /// 评估周围八个点并得到对应的消耗值
+    /// </summary>
+    /// <param name="currentNode"></param>
+    private void EvaluateNeighbourNodes(Node currentNode)
+    {
+        Vector2Int currentNodePos = currentNode.gridPosition;
+        Node validNeighbourNode;
+        for (int i = -1; i <= 1; i++)
+        {
+            for (int j = -1; j <= 1; j++)
+            {
+                if (i == 0 && j == 0)
+                {
+                    continue;
+                }
+                validNeighbourNode = GetValidNeighbourNode(currentNodePos.x + i, currentNodePos.y + j);
+                if (validNeighbourNode != null)
+                {
+                    if (!openNodeList.Contains(validNeighbourNode))
+                    {
+                        validNeighbourNode.gCost=currentNode.gCost+GetDistance(currentNode,validNeighbourNode);
+                        validNeighbourNode.hCost = GetDistance(validNeighbourNode, targetNode);
+                        //链接父节点
+                        validNeighbourNode.parentNode = currentNode;
+                        openNodeList.Add(validNeighbourNode);
+                    }
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// 相邻两点的距离
+    /// </summary>
+    /// <param name="nodeA">起始点</param>
+    /// <param name="nodeB">目标点</param>
+    /// <returns></returns>
+    private int GetDistance(Node nodeA,Node nodeB)
+    {
+        int xDistance = Mathf.Abs(nodeA.gridPosition.x - nodeB.gridPosition.x);
+        int yDistance = Mathf.Abs(nodeA.gridPosition.y - nodeB.gridPosition.y);
+        if (xDistance > yDistance)
+        {
+            return 14 * yDistance + 10 * (xDistance - yDistance);
+        }
+        return 10 * (yDistance - xDistance)+14*xDistance;
+    }
+    /// <summary>
+    /// 找到有效的Node，非故障，非已选择
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
+    /// <returns></returns>
+    private Node GetValidNeighbourNode(int x, int y)
+    {
+        if (x>=gridWidth||y>=gridHeight||x<0||y<0)
+        {
+            return null;
+        }
+        Node neighbourNode = gridNodes.GetGridNode(x, y);
+        if (neighbourNode.isObstacle||closeNodeList.Contains(neighbourNode))
+        {
+            return null;
+        }
+        else
+        {
+            return neighbourNode;
+        }
     }
 }
