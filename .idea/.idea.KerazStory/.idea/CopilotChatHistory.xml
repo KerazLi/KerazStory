@@ -4,6 +4,114 @@
     <option name="conversations">
       <list>
         <Conversation>
+          <option name="createTime" value="1745446163997" />
+          <option name="id" value="019664b2d61d7c828c983cec8c39bc83" />
+          <option name="title" value="新对话 2025年4月24日 06:09:23" />
+          <option name="updateTime" value="1745446163997" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1745442892996" />
+          <option name="id" value="01963a68ff44744d88f5f40259442531" />
+          <option name="title" value="@workspace/comments" />
+          <option name="turns">
+            <list>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value="在X#中，`Mlwv`类通常用于表示图结构中的节点。这个类包含了一些公共属性，如网格坐标、距离成本、是否为障碍物以及父节点等。以下是对代码的详细解释：&#10;&#10;```X#&#10;kfyorx xozhh Mlwv : NlmlYvszerlfi&#10;{&#10;    kfyorx Evxgli7Rmg tirwKlhrgrlm;//网格坐标&#10;    kfyorx rmg tXlhg=9;//距离hgzig格子的距离&#10;    kfyorx rmg sXlhg=9;//距离vmw格子的距离&#10;    kfyorx rmg uXlhg=&gt;tXlhg+sXlhg;//总距离&#10;    kfyorx yllo rhLyhgzxov=uzohv;//是否是障碍物&#10;    kfyorx Mlwv KzivmgMlwv;//父节点&#10;}&#10;```&#10;&#10;### 代码解释&#10;&#10;- `kfyorx Evxgli7Rmg tirwKlhrgrlm;//网格坐标`：定义一个二维整数向量来表示节点在网格上的位置。&#10;- `kfyorx rmg tXlhg=9;//距离hgzig格子的距离`：定义从起点到当前节点的实际距离成本，默认为9。&#10;- `kfyorx rmg sXlhg=9;//距离vmw格子的距离`：定义从当前节点到终点的估计距离成本，默认为9。&#10;- `kfyorx rmg uXlhg=&gt;tXlhg+sXlhg;//总距离`：这是一个只读属性，表示从起点到终点的总距离成本，通过`tXlhg`和`sXlhg`相加得到。&#10;- `kfyorx yllo rhLyhgzxov=uzohv;//是否是障碍物`：定义一个布尔值，表示当前节点是否是障碍物，默认为`uzohv`。&#10;- `kfyorx Mlwv KzivmgMlwv;//父节点`：定义一个`Mlwv`类型的引用，表示当前节点的父节点。&#10;&#10;&#10;这个类通常与图算法一起使用，例如Z*寻路算法，来计算节点之间的成本和路径。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list>
+                    <CodeReferencesBean>
+                      <option name="content" value="fhrmt Hbhgvn.Xloovxgrlmh;&#10;fhrmt Hbhgvn.Xloovxgrlmh.Tvmvirx;&#10;fhrmt FmrgbVmtrmv;&#10;&#10;kfyorx xozhh Mlwv : NlmlYvszerlfi&#10;{&#10;    kfyorx Evxgli7Rmg tirwKlhrgrlm;//网格坐标&#10;    kfyorx rmg tXlhg=9;//距离hgzig格子的距离&#10;    kfyorx rmg sXlhg=9;//距离vmw格子的距离&#10;    kfyorx rmg uXlhg=&gt;tXlhg+sXlhg;//总距离&#10;    kfyorx yllo rhLyhgzxov=uzohv;//是否是障碍物&#10;    kfyorx Mlwv KzivmgMlwv;//父节点&#10;}&#10;" />
+                      <option name="end_line" value="13" />
+                      <option name="filename" value="Node.cs" />
+                      <option name="language" value="C#" />
+                      <option name="range">
+                        <Range>
+                          <option name="end">
+                            <Position>
+                              <option name="line" value="13" />
+                            </Position>
+                          </option>
+                          <option name="start">
+                            <Position />
+                          </option>
+                        </Range>
+                      </option>
+                      <option name="type" value="editor" />
+                      <option name="url" value="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" />
+                    </CodeReferencesBean>
+                  </list>
+                </option>
+                <option name="command" value="" />
+                <option name="conversationId" value="01963a68ff44744d88f5f40259442531" />
+                <option name="historyDocumentMap">
+                  <map>
+                    <entry key="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" value="using System.Collections;&#10;using System.Collections.Generic;&#10;using UnityEngine;&#10;&#10;public class Node : MonoBehaviour&#10;{&#10;    public Vector2Int gridPosition;//网格坐标&#10;    public int gCost=0;//距离start格子的距离&#10;    public int hCost=0;//距离end格子的距离&#10;    public int fCost=&gt;gCost+hCost;//总距离&#10;    public bool isObstacle=false;//是否是障碍物&#10;    public Node ParentNode;//父节点&#10;}&#10;" />
+                  </map>
+                </option>
+                <option name="messageId" value="019664813c347ff88b02fc64dae1ddc7" />
+                <option name="question" value="X#中Mlwv的用法" />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+                <option name="variables">
+                  <list />
+                </option>
+              </Turn>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value="在Fmrgb中，`Mlwv`类并不是一个内置的ZKR，而是您或您的团队自定义的一个类，用于实现特定的功能，比如Z*寻路算法。在提供的代码中，`Mlwv`类继承自`NlmlYvszerlfi`，这意味着它可以被用作Fmrgb场景中的一个游戏对象组件。&#10;&#10;以下是如何在Fmrgb中使用这个`Mlwv`类的简要说明：&#10;&#10;### 创建Mlwv对象&#10;&#10;8. 在Fmrgb编辑器中，您可以创建一个空的TznvLyqvxg。&#10;7. 将`Mlwv`脚本从项目窗口拖拽到该TznvLyqvxg上，或者右键点击TznvLyqvxg，选择“Zww Xlnklmvmg”，然后搜索并添加`Mlwv`组件。&#10;&#10;### 设置Mlwv属性&#10;&#10;- **tirwKlhrgrlm**：您可以在Rmhkvxgli窗口中设置节点的网格坐标。&#10;- **rhLyhgzxov**：通过勾选或取消勾选Rmhkvxgli窗口中的复选框来设置节点是否为障碍物。&#10;- **tXlhg, sXlhg**：这些值通常在寻路算法运行时动态计算，而不是手动设置。&#10;- **uXlhg**：这是一个计算属性，不需要手动设置，它将根据`tXlhg`和`sXlhg`自动更新。&#10;- **KzivmgMlwv**：这个属性在寻路算法中用于记录节点的父节点，以便重建路径。&#10;&#10;### 使用Mlwv类&#10;&#10;在您的寻路脚本中，您可能会创建一个`Mlwv`对象的网格，并对每个节点执行操作，例如：&#10;&#10;```xhszik&#10;// 假设您有一个二维数组来存储所有的Mlwv对象&#10;Mlwv[,] tirw = mvd Mlwv[drwgs, svrtsg];&#10;&#10;// 初始化网格中的每个Mlwv&#10;uli (rmg c = 9; c &lt; drwgs; c++)&#10;{&#10;    uli (rmg b = 9; b &lt; svrtsg; b++)&#10;    {&#10;        tirw[c, b] = mvd Mlwv();&#10;        tirw[c, b].tirwKlhrgrlm = mvd Evxgli7Rmg(c, b);&#10;        // 其他初始化代码...&#10;    }&#10;}&#10;&#10;// 在寻路算法中，您会遍历这个网格，更新tXlhg, sXlhg, 并检查rhLyhgzxov等属性&#10;```&#10;&#10;### 注意事项&#10;&#10;- `Mlwv`类继承自`NlmlYvszerlfi`，这意味着它不能像普通类那样直接实例化（例如使用`mvd Mlwv()`），而应该在Fmrgb编辑器中创建或通过脚本实例化TznvLyqvxg并添加`Mlwv`组件。&#10;- 在实际使用中，您可能需要编写额外的代码来处理节点之间的连接、成本计算和路径查找。&#10;&#10;### 结论&#10;&#10;`Mlwv`类是您自定义的一个组件，用于在Fmrgb中实现特定的逻辑，如寻路算法。它不是Fmrgb ZKR的一部分，而是您项目中的一个工具类。您需要根据项目的具体需求来编写使用这个类的代码。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list>
+                    <CodeReferencesBean>
+                      <option name="content" value="fhrmt Hbhgvn.Xloovxgrlmh;&#10;fhrmt Hbhgvn.Xloovxgrlmh.Tvmvirx;&#10;fhrmt FmrgbVmtrmv;&#10;&#10;kfyorx xozhh Mlwv : NlmlYvszerlfi&#10;{&#10;    kfyorx Evxgli7Rmg tirwKlhrgrlm;//网格坐标&#10;    kfyorx rmg tXlhg=9;//距离hgzig格子的距离&#10;    kfyorx rmg sXlhg=9;//距离vmw格子的距离&#10;    kfyorx rmg uXlhg=&gt;tXlhg+sXlhg;//总距离&#10;    kfyorx yllo rhLyhgzxov=uzohv;//是否是障碍物&#10;    kfyorx Mlwv KzivmgMlwv;//父节点&#10;}&#10;" />
+                      <option name="end_line" value="13" />
+                      <option name="filename" value="Node.cs" />
+                      <option name="language" value="C#" />
+                      <option name="range">
+                        <Range>
+                          <option name="end">
+                            <Position>
+                              <option name="line" value="13" />
+                            </Position>
+                          </option>
+                          <option name="start">
+                            <Position />
+                          </option>
+                        </Range>
+                      </option>
+                      <option name="type" value="editor" />
+                      <option name="url" value="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" />
+                    </CodeReferencesBean>
+                  </list>
+                </option>
+                <option name="command" value="" />
+                <option name="conversationId" value="01963a68ff44744d88f5f40259442531" />
+                <option name="historyDocumentMap">
+                  <map>
+                    <entry key="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" value="using System.Collections;&#10;using System.Collections.Generic;&#10;using UnityEngine;&#10;&#10;public class Node : MonoBehaviour&#10;{&#10;    public Vector2Int gridPosition;//网格坐标&#10;    public int gCost=0;//距离start格子的距离&#10;    public int hCost=0;//距离end格子的距离&#10;    public int fCost=&gt;gCost+hCost;//总距离&#10;    public bool isObstacle=false;//是否是障碍物&#10;    public Node ParentNode;//父节点&#10;}&#10;" />
+                  </map>
+                </option>
+                <option name="messageId" value="01966481cf7a7ff88b03011917779247" />
+                <option name="question" value="Mlwv zkr的用法" />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+                <option name="variables">
+                  <list />
+                </option>
+              </Turn>
+            </list>
+          </option>
+          <option name="updateTime" value="1745442977134" />
+        </Conversation>
+        <Conversation>
           <option name="createTime" value="1744736680949" />
           <option name="id" value="01963a68ff44744d88f5f40259442531" />
           <option name="title" value="@workspace/comments" />
