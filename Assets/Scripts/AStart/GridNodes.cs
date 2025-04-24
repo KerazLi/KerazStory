@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MFarm.AStart
+namespace MFarm.AStar
 {
-    public class GridNodes : MonoBehaviour
+    public class GridNodes
     {
         private int width;
         private int height;
-        private Node[,] gridNodes;
+        private Node[,] gridNode;
+
         /// <summary>
         /// 构造函数初始化节点范围数组
         /// </summary>
@@ -18,23 +19,25 @@ namespace MFarm.AStart
         {
             this.width = width;
             this.height = height;
-            gridNodes = new Node[width, height];
-            for (int i = 0; i < width; i++)
+
+            gridNode = new Node[width, height];
+
+            for (int x = 0; x < width; x++)
             {
-                for (int j = 0; j < height; j++)
+                for (int y = 0; y < height; y++)
                 {
-                    gridNodes[i, j] = new Node(new Vector2Int(i, j));
+                    gridNode[x, y] = new Node(new Vector2Int(x, y));
                 }
             }
         }
 
-        public Node GetGridNode(int xPos,int yPos)
-        {
-            if (xPos<width&&yPos<height&&xPos>=0&&yPos>=0)
-            {
-                return gridNodes[xPos, yPos];
-            }
 
+        public Node GetGridNode(int xPos, int yPos)
+        {
+            if (xPos < width && yPos < height)
+            {
+                return gridNode[xPos, yPos];
+            }
             Debug.Log("超出网格范围");
             return null;
         }

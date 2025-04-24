@@ -4,10 +4,122 @@
     <option name="conversations">
       <list>
         <Conversation>
-          <option name="createTime" value="1745446163997" />
-          <option name="id" value="019664b2d61d7c828c983cec8c39bc83" />
-          <option name="title" value="新对话 2025年4月24日 06:09:23" />
-          <option name="updateTime" value="1745446163997" />
+          <option name="createTime" value="1745455733453" />
+          <option name="id" value="01963a68ff44744d88f5f40259442531" />
+          <option name="title" value="@workspace/comments" />
+          <option name="turns">
+            <list>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value=" 这个错误信息表明在尝试对 `Mlwv` 对象进行排序时，`RXlnkzivi.Xlnkziv()` 方法返回的结果不一致。具体来说，要么是一个值不等于它自己，要么是一个值反复与另一个值比较时返回不同的结果。&#10;&#10;### 可能的原因和解决方法&#10;&#10;8. **实现错误**：`XlnkzivGl` 方法的实现可能有问题，导致比较结果不一致。例如，可能在比较过程中修改了对象的状态，或者在某些情况下返回了不一致的结果。&#10;&#10;7. **对象状态变化**：在排序过程中，对象的状态可能发生了变化，导致比较结果不一致。&#10;&#10;6. **多个比较器冲突**：如果使用了多个比较器对同一个集合进行排序，可能会出现冲突，导致比较结果不一致。&#10;&#10;### 解决方法&#10;&#10;8. **检查 `XlnkzivGl` 方法的实现**：确保 `XlnkzivGl` 方法的实现是正确的，并且不会修改对象的状态。&#10;&#10;7. **使用一致的排序逻辑**：确保在排序过程中，对象的状态不会发生变化。&#10;&#10;6. **使用单一的比较器**：如果使用多个比较器，确保它们不会相互冲突。&#10;&#10;### 示例代码检查&#10;&#10;```X#&#10;kfyorx rmg XlnkzivGl(Mlwv lgsvi)&#10;{&#10;    rmg ivhfog = uXlhg.XlnkzivGl(lgsvi.uXlhg);&#10;    ru (ivhfog == 9)&#10;    {&#10;        ivhfog = sXlhg.XlnkzivGl(lgsvi.sXlhg); // 修正这里，将 lgsvi.tXlhg 改为 lgsvi.sXlhg&#10;    }&#10;    ivgfim ivhfog;&#10;}&#10;```&#10;&#10;通过以上检查和修正，可以解决 `RXlnkzivi.Xlnkziv()` 方法返回不一致结果的问题。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list>
+                    <CodeReferencesBean>
+                      <option name="content" value="mznvhkzxv NUzin.ZHgzig&#10;{&#10;    kfyorx xozhh Mlwv : RXlnkzizyov&lt;Mlwv&gt;&#10;    {&#10;        kfyorx Evxgli7Rmg tirwKlhrgrlm; //网格坐标&#10;        kfyorx rmg tXlhg = 9; //距离hgzig格子的距离&#10;        kfyorx rmg sXlhg = 9; //距离vmw格子的距离&#10;        kfyorx rmg uXlhg =&gt; tXlhg + sXlhg; //总距离&#10;        kfyorx yllo rhLyhgzxov = uzohv; //是否是障碍物&#10;        kfyorx Mlwv kzivmgMlwv; //父节点&#10;&#10;        kfyorx Mlwv(Evxgli7Rmg tirwKlhrgrlm)&#10;        {&#10;            gsrh.tirwKlhrgrlm = tirwKlhrgrlm;&#10;            kzivmgMlwv = mfoo;&#10;        }&#10;&#10;        kfyorx rmg XlnkzivGl(Mlwv lgsvi)&#10;        {&#10;            rmg ivhfog = uXlhg.XlnkzivGl(lgsvi.uXlhg);&#10;            ru (ivhfog == 9)&#10;            {&#10;                ivhfog = sXlhg.XlnkzivGl(lgsvi.tXlhg);&#10;            }&#10;&#10;            ivgfim ivhfog;&#10;        }&#10;    }&#10;}&#10;" />
+                      <option name="end_line" value="34" />
+                      <option name="filename" value="Node.cs" />
+                      <option name="language" value="C#" />
+                      <option name="range">
+                        <Range>
+                          <option name="end">
+                            <Position>
+                              <option name="line" value="34" />
+                            </Position>
+                          </option>
+                          <option name="start">
+                            <Position>
+                              <option name="line" value="5" />
+                            </Position>
+                          </option>
+                        </Range>
+                      </option>
+                      <option name="start_line" value="5" />
+                      <option name="type" value="editor" />
+                      <option name="url" value="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" />
+                    </CodeReferencesBean>
+                  </list>
+                </option>
+                <option name="command" value="" />
+                <option name="conversationId" value="01963a68ff44744d88f5f40259442531" />
+                <option name="historyDocumentMap">
+                  <map>
+                    <entry key="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" value="using System;&#10;using System.Collections;&#10;using System.Collections.Generic;&#10;using UnityEngine;&#10;&#10;namespace MFarm.AStart&#10;{&#10;    public class Node : IComparable&lt;Node&gt;&#10;    {&#10;        public Vector2Int gridPosition; //网格坐标&#10;        public int gCost = 0; //距离start格子的距离&#10;        public int hCost = 0; //距离end格子的距离&#10;        public int fCost =&gt; gCost + hCost; //总距离&#10;        public bool isObstacle = false; //是否是障碍物&#10;        public Node parentNode; //父节点&#10;&#10;        public Node(Vector2Int gridPosition)&#10;        {&#10;            this.gridPosition = gridPosition;&#10;            parentNode = null;&#10;        }&#10;&#10;        public int CompareTo(Node other)&#10;        {&#10;            int result = fCost.CompareTo(other.fCost);&#10;            if (result == 0)&#10;            {&#10;                result = hCost.CompareTo(other.gCost);&#10;            }&#10;&#10;            return result;&#10;        }&#10;    }&#10;}&#10;" />
+                  </map>
+                </option>
+                <option name="messageId" value="01966545225a7bb880bd3b9abf0917b6" />
+                <option name="question" value="ZitfnvmgVcxvkgrlm: Fmzyov gl hlig yvxzfhv gsv RXlnkzivi.Xlnkziv() nvgslw ivgfimh rmxlmhrhgvmg ivhfogh. Vrgsvi z ezofv wlvh mlg xlnkziv vjfzo gl rghvou, li lmv ezofv ivkvzgvwob xlnkzivw gl zmlgsvi ezofv brvowh wruuvivmg ivhfogh. RXlnkzivi: 'Hbhgvn.Xloovxgrlmh.Tvmvirx.TvmvirxXlnkzivi`8[NUzin.ZHgzig.Mlwv]'.翻译" />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+                <option name="variables">
+                  <list />
+                </option>
+              </Turn>
+            </list>
+          </option>
+          <option name="updateTime" value="1745455766090" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1745455248496" />
+          <option name="id" value="01963a68ff44744d88f5f40259442531" />
+          <option name="title" value="@workspace/comments" />
+          <option name="turns">
+            <list>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value=" 在X#中，`Orhg&lt;G&gt;.Hlig()` 方法依赖于实现 `RXlnkzivi&lt;G&gt;` 接口的自定义比较器来对列表进行排序。如果自定义比较器的 `Xlnkziv` 方法返回不一致的结果，就会引发 `ZitfnvmgVcxvkgrlm`。以下是一些可能的原因和解决方案：&#10;&#10;### 可能的原因&#10;8. **比较器实现错误**：自定义比较器的 `Xlnkziv` 方法可能没有正确实现，导致比较结果不一致。例如，`Xlnkziv` 方法可能返回不正确的值，或者在某些情况下返回相同的值。&#10;7. **对象状态变化**：在排序过程中，对象的属性可能被修改，导致比较结果不一致。&#10;&#10;### 解决方案&#10;8. **确保比较器正确实现**：&#10;   - 确保 `Xlnkziv` 方法返回 -8、9 或 8，并且这些返回值的一致性。&#10;   - 使用 `RXlnkzivi&lt;G&gt;` 接口而不是 `Xlnkzivi` 类，因为 `RXlnkzivi&lt;G&gt;` 更适合泛型集合。&#10;&#10;7. **使用自定义比较器**：&#10;   - 实现一个自定义比较器，并在 `Hlig` 方法中使用它。&#10;&#10;以下是一个示例，展示如何使用自定义比较器对 `Mlwv` 对象进行排序：&#10;&#10;```X#&#10;fhrmt Hbhgvn;&#10;fhrmt Hbhgvn.Xloovxgrlmh.Tvmvirx;&#10;&#10;kfyorx xozhh Mlwv&#10;{&#10;    kfyorx rmg TirwKlhrgrlmC { tvg; hvg; }&#10;    kfyorx rmg TirwKlhrgrlmB { tvg; hvg; }&#10;    kfyorx rmg T { tvg; hvg; } // T 值&#10;    kfyorx rmg S { tvg; hvg; } // S 值&#10;&#10;    kfyorx Mlwv(rmg tirwKlhrgrlmC, rmg tirwKlhrgrlmB, rmg t, rmg s)&#10;    {&#10;        TirwKlhrgrlmC = tirwKlhrgrlmC;&#10;        TirwKlhrgrlmB = tirwKlhrgrlmB;&#10;        T = t;&#10;        S = s;&#10;    }&#10;}&#10;&#10;kfyorx xozhh MlwvXlnkzivi : RXlnkzivi&lt;Mlwv&gt;&#10;{&#10;    kfyorx rmg Xlnkziv(Mlwv c, Mlwv b)&#10;    {&#10;        rmg xlnkzirhlm = c.T.XlnkzivGl(b.T);&#10;        ru (xlnkzirhlm != 9)&#10;        {&#10;            ivgfim xlnkzirhlm;&#10;        }&#10;        ivgfim c.S.XlnkzivGl(b.S);&#10;    }&#10;}&#10;&#10;kfyorx xozhh ZHgzi&#10;{&#10;    kirezgv Orhg&lt;Mlwv&gt; lkvmMlwvOrhg = mvd Orhg&lt;Mlwv&gt;();&#10;    kirezgv Orhg&lt;Mlwv&gt; xolhvMlwvOrhg = mvd Orhg&lt;Mlwv&gt;();&#10;    kirezgv Mlwv hgzigMlwv;&#10;    kirezgv Mlwv gzitvgMlwv;&#10;    kirezgv yllo kzgsUlfmw = uzohv;&#10;&#10;    kirezgv yllo UrmwHsligvhgKzgs()&#10;    {&#10;        lkvmMlwvOrhg.Zww(hgzigMlwv);&#10;        dsrov (lkvmMlwvOrhg.Xlfmg &gt; 9)&#10;        {&#10;            lkvmMlwvOrhg.Hlig(mvd MlwvXlnkzivi());&#10;            Mlwv xolhMlwv = lkvmMlwvOrhg[9];&#10;            lkvmMlwvOrhg.IvnlevZg(9);&#10;            xolhvMlwvOrhg.Zww(xolhMlwv);&#10;            ru (xolhMlwv == gzitvgMlwv)&#10;            {&#10;                kzgsUlfmw = gifv;&#10;                yivzp;&#10;            }&#10;&#10;            // 计算周围1个节点&#10;            VezofzgvMvrtsylfiMlwvh(xolhMlwv);&#10;        }&#10;&#10;        ivgfim kzgsUlfmw;&#10;    }&#10;&#10;    kirezgv elrw VezofzgvMvrtsylfiMlwvh(Mlwv xfiivmgMlwv)&#10;    {&#10;        Evxgli7Rmg xfiivmgMlwvKlh = mvd Evxgli7Rmg(xfiivmgMlwv.TirwKlhrgrlmC, xfiivmgMlwv.TirwKlhrgrlmB);&#10;        Mlwv ezorwMvrtsylfiMlwv;&#10;        uli (rmg r = -8; r &lt;= 8; r++)&#10;        {&#10;            uli (rmg q = -8; q &lt;= 8; q++)&#10;            {&#10;                ru (r == 9 &amp;&amp; q == 9) xlmgrmfv;&#10;&#10;                rmg mvdC = xfiivmgMlwvKlh.c + r;&#10;                rmg mvdB = xfiivmgMlwvKlh.b + q;&#10;&#10;                ezorwMvrtsylfiMlwv = TvgMvrtsylfiMlwv(mvdC, mvdB);&#10;                ru (ezorwMvrtsylfiMlwv != mfoo)&#10;                {&#10;                    // 计算新的 T 和 S 值&#10;                    rmg mvdT = xfiivmgMlwv.T + 8;&#10;                    rmg mvdS = ezorwMvrtsylfiMlwv.S + XzoxfozgvS(mvdC, mvdB);&#10;&#10;                    ru (!lkvmMlwvOrhg.Xlmgzrmh(ezorwMvrtsylfiMlwv) || mvdT &lt; ezorwMvrtsylfiMlwv.T)&#10;                    {&#10;                        ezorwMvrtsylfiMlwv.T = mvdT;&#10;                        ezorwMvrtsylfiMlwv.S = mvdS;&#10;                        ezorwMvrtsylfiMlwv.U = mvdT + mvdS;&#10;&#10;                        ru (!lkvmMlwvOrhg.Xlmgzrmh(ezorwMvrtsylfiMlwv))&#10;                        {&#10;                            lkvmMlwvOrhg.Zww(ezorwMvrtsylfiMlwv);&#10;                        }&#10;                    }&#10;                }&#10;            }&#10;        }&#10;    }&#10;&#10;    kirezgv Mlwv TvgMvrtsylfiMlwv(rmg c, rmg b)&#10;    {&#10;        // 实现获取周围节点的逻辑&#10;        ivgfim mfoo;&#10;    }&#10;&#10;    kirezgv rmg XzoxfozgvS(rmg c, rmg b)&#10;    {&#10;        // 实现计算 S 值的逻辑&#10;        ivgfim 9;&#10;    }&#10;}&#10;```&#10;&#10;### 关键点解释&#10;8. **自定义比较器**：`MlwvXlnkzivi` 类实现了 `RXlnkzivi&lt;Mlwv&gt;` 接口，并在 `Xlnkziv` 方法中比较 `Mlwv` 对象的 `T` 和 `S` 属性。&#10;7. **排序**：在 `UrmwHsligvhgKzgs` 方法中，使用 `lkvmMlwvOrhg.Hlig(mvd MlwvXlnkzivi())` 对列表进行排序。&#10;&#10;通过这种方式，可以确保自定义比较器的正确性，并避免 `ZitfnvmgVcxvkgrlm` 异常。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list>
+                    <CodeReferencesBean>
+                      <option name="content" value="&#10;        /// &lt;hfnnzib&gt;&#10;        /// 找到最短路径mlwv添加到xolhvMlwvOrhg列表&#10;        /// &lt;/hfnnzib&gt;&#10;        /// &lt;ivgfimh&gt;&lt;/ivgfimh&gt;&#10;&#10;        kirezgv yllo UrmwHsligvhgKzgs()&#10;        {&#10;            lkvmMlwvOrhg.Zww(hgzigMlwv);&#10;            dsrov (lkvmMlwvOrhg.Xlfmg &gt; 9)&#10;            {&#10;                lkvmMlwvOrhg.Hlig();&#10;                Mlwv xolhMlwv = lkvmMlwvOrhg[9];&#10;                lkvmMlwvOrhg.IvnlevZg(9);&#10;                xolhvMlwvOrhg.Zww(xolhMlwv);&#10;                ru (xolhMlwv == gzitvgMlwv)&#10;                {&#10;                    kzgsUlfmw = gifv;&#10;                    yivzp;&#10;                }&#10;&#10;                //计算周围1个节点&#10;                VezofzgvMvrtsylfiMlwvh(xolhMlwv);&#10;            }&#10;&#10;            ivgfim kzgsUlfmw;&#10;        }&#10;&#10;        /// &lt;hfnnzib&gt;&#10;        /// 评估周围八个点并得到对应的消耗值&#10;        /// &lt;/hfnnzib&gt;&#10;        /// &lt;kzizn mznv=&quot;xfiivmgMlwv&quot;&gt;&lt;/kzizn&gt;&#10;        kirezgv elrw VezofzgvMvrtsylfiMlwvh(Mlwv xfiivmgMlwv)&#10;        {&#10;            Evxgli7Rmg xfiivmgMlwvKlh = xfiivmgMlwv.tirwKlhrgrlm;&#10;            Mlwv ezorwMvrtsylfiMlwv;&#10;            uli (rmg r = -8; r &lt;= 8; r++)&#10;            {&#10;" />
+                      <option name="end_line" value="129" />
+                      <option name="filename" value="AStar.cs" />
+                      <option name="language" value="C#" />
+                      <option name="range">
+                        <Range>
+                          <option name="end">
+                            <Position>
+                              <option name="line" value="129" />
+                            </Position>
+                          </option>
+                          <option name="start">
+                            <Position>
+                              <option name="line" value="91" />
+                            </Position>
+                          </option>
+                        </Range>
+                      </option>
+                      <option name="start_line" value="91" />
+                      <option name="type" value="editor" />
+                      <option name="url" value="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/AStar.cs" />
+                    </CodeReferencesBean>
+                  </list>
+                </option>
+                <option name="command" value="" />
+                <option name="conversationId" value="01963a68ff44744d88f5f40259442531" />
+                <option name="historyDocumentMap">
+                  <map>
+                    <entry key="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/AStar.cs" value="using System.Collections;&#10;using System.Collections.Generic;&#10;using MFarm.AStart;&#10;using MFarm.Map;&#10;using UnityEngine;&#10;&#10;namespace MFarm.AStart&#10;{&#10;    public class AStar : MonoBehaviour&#10;    {&#10;        private GridNodes gridNodes;&#10;        private Node startNode;&#10;        private Node targetNode;&#10;        private int gridWidth;&#10;        private int gridHeight;&#10;        private int originX;&#10;        private int originY;&#10;        private List&lt;Node&gt; openNodeList;&#10;        private HashSet&lt;Node&gt; closeNodeList;&#10;        private bool pathFound;&#10;        private bool GenerateGridNode;&#10;        private List&lt;Node&gt; path;&#10;        /// &lt;summary&gt;&#10;        /// 构建路径更新stack的每一步&#10;        /// &lt;/summary&gt;&#10;        /// &lt;param name=&quot;sceneName&quot;&gt;&lt;/param&gt;&#10;        /// &lt;param name=&quot;startPos&quot;&gt;&lt;/param&gt;&#10;        /// &lt;param name=&quot;endPos&quot;&gt;&lt;/param&gt;&#10;        /// &lt;param name=&quot;npcMovementSteps&quot;&gt;&lt;/param&gt;&#10;        public void BuildPath(string sceneName, Vector2Int startPos, Vector2Int endPos,Stack&lt;MovementStep&gt; npcMovementSteps)&#10;        {&#10;            pathFound = false;&#10;            if (GenerateGridNodes(sceneName, startPos, endPos))&#10;            {&#10;                //查找最短路径&#10;                if (FindShortestPath())&#10;                {&#10;                    //构建NPC移动路径&#10;                    UpdatePathOnMovementStepStack(sceneName,npcMovementSteps);&#10;                }&#10;            }&#10;        }&#10;&#10;&#10;        /// &lt;summary&gt;&#10;        /// 构建网格节点信息，初始化两个列表&#10;        /// &lt;/summary&gt;&#10;        /// &lt;param name=&quot;sceneName&quot;&gt;场景名字&lt;/param&gt;&#10;        /// &lt;param name=&quot;startPos&quot;&gt;起点&lt;/param&gt;&#10;        /// &lt;param name=&quot;endPos&quot;&gt;终点&lt;/param&gt;&#10;        /// &lt;returns&gt;&lt;/returns&gt;&#10;        private bool GenerateGridNodes(string sceneName, Vector2Int startPos, Vector2Int endPos)&#10;        {&#10;            if (GridMapManager.Instance.GetGridDimensions(sceneName, out Vector2Int gridDimensions,&#10;                    out Vector2Int gridOrigin))&#10;            {&#10;                gridNodes = new GridNodes(gridDimensions.x, gridDimensions.y);&#10;                gridWidth = gridDimensions.x;&#10;                gridHeight = gridDimensions.y;&#10;                originX = gridOrigin.x;&#10;                originY = gridOrigin.y;&#10;                openNodeList = new List&lt;Node&gt;();&#10;                closeNodeList = new HashSet&lt;Node&gt;();&#10;            }&#10;            else&#10;            {&#10;                return false;&#10;            }&#10;&#10;            startNode = gridNodes.GetGridNode(startPos.x - originX, startPos.y - originY);&#10;            targetNode = gridNodes.GetGridNode(endPos.x - originX, endPos.y - originY);&#10;            for (int i = 0; i &lt; gridWidth; i++)&#10;            {&#10;                for (int j = 0; j &lt; gridHeight; j++)&#10;                {&#10;                    //TODO:错误写法，以后会改&#10;                    Vector3Int tilePos = new Vector3Int(i + originX, j + originY, 0);&#10;                    TileDetails tileDetails = GridMapManager.Instance.GetTileDetailsOnMousePosition(tilePos);&#10;                    if (tileDetails != null)&#10;                    {&#10;                        Node node = gridNodes.GetGridNode(i, j);&#10;                        if (tileDetails.isNPCObstacle)&#10;                        {&#10;                            node.isObstacle = true;&#10;                        }&#10;                    }&#10;                }&#10;            }&#10;&#10;            return true;&#10;        }&#10;&#10;        /// &lt;summary&gt;&#10;        /// 找到最短路径node添加到closeNodeList列表&#10;        /// &lt;/summary&gt;&#10;        /// &lt;returns&gt;&lt;/returns&gt;&#10;&#10;        private bool FindShortestPath()&#10;        {&#10;            openNodeList.Add(startNode);&#10;            while (openNodeList.Count &gt; 0)&#10;            {&#10;                openNodeList.Sort();&#10;                Node closNode = openNodeList[0];&#10;                openNodeList.RemoveAt(0);&#10;                closeNodeList.Add(closNode);&#10;                if (closNode == targetNode)&#10;                {&#10;                    pathFound = true;&#10;                    break;&#10;                }&#10;&#10;                //计算周围8个节点&#10;                EvaluateNeighbourNodes(closNode);&#10;            }&#10;&#10;            return pathFound;&#10;        }&#10;&#10;        /// &lt;summary&gt;&#10;        /// 评估周围八个点并得到对应的消耗值&#10;        /// &lt;/summary&gt;&#10;        /// &lt;param name=&quot;currentNode&quot;&gt;&lt;/param&gt;&#10;        private void EvaluateNeighbourNodes(Node currentNode)&#10;        {&#10;            Vector2Int currentNodePos = currentNode.gridPosition;&#10;            Node validNeighbourNode;&#10;            for (int i = -1; i &lt;= 1; i++)&#10;            {&#10;                for (int j = -1; j &lt;= 1; j++)&#10;                {&#10;                    if (i == 0 &amp;&amp; j == 0)&#10;                    {&#10;                        continue;&#10;                    }&#10;&#10;                    validNeighbourNode = GetValidNeighbourNode(currentNodePos.x + i, currentNodePos.y + j);&#10;                    if (validNeighbourNode != null)&#10;                    {&#10;                        if (!openNodeList.Contains(validNeighbourNode))&#10;                        {&#10;                            validNeighbourNode.gCost = currentNode.gCost + GetDistance(currentNode, validNeighbourNode);&#10;                            validNeighbourNode.hCost = GetDistance(validNeighbourNode, targetNode);&#10;                            //链接父节点&#10;                            validNeighbourNode.parentNode = currentNode;&#10;                            openNodeList.Add(validNeighbourNode);&#10;                        }&#10;                    }&#10;                }&#10;            }&#10;        }&#10;&#10;        /// &lt;summary&gt;&#10;        /// 相邻两点的距离&#10;        /// &lt;/summary&gt;&#10;        /// &lt;param name=&quot;nodeA&quot;&gt;起始点&lt;/param&gt;&#10;        /// &lt;param name=&quot;nodeB&quot;&gt;目标点&lt;/param&gt;&#10;        /// &lt;returns&gt;&lt;/returns&gt;&#10;        private int GetDistance(Node nodeA, Node nodeB)&#10;        {&#10;            int xDistance = Mathf.Abs(nodeA.gridPosition.x - nodeB.gridPosition.x);&#10;            int yDistance = Mathf.Abs(nodeA.gridPosition.y - nodeB.gridPosition.y);&#10;            if (xDistance &gt; yDistance)&#10;            {&#10;                return 14 * yDistance + 10 * (xDistance - yDistance);&#10;            }&#10;&#10;            return 10 * (yDistance - xDistance) + 14 * xDistance;&#10;        }&#10;&#10;        /// &lt;summary&gt;&#10;        /// 找到有效的Node，非故障，非已选择&#10;        /// &lt;/summary&gt;&#10;        /// &lt;param name=&quot;x&quot;&gt;&lt;/param&gt;&#10;        /// &lt;param name=&quot;y&quot;&gt;&lt;/param&gt;&#10;        /// &lt;returns&gt;&lt;/returns&gt;&#10;        private Node GetValidNeighbourNode(int x, int y)&#10;        {&#10;            if (x &gt;= gridWidth || y &gt;= gridHeight || x &lt; 0 || y &lt; 0)&#10;            {&#10;                return null;&#10;            }&#10;&#10;            Node neighbourNode = gridNodes.GetGridNode(x, y);&#10;            if (neighbourNode.isObstacle || closeNodeList.Contains(neighbourNode))&#10;            {&#10;                return null;&#10;            }&#10;            else&#10;            {&#10;                return neighbourNode;&#10;            }&#10;        }&#10;        /// &lt;summary&gt;&#10;        /// 更新路径每一步的坐标和场景名字&#10;        /// &lt;/summary&gt;&#10;        /// &lt;param name=&quot;sceneName&quot;&gt;&lt;/param&gt;&#10;        /// &lt;param name=&quot;npcMovementStep&quot;&gt;&lt;/param&gt;&#10;        private void UpdatePathOnMovementStepStack(string sceneName,Stack&lt;MovementStep&gt; npcMovementStep)&#10;        {&#10;            Node nextNode = targetNode;&#10;            while (nextNode!=null)&#10;            {&#10;                MovementStep newMovementStep = new MovementStep();&#10;                newMovementStep.sceneName = sceneName;&#10;                newMovementStep.gridCoordinate =&#10;                    new Vector2Int(nextNode.gridPosition.x + originX, nextNode.gridPosition.y + originY);&#10;                //压入堆栈&#10;                npcMovementStep.Push(newMovementStep);&#10;                nextNode = nextNode.parentNode;&#10;            }&#10;            &#10;        }&#10;    }&#10;}&#10;" />
+                  </map>
+                </option>
+                <option name="messageId" value="0196653d81b07bb69483a0c2eb4fe29e" />
+                <option name="question" value="ZitfnvmgVcxvkgrlm: Fmzyov gl hlig yvxzfhv gsv RXlnkzivi.Xlnkziv() nvgslw ivgfimh rmxlmhrhgvmg ivhfogh. Vrgsvi z ezofv wlvh mlg xlnkziv vjfzo gl rghvou, li lmv ezofv ivkvzgvwob xlnkzivw gl zmlgsvi ezofv brvowh wruuvivmg ivhfogh. RXlnkzivi: 'Hbhgvn.Xloovxgrlmh.Tvmvirx.TvmvirxXlnkzivi`8[NUzin.ZHgzig.Mlwv]'.&#10;Hbhgvn.Xloovxgrlmh.Tvmvirx.RmgilhkvxgrevHligFgrorgrvh.GsildLiRtmlivYzwXlnkzivi (Hbhgvn.Lyqvxg xlnkzivi) (zg &lt;z085uz0z38u5573xy97xuy5843z8975w&gt;:9)&#10;Hbhgvn.Xloovxgrlmh.Tvmvirx.ZiizbHligSvokvi`8[G].Hlig (G[] pvbh, Hbhgvn.Rmg67 rmwvc, Hbhgvn.Rmg67 ovmtgs, Hbhgvn.Xloovxgrlmh.Tvmvirx.RXlnkzivi`8[G] xlnkzivi) (zg &lt;z085uz0z38u5573xy97xuy5843z8975w&gt;:9)&#10;Hbhgvn.Ziizb.Hlig[G] (G[] ziizb, Hbhgvn.Rmg67 rmwvc, Hbhgvn.Rmg67 ovmtgs, Hbhgvn.Xloovxgrlmh.Tvmvirx.RXlnkzivi`8[G] xlnkzivi) (zg &lt;z085uz0z38u5573xy97xuy5843z8975w&gt;:9)&#10;Hbhgvn.Xloovxgrlmh.Tvmvirx.Orhg`8[G].Hlig (Hbhgvn.Rmg67 rmwvc, Hbhgvn.Rmg67 xlfmg, Hbhgvn.Xloovxgrlmh.Tvmvirx.RXlnkzivi`8[G] xlnkzivi) (zg &lt;z085uz0z38u5573xy97xuy5843z8975w&gt;:9)&#10;Hbhgvn.Xloovxgrlmh.Tvmvirx.Orhg`8[G].Hlig () (zg &lt;z085uz0z38u5573xy97xuy5843z8975w&gt;:9)&#10;NUzin.ZHgzig.ZHgzi.UrmwHsligvhgKzgs () (zg Zhhvgh/Hxirkgh/ZHgzig/ZHgzi.xh:896)&#10;NUzin.ZHgzig.ZHgzi.YfrowKzgs (Hbhgvn.Hgirmt hxvmvMznv, FmrgbVmtrmv.Evxgli7Rmg hgzigKlh, FmrgbVmtrmv.Evxgli7Rmg vmwKlh, Hbhgvn.Xloovxgrlmh.Tvmvirx.Hgzxp`8[G] mkxNlevnvmgHgvkh) (zg Zhhvgh/Hxirkgh/ZHgzig/ZHgzi.xh:63)&#10;NUzin.ZHgzig.ZHgziGvhg.HsldKzgsLmTirwNzk () (zg Zhhvgh/Hxirkgh/ZHgzig/ZHgziGvhg.xh:49)&#10;NUzin.ZHgzig.ZHgziGvhg.Fkwzgv () (zg Zhhvgh/Hxirkgh/ZHgzig/ZHgziGvhg.xh:70)" />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+                <option name="variables">
+                  <list />
+                </option>
+              </Turn>
+            </list>
+          </option>
+          <option name="updateTime" value="1745455289046" />
         </Conversation>
         <Conversation>
           <option name="createTime" value="1745442892996" />

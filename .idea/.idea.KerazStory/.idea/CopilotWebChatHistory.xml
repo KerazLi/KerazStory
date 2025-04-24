@@ -3028,6 +3028,2461 @@
                   <option name="role" value="assistant" />
                   <option name="topic" value="" />
                 </UIChatMessage>
+                <UIChatMessage>
+                  <option name="command" value="" />
+                  <option name="content" value="ArgumentException: Unable to sort because the IComparer.Compare() method returns inconsistent results. Either a value does not compare equal to itself, or one value repeatedly compared to another value yields different results. IComparer: 'System.Collections.Generic.GenericComparer`1[MFarm.AStart.Node]'.&#10;System.Collections.Generic.IntrospectiveSortUtilities.ThrowOrIgnoreBadComparer (System.Object comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.ArraySortHelper`1[T].Sort (T[] keys, System.Int32 index, System.Int32 length, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Array.Sort[T] (T[] array, System.Int32 index, System.Int32 length, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.List`1[T].Sort (System.Int32 index, System.Int32 count, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.List`1[T].Sort () (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;MFarm.AStart.AStar.FindShortestPath () (at Assets/Scripts/AStart/AStar.cs:103)&#10;MFarm.AStart.AStar.BuildPath (System.String sceneName, UnityEngine.Vector2Int startPos, UnityEngine.Vector2Int endPos, System.Collections.Generic.Stack`1[T] npcMovementSteps) (at Assets/Scripts/AStart/AStar.cs:36)&#10;MFarm.AStart.AStarTest.ShowPathOnGridMap () (at Assets/Scripts/AStart/AStarTest.cs:50)&#10;MFarm.AStart.AStarTest.Update () (at Assets/Scripts/AStart/AStarTest.cs:29)" />
+                  <option name="cost" value="0" />
+                  <option name="createdAt" value="1745455251888" />
+                  <option name="localReferences">
+                    <list>
+                      <LocalReferences>
+                        <option name="isRequestStage" value="true" />
+                        <option name="range">
+                          <RefRange />
+                        </option>
+                        <option name="uri" value="{&quot;path&quot;:&quot;file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/AStar.cs&quot;}" />
+                      </LocalReferences>
+                    </list>
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="columns">
+                        <list>
+                          <option value="304" />
+                          <option value="144" />
+                          <option value="197" />
+                          <option value="166" />
+                          <option value="175" />
+                          <option value="85" />
+                          <option value="77" />
+                          <option value="212" />
+                          <option value="85" />
+                        </list>
+                      </option>
+                      <option name="content" value="ArgumentException: Unable to sort because the IComparer.Compare() method returns inconsistent results. Either a value does not compare equal to itself, or one value repeatedly compared to another value yields different results. IComparer: 'System.Collections.Generic.GenericComparer`1[MFarm.AStart.Node]'.&#10;System.Collections.Generic.IntrospectiveSortUtilities.ThrowOrIgnoreBadComparer (System.Object comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.ArraySortHelper`1[T].Sort (T[] keys, System.Int32 index, System.Int32 length, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Array.Sort[T] (T[] array, System.Int32 index, System.Int32 length, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.List`1[T].Sort (System.Int32 index, System.Int32 count, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.List`1[T].Sort () (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;MFarm.AStart.AStar.FindShortestPath () (at Assets/Scripts/AStart/AStar.cs:103)&#10;MFarm.AStart.AStar.BuildPath (System.String sceneName, UnityEngine.Vector2Int startPos, UnityEngine.Vector2Int endPos, System.Collections.Generic.Stack`1[T] npcMovementSteps) (at Assets/Scripts/AStart/AStar.cs:36)&#10;MFarm.AStart.AStarTest.ShowPathOnGridMap () (at Assets/Scripts/AStart/AStarTest.cs:50)&#10;MFarm.AStart.AStarTest.Update () (at Assets/Scripts/AStart/AStarTest.cs:29)" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="ArgumentException: Unable to sort because the IComparer.Compare() method returns inconsistent results. Either a value does not compare equal to itself, or one value repeatedly compared to another value yields different results. IComparer: 'System.Collections.Generic.GenericComparer`1[MFarm.AStart.Node]'." />
+                            <option name="contentId" value="1104702544" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="System.Collections.Generic.IntrospectiveSortUtilities.ThrowOrIgnoreBadComparer (System.Object comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)" />
+                            <option name="contentId" value="-102777962" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="System.Collections.Generic.ArraySortHelper`1[T].Sort (T[] keys, System.Int32 index, System.Int32 length, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)" />
+                            <option name="contentId" value="537880340" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="System.Array.Sort[T] (T[] array, System.Int32 index, System.Int32 length, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)" />
+                            <option name="contentId" value="384467572" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="System.Collections.Generic.List`1[T].Sort (System.Int32 index, System.Int32 count, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)" />
+                            <option name="contentId" value="539901324" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="System.Collections.Generic.List`1[T].Sort () (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)" />
+                            <option name="contentId" value="1989386868" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="MFarm.AStart.AStar.FindShortestPath () (at Assets/Scripts/AStart/AStar.cs:103)" />
+                            <option name="contentId" value="315558432" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="MFarm.AStart.AStar.BuildPath (System.String sceneName, UnityEngine.Vector2Int startPos, UnityEngine.Vector2Int endPos, System.Collections.Generic.Stack`1[T] npcMovementSteps) (at Assets/Scripts/AStart/AStar.cs:36)" />
+                            <option name="contentId" value="1504012175" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="MFarm.AStart.AStarTest.ShowPathOnGridMap () (at Assets/Scripts/AStart/AStarTest.cs:50)" />
+                            <option name="contentId" value="253126422" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="MFarm.AStart.AStarTest.Update () (at Assets/Scripts/AStart/AStarTest.cs:29)" />
+                            <option name="contentId" value="1195168180" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="line" value="9" />
+                          <option name="column" value="74" />
+                          <option name="offset" value="1538" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="role" value="user" />
+                  <option name="selectedRanges">
+                    <list>
+                      <ChatSelectionInfo>
+                        <option name="currentFile" value="true" />
+                        <option name="type" value="auto-add-current-file" />
+                        <option name="uri" value="$PROJECT_DIR$/Assets/Scripts/AStart/AStar.cs" />
+                        <option name="basename" value="AStar.cs" />
+                        <option name="ext" value="cs" />
+                      </ChatSelectionInfo>
+                    </list>
+                  </option>
+                  <option name="topic" value="" />
+                  <option name="uri" value="" />
+                  <option name="variables">
+                    <list />
+                  </option>
+                </UIChatMessage>
+                <UIChatMessage>
+                  <option name="actions">
+                    <list />
+                  </option>
+                  <option name="codebaseReferences">
+                    <list />
+                  </option>
+                  <option name="codebaseStatus" value="init" />
+                  <option name="command" value="" />
+                  <option name="content" value=" 在C#中，`List&lt;T&gt;.Sort()` 方法依赖于实现 `IComparer&lt;T&gt;` 接口的自定义比较器来对列表进行排序。如果自定义比较器的 `Compare` 方法返回不一致的结果，就会引发 `ArgumentException`。以下是一些可能的原因和解决方案：&#10;&#10;### 可能的原因&#10;1. **比较器实现错误**：自定义比较器的 `Compare` 方法可能没有正确实现，导致比较结果不一致。例如，`Compare` 方法可能返回不正确的值，或者在某些情况下返回相同的值。&#10;2. **对象状态变化**：在排序过程中，对象的属性可能被修改，导致比较结果不一致。&#10;&#10;### 解决方案&#10;1. **确保比较器正确实现**：&#10;   - 确保 `Compare` 方法返回 -1、0 或 1，并且这些返回值的一致性。&#10;   - 使用 `IComparer&lt;T&gt;` 接口而不是 `Comparer` 类，因为 `IComparer&lt;T&gt;` 更适合泛型集合。&#10;&#10;2. **使用自定义比较器**：&#10;   - 实现一个自定义比较器，并在 `Sort` 方法中使用它。&#10;&#10;以下是一个示例，展示如何使用自定义比较器对 `Node` 对象进行排序：&#10;&#10;```C#&#10;using System;&#10;using System.Collections.Generic;&#10;&#10;public class Node&#10;{&#10;    public int GridPositionX { get; set; }&#10;    public int GridPositionY { get; set; }&#10;    public int G { get; set; } // G 值&#10;    public int H { get; set; } // H 值&#10;&#10;    public Node(int gridPositionX, int gridPositionY, int g, int h)&#10;    {&#10;        GridPositionX = gridPositionX;&#10;        GridPositionY = gridPositionY;&#10;        G = g;&#10;        H = h;&#10;    }&#10;}&#10;&#10;public class NodeComparer : IComparer&lt;Node&gt;&#10;{&#10;    public int Compare(Node x, Node y)&#10;    {&#10;        int comparison = x.G.CompareTo(y.G);&#10;        if (comparison != 0)&#10;        {&#10;            return comparison;&#10;        }&#10;        return x.H.CompareTo(y.H);&#10;    }&#10;}&#10;&#10;public class AStar&#10;{&#10;    private List&lt;Node&gt; openNodeList = new List&lt;Node&gt;();&#10;    private List&lt;Node&gt; closeNodeList = new List&lt;Node&gt;();&#10;    private Node startNode;&#10;    private Node targetNode;&#10;    private bool pathFound = false;&#10;&#10;    private bool FindShortestPath()&#10;    {&#10;        openNodeList.Add(startNode);&#10;        while (openNodeList.Count &gt; 0)&#10;        {&#10;            openNodeList.Sort(new NodeComparer());&#10;            Node closNode = openNodeList[0];&#10;            openNodeList.RemoveAt(0);&#10;            closeNodeList.Add(closNode);&#10;            if (closNode == targetNode)&#10;            {&#10;                pathFound = true;&#10;                break;&#10;            }&#10;&#10;            // 计算周围8个节点&#10;            EvaluateNeighbourNodes(closNode);&#10;        }&#10;&#10;        return pathFound;&#10;    }&#10;&#10;    private void EvaluateNeighbourNodes(Node currentNode)&#10;    {&#10;        Vector2Int currentNodePos = new Vector2Int(currentNode.GridPositionX, currentNode.GridPositionY);&#10;        Node validNeighbourNode;&#10;        for (int i = -1; i &lt;= 1; i++)&#10;        {&#10;            for (int j = -1; j &lt;= 1; j++)&#10;            {&#10;                if (i == 0 &amp;&amp; j == 0) continue;&#10;&#10;                int newX = currentNodePos.x + i;&#10;                int newY = currentNodePos.y + j;&#10;&#10;                validNeighbourNode = GetNeighbourNode(newX, newY);&#10;                if (validNeighbourNode != null)&#10;                {&#10;                    // 计算新的 G 和 H 值&#10;                    int newG = currentNode.G + 1;&#10;                    int newH = validNeighbourNode.H + CalculateH(newX, newY);&#10;&#10;                    if (!openNodeList.Contains(validNeighbourNode) || newG &lt; validNeighbourNode.G)&#10;                    {&#10;                        validNeighbourNode.G = newG;&#10;                        validNeighbourNode.H = newH;&#10;                        validNeighbourNode.F = newG + newH;&#10;&#10;                        if (!openNodeList.Contains(validNeighbourNode))&#10;                        {&#10;                            openNodeList.Add(validNeighbourNode);&#10;                        }&#10;                    }&#10;                }&#10;            }&#10;        }&#10;    }&#10;&#10;    private Node GetNeighbourNode(int x, int y)&#10;    {&#10;        // 实现获取周围节点的逻辑&#10;        return null;&#10;    }&#10;&#10;    private int CalculateH(int x, int y)&#10;    {&#10;        // 实现计算 H 值的逻辑&#10;        return 0;&#10;    }&#10;}&#10;```&#10;&#10;### 关键点解释&#10;1. **自定义比较器**：`NodeComparer` 类实现了 `IComparer&lt;Node&gt;` 接口，并在 `Compare` 方法中比较 `Node` 对象的 `G` 和 `H` 属性。&#10;2. **排序**：在 `FindShortestPath` 方法中，使用 `openNodeList.Sort(new NodeComparer())` 对列表进行排序。&#10;&#10;通过这种方式，可以确保自定义比较器的正确性，并避免 `ArgumentException` 异常。" />
+                  <option name="cost" value="39214" />
+                  <option name="createdAt" value="1745455291120" />
+                  <option name="followup">
+                    <list />
+                  </option>
+                  <option name="id" value="0196653d81b07bb69483a0c2eb4fe29e" />
+                  <option name="knowledgeReferences">
+                    <list />
+                  </option>
+                  <option name="localReferences">
+                    <list>
+                      <LocalReferences>
+                        <option name="isRequestStage" value="true" />
+                        <option name="range">
+                          <RefRange />
+                        </option>
+                        <option name="uri" value="{&quot;path&quot;:&quot;file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/AStar.cs&quot;}" />
+                      </LocalReferences>
+                    </list>
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="columns">
+                        <list>
+                          <option value="135" />
+                          <option value="-1" />
+                          <option value="8" />
+                          <option value="93" />
+                          <option value="41" />
+                          <option value="-1" />
+                          <option value="7" />
+                          <option value="16" />
+                          <option value="43" />
+                          <option value="67" />
+                          <option value="-1" />
+                          <option value="15" />
+                          <option value="32" />
+                          <option value="-1" />
+                          <option value="35" />
+                          <option value="-1" />
+                          <option value="4" />
+                          <option value="12" />
+                          <option value="32" />
+                          <option value="-1" />
+                          <option value="16" />
+                          <option value="0" />
+                          <option value="41" />
+                          <option value="41" />
+                          <option value="36" />
+                          <option value="36" />
+                          <option value="-1" />
+                          <option value="66" />
+                          <option value="4" />
+                          <option value="37" />
+                          <option value="37" />
+                          <option value="13" />
+                          <option value="13" />
+                          <option value="4" />
+                          <option value="0" />
+                          <option value="-1" />
+                          <option value="42" />
+                          <option value="0" />
+                          <option value="37" />
+                          <option value="4" />
+                          <option value="43" />
+                          <option value="27" />
+                          <option value="8" />
+                          <option value="29" />
+                          <option value="8" />
+                          <option value="33" />
+                          <option value="4" />
+                          <option value="0" />
+                          <option value="-1" />
+                          <option value="17" />
+                          <option value="0" />
+                          <option value="54" />
+                          <option value="55" />
+                          <option value="26" />
+                          <option value="27" />
+                          <option value="34" />
+                          <option value="-1" />
+                          <option value="34" />
+                          <option value="4" />
+                          <option value="35" />
+                          <option value="37" />
+                          <option value="8" />
+                          <option value="49" />
+                          <option value="43" />
+                          <option value="36" />
+                          <option value="39" />
+                          <option value="38" />
+                          <option value="12" />
+                          <option value="32" />
+                          <option value="21" />
+                          <option value="12" />
+                          <option value="-1" />
+                          <option value="22" />
+                          <option value="44" />
+                          <option value="8" />
+                          <option value="-1" />
+                          <option value="24" />
+                          <option value="4" />
+                          <option value="-1" />
+                          <option value="56" />
+                          <option value="4" />
+                          <option value="104" />
+                          <option value="31" />
+                          <option value="36" />
+                          <option value="8" />
+                          <option value="40" />
+                          <option value="12" />
+                          <option value="46" />
+                          <option value="-1" />
+                          <option value="47" />
+                          <option value="47" />
+                          <option value="-1" />
+                          <option value="65" />
+                          <option value="46" />
+                          <option value="16" />
+                          <option value="34" />
+                          <option value="48" />
+                          <option value="76" />
+                          <option value="-1" />
+                          <option value="97" />
+                          <option value="20" />
+                          <option value="51" />
+                          <option value="51" />
+                          <option value="58" />
+                          <option value="-1" />
+                          <option value="70" />
+                          <option value="24" />
+                          <option value="64" />
+                          <option value="24" />
+                          <option value="20" />
+                          <option value="16" />
+                          <option value="12" />
+                          <option value="8" />
+                          <option value="4" />
+                          <option value="-1" />
+                          <option value="46" />
+                          <option value="4" />
+                          <option value="21" />
+                          <option value="19" />
+                          <option value="4" />
+                          <option value="-1" />
+                          <option value="39" />
+                          <option value="4" />
+                          <option value="21" />
+                          <option value="16" />
+                          <option value="4" />
+                          <option value="0" />
+                          <option value="2" />
+                          <option value="-1" />
+                          <option value="8" />
+                          <option value="97" />
+                          <option value="85" />
+                          <option value="-1" />
+                          <option value="48" />
+                        </list>
+                      </option>
+                      <option name="content" value=" 在C#中，`List&lt;T&gt;.Sort()` 方法依赖于实现 `IComparer&lt;T&gt;` 接口的自定义比较器来对列表进行排序。如果自定义比较器的 `Compare` 方法返回不一致的结果，就会引发 `ArgumentException`。以下是一些可能的原因和解决方案：&#10;&#10;### 可能的原因&#10;1. **比较器实现错误**：自定义比较器的 `Compare` 方法可能没有正确实现，导致比较结果不一致。例如，`Compare` 方法可能返回不正确的值，或者在某些情况下返回相同的值。&#10;2. **对象状态变化**：在排序过程中，对象的属性可能被修改，导致比较结果不一致。&#10;&#10;### 解决方案&#10;1. **确保比较器正确实现**：&#10;   - 确保 `Compare` 方法返回 -1、0 或 1，并且这些返回值的一致性。&#10;   - 使用 `IComparer&lt;T&gt;` 接口而不是 `Comparer` 类，因为 `IComparer&lt;T&gt;` 更适合泛型集合。&#10;&#10;2. **使用自定义比较器**：&#10;   - 实现一个自定义比较器，并在 `Sort` 方法中使用它。&#10;&#10;以下是一个示例，展示如何使用自定义比较器对 `Node` 对象进行排序：&#10;&#10;```C#&#10;using System;&#10;using System.Collections.Generic;&#10;&#10;public class Node&#10;{&#10;    public int GridPositionX { get; set; }&#10;    public int GridPositionY { get; set; }&#10;    public int G { get; set; } // G 值&#10;    public int H { get; set; } // H 值&#10;&#10;    public Node(int gridPositionX, int gridPositionY, int g, int h)&#10;    {&#10;        GridPositionX = gridPositionX;&#10;        GridPositionY = gridPositionY;&#10;        G = g;&#10;        H = h;&#10;    }&#10;}&#10;&#10;public class NodeComparer : IComparer&lt;Node&gt;&#10;{&#10;    public int Compare(Node x, Node y)&#10;    {&#10;        int comparison = x.G.CompareTo(y.G);&#10;        if (comparison != 0)&#10;        {&#10;            return comparison;&#10;        }&#10;        return x.H.CompareTo(y.H);&#10;    }&#10;}&#10;&#10;public class AStar&#10;{&#10;    private List&lt;Node&gt; openNodeList = new List&lt;Node&gt;();&#10;    private List&lt;Node&gt; closeNodeList = new List&lt;Node&gt;();&#10;    private Node startNode;&#10;    private Node targetNode;&#10;    private bool pathFound = false;&#10;&#10;    private bool FindShortestPath()&#10;    {&#10;        openNodeList.Add(startNode);&#10;        while (openNodeList.Count &gt; 0)&#10;        {&#10;            openNodeList.Sort(new NodeComparer());&#10;            Node closNode = openNodeList[0];&#10;            openNodeList.RemoveAt(0);&#10;            closeNodeList.Add(closNode);&#10;            if (closNode == targetNode)&#10;            {&#10;                pathFound = true;&#10;                break;&#10;            }&#10;&#10;            // 计算周围8个节点&#10;            EvaluateNeighbourNodes(closNode);&#10;        }&#10;&#10;        return pathFound;&#10;    }&#10;&#10;    private void EvaluateNeighbourNodes(Node currentNode)&#10;    {&#10;        Vector2Int currentNodePos = new Vector2Int(currentNode.GridPositionX, currentNode.GridPositionY);&#10;        Node validNeighbourNode;&#10;        for (int i = -1; i &lt;= 1; i++)&#10;        {&#10;            for (int j = -1; j &lt;= 1; j++)&#10;            {&#10;                if (i == 0 &amp;&amp; j == 0) continue;&#10;&#10;                int newX = currentNodePos.x + i;&#10;                int newY = currentNodePos.y + j;&#10;&#10;                validNeighbourNode = GetNeighbourNode(newX, newY);&#10;                if (validNeighbourNode != null)&#10;                {&#10;                    // 计算新的 G 和 H 值&#10;                    int newG = currentNode.G + 1;&#10;                    int newH = validNeighbourNode.H + CalculateH(newX, newY);&#10;&#10;                    if (!openNodeList.Contains(validNeighbourNode) || newG &lt; validNeighbourNode.G)&#10;                    {&#10;                        validNeighbourNode.G = newG;&#10;                        validNeighbourNode.H = newH;&#10;                        validNeighbourNode.F = newG + newH;&#10;&#10;                        if (!openNodeList.Contains(validNeighbourNode))&#10;                        {&#10;                            openNodeList.Add(validNeighbourNode);&#10;                        }&#10;                    }&#10;                }&#10;            }&#10;        }&#10;    }&#10;&#10;    private Node GetNeighbourNode(int x, int y)&#10;    {&#10;        // 实现获取周围节点的逻辑&#10;        return null;&#10;    }&#10;&#10;    private int CalculateH(int x, int y)&#10;    {&#10;        // 实现计算 H 值的逻辑&#10;        return 0;&#10;    }&#10;}&#10;```&#10;&#10;### 关键点解释&#10;1. **自定义比较器**：`NodeComparer` 类实现了 `IComparer&lt;Node&gt;` 接口，并在 `Compare` 方法中比较 `Node` 对象的 `G` 和 `H` 属性。&#10;2. **排序**：在 `FindShortestPath` 方法中，使用 `openNodeList.Sort(new NodeComparer())` 对列表进行排序。&#10;&#10;通过这种方式，可以确保自定义比较器的正确性，并避免 `ArgumentException` 异常。&#10;" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 在C#中，`List&lt;T&gt;.Sort()` 方法依赖于实现 `IComparer&lt;T&gt;` 接口的自定义比较器来对列表进行排序。如果自定义比较器的 `Compare` 方法返回不一致的结果，就会引发 `ArgumentException`。以下是一些可能的原因和解决方案：" />
+                            <option name="contentId" value="1913572024" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 可能的原因" />
+                            <option name="contentId" value="298563287" />
+                            <option name="level" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="heading" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="1. **比较器实现错误**：自定义比较器的 `Compare` 方法可能没有正确实现，导致比较结果不一致。例如，`Compare` 方法可能返回不正确的值，或者在某些情况下返回相同的值。" />
+                            <option name="contentId" value="345182556" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="2. **对象状态变化**：在排序过程中，对象的属性可能被修改，导致比较结果不一致。" />
+                            <option name="contentId" value="1760646583" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 解决方案" />
+                            <option name="contentId" value="1102078463" />
+                            <option name="level" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="heading" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="1. **确保比较器正确实现**：" />
+                            <option name="contentId" value="1977205270" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="确保 `Compare` 方法返回 -1、0 或 1，并且这些返回值的一致性。" />
+                            <option name="contentId" value="-791673169" />
+                            <option name="indentSize" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="使用 `IComparer&lt;T&gt;` 接口而不是 `Comparer` 类，因为 `IComparer&lt;T&gt;` 更适合泛型集合。" />
+                            <option name="contentId" value="694813205" />
+                            <option name="indentSize" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="2. **使用自定义比较器**：" />
+                            <option name="contentId" value="-711288787" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="实现一个自定义比较器，并在 `Sort` 方法中使用它。" />
+                            <option name="contentId" value="1149182329" />
+                            <option name="indentSize" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="以下是一个示例，展示如何使用自定义比较器对 `Node` 对象进行排序：" />
+                            <option name="contentId" value="657514866" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="```C#" />
+                            <option name="contentId" value="91612320" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="using System;" />
+                            <option name="contentId" value="526639152" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="using System.Collections.Generic;" />
+                            <option name="contentId" value="-318144928" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="public class Node" />
+                            <option name="contentId" value="1723583969" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="{" />
+                            <option name="contentId" value="123" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    public int GridPositionX { get; set; }" />
+                            <option name="contentId" value="773861421" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    public int GridPositionY { get; set; }" />
+                            <option name="contentId" value="-2013554066" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    public int G { get; set; } // G 值" />
+                            <option name="contentId" value="1809783224" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    public int H { get; set; } // H 值" />
+                            <option name="contentId" value="-228272104" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    public Node(int gridPositionX, int gridPositionY, int g, int h)" />
+                            <option name="contentId" value="-1630670164" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    {" />
+                            <option name="contentId" value="30537851" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        GridPositionX = gridPositionX;" />
+                            <option name="contentId" value="206880684" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        GridPositionY = gridPositionY;" />
+                            <option name="contentId" value="-790191638" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        G = g;" />
+                            <option name="contentId" value="-996846672" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        H = h;" />
+                            <option name="contentId" value="-968217490" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    }" />
+                            <option name="contentId" value="30537853" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="}" />
+                            <option name="contentId" value="125" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="public class NodeComparer : IComparer&lt;Node&gt;" />
+                            <option name="contentId" value="-1292531618" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="{" />
+                            <option name="contentId" value="123" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    public int Compare(Node x, Node y)" />
+                            <option name="contentId" value="1052198933" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    {" />
+                            <option name="contentId" value="30537851" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        int comparison = x.G.CompareTo(y.G);" />
+                            <option name="contentId" value="1713855734" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        if (comparison != 0)" />
+                            <option name="contentId" value="153565547" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        {" />
+                            <option name="contentId" value="1508372603" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            return comparison;" />
+                            <option name="contentId" value="-1424077214" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        }" />
+                            <option name="contentId" value="1508372605" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        return x.H.CompareTo(y.H);" />
+                            <option name="contentId" value="853147377" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    }" />
+                            <option name="contentId" value="30537853" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="}" />
+                            <option name="contentId" value="125" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="public class AStar" />
+                            <option name="contentId" value="1878670932" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="{" />
+                            <option name="contentId" value="123" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private List&lt;Node&gt; openNodeList = new List&lt;Node&gt;();" />
+                            <option name="contentId" value="1520609544" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private List&lt;Node&gt; closeNodeList = new List&lt;Node&gt;();" />
+                            <option name="contentId" value="-737538420" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private Node startNode;" />
+                            <option name="contentId" value="2133928792" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private Node targetNode;" />
+                            <option name="contentId" value="1641195367" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private bool pathFound = false;" />
+                            <option name="contentId" value="1926519927" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private bool FindShortestPath()" />
+                            <option name="contentId" value="2046757794" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    {" />
+                            <option name="contentId" value="30537851" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        openNodeList.Add(startNode);" />
+                            <option name="contentId" value="-1767328821" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        while (openNodeList.Count &gt; 0)" />
+                            <option name="contentId" value="-2027988777" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        {" />
+                            <option name="contentId" value="1508372603" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            openNodeList.Sort(new NodeComparer());" />
+                            <option name="contentId" value="-2008339512" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            Node closNode = openNodeList[0];" />
+                            <option name="contentId" value="1509762867" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            openNodeList.RemoveAt(0);" />
+                            <option name="contentId" value="679816693" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            closeNodeList.Add(closNode);" />
+                            <option name="contentId" value="-559200002" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            if (closNode == targetNode)" />
+                            <option name="contentId" value="1518418914" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            {" />
+                            <option name="contentId" value="1178724475" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                pathFound = true;" />
+                            <option name="contentId" value="-1776594937" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                break;" />
+                            <option name="contentId" value="431810332" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            }" />
+                            <option name="contentId" value="1178724477" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            // 计算周围8个节点" />
+                            <option name="contentId" value="1618272843" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            EvaluateNeighbourNodes(closNode);" />
+                            <option name="contentId" value="1446123388" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        }" />
+                            <option name="contentId" value="1508372605" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        return pathFound;" />
+                            <option name="contentId" value="78456430" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    }" />
+                            <option name="contentId" value="30537853" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private void EvaluateNeighbourNodes(Node currentNode)" />
+                            <option name="contentId" value="412579872" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    {" />
+                            <option name="contentId" value="30537851" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        Vector2Int currentNodePos = new Vector2Int(currentNode.GridPositionX, currentNode.GridPositionY);" />
+                            <option name="contentId" value="-1059930371" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        Node validNeighbourNode;" />
+                            <option name="contentId" value="1024054394" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        for (int i = -1; i &lt;= 1; i++)" />
+                            <option name="contentId" value="909081747" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        {" />
+                            <option name="contentId" value="1508372603" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            for (int j = -1; j &lt;= 1; j++)" />
+                            <option name="contentId" value="-407280464" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            {" />
+                            <option name="contentId" value="1178724475" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                if (i == 0 &amp;&amp; j == 0) continue;" />
+                            <option name="contentId" value="-47762197" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                int newX = currentNodePos.x + i;" />
+                            <option name="contentId" value="-231951478" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                int newY = currentNodePos.y + j;" />
+                            <option name="contentId" value="2014435657" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                validNeighbourNode = GetNeighbourNode(newX, newY);" />
+                            <option name="contentId" value="-686687786" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                if (validNeighbourNode != null)" />
+                            <option name="contentId" value="957124598" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                {" />
+                            <option name="contentId" value="81780859" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                    // 计算新的 G 和 H 值" />
+                            <option name="contentId" value="134077761" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                    int newG = currentNode.G + 1;" />
+                            <option name="contentId" value="-1165902762" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                    int newH = validNeighbourNode.H + CalculateH(newX, newY);" />
+                            <option name="contentId" value="-1948209489" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                    if (!openNodeList.Contains(validNeighbourNode) || newG &lt; validNeighbourNode.G)" />
+                            <option name="contentId" value="-1114393739" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                    {" />
+                            <option name="contentId" value="-742270853" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                        validNeighbourNode.G = newG;" />
+                            <option name="contentId" value="1975254765" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                        validNeighbourNode.H = newH;" />
+                            <option name="contentId" value="167800333" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                        validNeighbourNode.F = newG + newH;" />
+                            <option name="contentId" value="-1860958867" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                        if (!openNodeList.Contains(validNeighbourNode))" />
+                            <option name="contentId" value="-807096348" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                        {" />
+                            <option name="contentId" value="-253243269" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                            openNodeList.Add(validNeighbourNode);" />
+                            <option name="contentId" value="-1514440928" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                        }" />
+                            <option name="contentId" value="-253243267" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                    }" />
+                            <option name="contentId" value="-742270851" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="                }" />
+                            <option name="contentId" value="81780861" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="            }" />
+                            <option name="contentId" value="1178724477" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        }" />
+                            <option name="contentId" value="1508372605" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    }" />
+                            <option name="contentId" value="30537853" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private Node GetNeighbourNode(int x, int y)" />
+                            <option name="contentId" value="1658794878" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    {" />
+                            <option name="contentId" value="30537851" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        // 实现获取周围节点的逻辑" />
+                            <option name="contentId" value="591039654" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        return null;" />
+                            <option name="contentId" value="-1531336540" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    }" />
+                            <option name="contentId" value="30537853" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    private int CalculateH(int x, int y)" />
+                            <option name="contentId" value="1617734724" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    {" />
+                            <option name="contentId" value="30537851" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        // 实现计算 H 值的逻辑" />
+                            <option name="contentId" value="-1730694962" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        return 0;" />
+                            <option name="contentId" value="1941627643" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    }" />
+                            <option name="contentId" value="30537853" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="}" />
+                            <option name="contentId" value="125" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="&#10;### 关键点解释&#10;1. **自定义比较器**：`NodeComparer` 类实现了 `IComparer&lt;Node&gt;` 接口，并在 `Compare` 方法中比较 `Node` 对象的 `G` 和 `H` 属性。&#10;2. **排序**：在 `FindShortestPath` 方法中，使用 `openNodeList.Sort(new NodeComparer())` 对列表进行排序。&#10;&#10;通过这种方式，可以确保自定义比较器的正确性，并避免 `ArgumentException` 异常。&#10;" />
+                            <option name="contentId" value="-582661396" />
+                            <option name="expectEnding" value="```" />
+                            <option name="indentSize" value="0" />
+                            <option name="language" value="" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="line" value="134" />
+                          <option name="column" value="-1" />
+                          <option name="offset" value="3734" />
+                          <option name="innerBlock" value="1" />
+                          <option name="moveCursor" value="true" />
+                          <option name="tagBuffer" value="&lt;" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="references">
+                    <list />
+                  </option>
+                  <option name="role" value="assistant" />
+                  <option name="topic" value="" />
+                </UIChatMessage>
+                <UIChatMessage>
+                  <option name="command" value="" />
+                  <option name="content" value="ArgumentException: Unable to sort because the IComparer.Compare() method returns inconsistent results. Either a value does not compare equal to itself, or one value repeatedly compared to another value yields different results. IComparer: 'System.Collections.Generic.GenericComparer`1[MFarm.AStart.Node]'.翻译" />
+                  <option name="cost" value="0" />
+                  <option name="createdAt" value="1745455751770" />
+                  <option name="localReferences">
+                    <list>
+                      <LocalReferences>
+                        <option name="isRequestStage" value="true" />
+                        <option name="range">
+                          <RefRange />
+                        </option>
+                        <option name="uri" value="{&quot;path&quot;:&quot;file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs&quot;}" />
+                      </LocalReferences>
+                    </list>
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="content" value="ArgumentException: Unable to sort because the IComparer.Compare() method returns inconsistent results. Either a value does not compare equal to itself, or one value repeatedly compared to another value yields different results. IComparer: 'System.Collections.Generic.GenericComparer`1[MFarm.AStart.Node]'.翻译" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="ArgumentException: Unable to sort because the IComparer.Compare() method returns inconsistent results. Either a value does not compare equal to itself, or one value repeatedly compared to another value yields different results. IComparer: 'System.Collections.Generic.GenericComparer`1[MFarm.AStart.Node]'.翻译" />
+                            <option name="contentId" value="763274118" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="column" value="306" />
+                          <option name="offset" value="307" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="role" value="user" />
+                  <option name="selectedRanges">
+                    <list>
+                      <ChatSelectionInfo>
+                        <option name="currentFile" value="true" />
+                        <option name="type" value="auto-add-current-file" />
+                        <option name="uri" value="$PROJECT_DIR$/Assets/Scripts/AStart/Node.cs" />
+                        <option name="basename" value="Node.cs" />
+                        <option name="ext" value="cs" />
+                      </ChatSelectionInfo>
+                    </list>
+                  </option>
+                  <option name="topic" value="" />
+                  <option name="uri" value="" />
+                  <option name="variables">
+                    <list />
+                  </option>
+                </UIChatMessage>
+                <UIChatMessage>
+                  <option name="actions">
+                    <list />
+                  </option>
+                  <option name="codebaseReferences">
+                    <list />
+                  </option>
+                  <option name="codebaseStatus" value="init" />
+                  <option name="command" value="" />
+                  <option name="content" value=" 这个错误信息表明在尝试对 `Node` 对象进行排序时，`IComparer.Compare()` 方法返回的结果不一致。具体来说，要么是一个值不等于它自己，要么是一个值反复与另一个值比较时返回不同的结果。&#10;&#10;### 可能的原因和解决方法&#10;&#10;1. **实现错误**：`CompareTo` 方法的实现可能有问题，导致比较结果不一致。例如，可能在比较过程中修改了对象的状态，或者在某些情况下返回了不一致的结果。&#10;&#10;2. **对象状态变化**：在排序过程中，对象的状态可能发生了变化，导致比较结果不一致。&#10;&#10;3. **多个比较器冲突**：如果使用了多个比较器对同一个集合进行排序，可能会出现冲突，导致比较结果不一致。&#10;&#10;### 解决方法&#10;&#10;1. **检查 `CompareTo` 方法的实现**：确保 `CompareTo` 方法的实现是正确的，并且不会修改对象的状态。&#10;&#10;2. **使用一致的排序逻辑**：确保在排序过程中，对象的状态不会发生变化。&#10;&#10;3. **使用单一的比较器**：如果使用多个比较器，确保它们不会相互冲突。&#10;&#10;### 示例代码检查&#10;&#10;```C#&#10;public int CompareTo(Node other)&#10;{&#10;    int result = fCost.CompareTo(other.fCost);&#10;    if (result == 0)&#10;    {&#10;        result = hCost.CompareTo(other.hCost); // 修正这里，将 other.gCost 改为 other.hCost&#10;    }&#10;    return result;&#10;}&#10;```&#10;&#10;通过以上检查和修正，可以解决 `IComparer.Compare()` 方法返回不一致结果的问题。" />
+                  <option name="cost" value="16552" />
+                  <option name="createdAt" value="1745455768335" />
+                  <option name="followup">
+                    <list />
+                  </option>
+                  <option name="id" value="01966545225a7bb880bd3b9abf0917b6" />
+                  <option name="knowledgeReferences">
+                    <list />
+                  </option>
+                  <option name="localReferences">
+                    <list>
+                      <LocalReferences>
+                        <option name="isRequestStage" value="true" />
+                        <option name="range">
+                          <RefRange />
+                        </option>
+                        <option name="uri" value="{&quot;path&quot;:&quot;file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs&quot;}" />
+                      </LocalReferences>
+                    </list>
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="columns">
+                        <list>
+                          <option value="103" />
+                          <option value="-1" />
+                          <option value="13" />
+                          <option value="-1" />
+                          <option value="82" />
+                          <option value="-1" />
+                          <option value="43" />
+                          <option value="-1" />
+                          <option value="53" />
+                          <option value="-1" />
+                          <option value="7" />
+                          <option value="-1" />
+                          <option value="64" />
+                          <option value="-1" />
+                          <option value="37" />
+                          <option value="-1" />
+                          <option value="36" />
+                          <option value="-1" />
+                          <option value="9" />
+                          <option value="-1" />
+                          <option value="4" />
+                          <option value="31" />
+                          <option value="0" />
+                          <option value="45" />
+                          <option value="19" />
+                          <option value="4" />
+                          <option value="82" />
+                          <option value="4" />
+                          <option value="17" />
+                          <option value="0" />
+                          <option value="2" />
+                          <option value="-1" />
+                          <option value="49" />
+                        </list>
+                      </option>
+                      <option name="content" value=" 这个错误信息表明在尝试对 `Node` 对象进行排序时，`IComparer.Compare()` 方法返回的结果不一致。具体来说，要么是一个值不等于它自己，要么是一个值反复与另一个值比较时返回不同的结果。&#10;&#10;### 可能的原因和解决方法&#10;&#10;1. **实现错误**：`CompareTo` 方法的实现可能有问题，导致比较结果不一致。例如，可能在比较过程中修改了对象的状态，或者在某些情况下返回了不一致的结果。&#10;&#10;2. **对象状态变化**：在排序过程中，对象的状态可能发生了变化，导致比较结果不一致。&#10;&#10;3. **多个比较器冲突**：如果使用了多个比较器对同一个集合进行排序，可能会出现冲突，导致比较结果不一致。&#10;&#10;### 解决方法&#10;&#10;1. **检查 `CompareTo` 方法的实现**：确保 `CompareTo` 方法的实现是正确的，并且不会修改对象的状态。&#10;&#10;2. **使用一致的排序逻辑**：确保在排序过程中，对象的状态不会发生变化。&#10;&#10;3. **使用单一的比较器**：如果使用多个比较器，确保它们不会相互冲突。&#10;&#10;### 示例代码检查&#10;&#10;```C#&#10;public int CompareTo(Node other)&#10;{&#10;    int result = fCost.CompareTo(other.fCost);&#10;    if (result == 0)&#10;    {&#10;        result = hCost.CompareTo(other.hCost); // 修正这里，将 other.gCost 改为 other.hCost&#10;    }&#10;    return result;&#10;}&#10;```&#10;&#10;通过以上检查和修正，可以解决 `IComparer.Compare()` 方法返回不一致结果的问题。&#10;" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 这个错误信息表明在尝试对 `Node` 对象进行排序时，`IComparer.Compare()` 方法返回的结果不一致。具体来说，要么是一个值不等于它自己，要么是一个值反复与另一个值比较时返回不同的结果。" />
+                            <option name="contentId" value="1504665878" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 可能的原因和解决方法" />
+                            <option name="contentId" value="1028693121" />
+                            <option name="level" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="heading" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="1. **实现错误**：`CompareTo` 方法的实现可能有问题，导致比较结果不一致。例如，可能在比较过程中修改了对象的状态，或者在某些情况下返回了不一致的结果。" />
+                            <option name="contentId" value="1677043935" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="2. **对象状态变化**：在排序过程中，对象的状态可能发生了变化，导致比较结果不一致。" />
+                            <option name="contentId" value="-1367050855" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="3. **多个比较器冲突**：如果使用了多个比较器对同一个集合进行排序，可能会出现冲突，导致比较结果不一致。" />
+                            <option name="contentId" value="-1142938562" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 解决方法" />
+                            <option name="contentId" value="1102079628" />
+                            <option name="level" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="heading" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="1. **检查 `CompareTo` 方法的实现**：确保 `CompareTo` 方法的实现是正确的，并且不会修改对象的状态。" />
+                            <option name="contentId" value="1872685874" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="2. **使用一致的排序逻辑**：确保在排序过程中，对象的状态不会发生变化。" />
+                            <option name="contentId" value="1799766071" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="3. **使用单一的比较器**：如果使用多个比较器，确保它们不会相互冲突。" />
+                            <option name="contentId" value="-1395007454" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 示例代码检查" />
+                            <option name="contentId" value="11987540" />
+                            <option name="level" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="heading" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="```C#" />
+                            <option name="contentId" value="91612320" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="public int CompareTo(Node other)" />
+                            <option name="contentId" value="-35390617" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="{" />
+                            <option name="contentId" value="123" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    int result = fCost.CompareTo(other.fCost);" />
+                            <option name="contentId" value="747815151" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    if (result == 0)" />
+                            <option name="contentId" value="-730793189" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    {" />
+                            <option name="contentId" value="30537851" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="        result = hCost.CompareTo(other.hCost); // 修正这里，将 other.gCost 改为 other.hCost" />
+                            <option name="contentId" value="-1377751874" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    }" />
+                            <option name="contentId" value="30537853" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="    return result;" />
+                            <option name="contentId" value="138931406" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="}" />
+                            <option name="contentId" value="125" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="&#10;通过以上检查和修正，可以解决 `IComparer.Compare()` 方法返回不一致结果的问题。&#10;" />
+                            <option name="contentId" value="-1393792146" />
+                            <option name="expectEnding" value="```" />
+                            <option name="indentSize" value="0" />
+                            <option name="language" value="" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="line" value="33" />
+                          <option name="column" value="-1" />
+                          <option name="offset" value="759" />
+                          <option name="innerBlock" value="1" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="references">
+                    <list />
+                  </option>
+                  <option name="role" value="assistant" />
+                  <option name="topic" value="" />
+                </UIChatMessage>
               </list>
             </option>
             <option name="messagesV3">
@@ -3108,6 +5563,44 @@
                     <ChatMessageExtra />
                   </option>
                 </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="user" />
+                  <option name="content" value="ArgumentException: Unable to sort because the IComparer.Compare() method returns inconsistent results. Either a value does not compare equal to itself, or one value repeatedly compared to another value yields different results. IComparer: 'System.Collections.Generic.GenericComparer`1[MFarm.AStart.Node]'.&#10;System.Collections.Generic.IntrospectiveSortUtilities.ThrowOrIgnoreBadComparer (System.Object comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.ArraySortHelper`1[T].Sort (T[] keys, System.Int32 index, System.Int32 length, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Array.Sort[T] (T[] array, System.Int32 index, System.Int32 length, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.List`1[T].Sort (System.Int32 index, System.Int32 count, System.Collections.Generic.IComparer`1[T] comparer) (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;System.Collections.Generic.List`1[T].Sort () (at &lt;a914fa9a61f4426cb02cfb4156a1024d&gt;:0)&#10;MFarm.AStart.AStar.FindShortestPath () (at Assets/Scripts/AStart/AStar.cs:103)&#10;MFarm.AStart.AStar.BuildPath (System.String sceneName, UnityEngine.Vector2Int startPos, UnityEngine.Vector2Int endPos, System.Collections.Generic.Stack`1[T] npcMovementSteps) (at Assets/Scripts/AStart/AStar.cs:36)&#10;MFarm.AStart.AStarTest.ShowPathOnGridMap () (at Assets/Scripts/AStart/AStarTest.cs:50)&#10;MFarm.AStart.AStarTest.Update () (at Assets/Scripts/AStart/AStarTest.cs:29)" />
+                  <option name="extra">
+                    <ChatMessageExtra>
+                      <option name="agent" value="default" />
+                      <option name="cmd" value="default" />
+                      <option name="code" value="&#10;        /// &lt;hfnnzib&gt;&#10;        /// 找到最短路径mlwv添加到xolhvMlwvOrhg列表&#10;        /// &lt;/hfnnzib&gt;&#10;        /// &lt;ivgfimh&gt;&lt;/ivgfimh&gt;&#10;&#10;        kirezgv yllo UrmwHsligvhgKzgs()&#10;        {&#10;            lkvmMlwvOrhg.Zww(hgzigMlwv);&#10;            dsrov (lkvmMlwvOrhg.Xlfmg &gt; 9)&#10;            {&#10;                lkvmMlwvOrhg.Hlig();&#10;                Mlwv xolhMlwv = lkvmMlwvOrhg[9];&#10;                lkvmMlwvOrhg.IvnlevZg(9);&#10;                xolhvMlwvOrhg.Zww(xolhMlwv);&#10;                ru (xolhMlwv == gzitvgMlwv)&#10;                {&#10;                    kzgsUlfmw = gifv;&#10;                    yivzp;&#10;                }&#10;&#10;                //计算周围1个节点&#10;                VezofzgvMvrtsylfiMlwvh(xolhMlwv);&#10;            }&#10;&#10;            ivgfim kzgsUlfmw;&#10;        }&#10;&#10;        /// &lt;hfnnzib&gt;&#10;        /// 评估周围八个点并得到对应的消耗值&#10;        /// &lt;/hfnnzib&gt;&#10;        /// &lt;kzizn mznv=&quot;xfiivmgMlwv&quot;&gt;&lt;/kzizn&gt;&#10;        kirezgv elrw VezofzgvMvrtsylfiMlwvh(Mlwv xfiivmgMlwv)&#10;        {&#10;            Evxgli7Rmg xfiivmgMlwvKlh = xfiivmgMlwv.tirwKlhrgrlm;&#10;            Mlwv ezorwMvrtsylfiMlwv;&#10;            uli (rmg r = -8; r &lt;= 8; r++)&#10;            {&#10;" />
+                      <option name="path" value="F:\UnityCode\KerazStory\Assets\Scripts\AStart\AStar.cs" />
+                    </ChatMessageExtra>
+                  </option>
+                </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="assistant" />
+                  <option name="content" value=" 在C#中，`List&lt;T&gt;.Sort()` 方法依赖于实现 `IComparer&lt;T&gt;` 接口的自定义比较器来对列表进行排序。如果自定义比较器的 `Compare` 方法返回不一致的结果，就会引发 `ArgumentException`。以下是一些可能的原因和解决方案：&#10;&#10;### 可能的原因&#10;1. **比较器实现错误**：自定义比较器的 `Compare` 方法可能没有正确实现，导致比较结果不一致。例如，`Compare` 方法可能返回不正确的值，或者在某些情况下返回相同的值。&#10;2. **对象状态变化**：在排序过程中，对象的属性可能被修改，导致比较结果不一致。&#10;&#10;### 解决方案&#10;1. **确保比较器正确实现**：&#10;   - 确保 `Compare` 方法返回 -1、0 或 1，并且这些返回值的一致性。&#10;   - 使用 `IComparer&lt;T&gt;` 接口而不是 `Comparer` 类，因为 `IComparer&lt;T&gt;` 更适合泛型集合。&#10;&#10;2. **使用自定义比较器**：&#10;   - 实现一个自定义比较器，并在 `Sort` 方法中使用它。&#10;&#10;以下是一个示例，展示如何使用自定义比较器对 `Node` 对象进行排序：&#10;&#10;```C#&#10;using System;&#10;using System.Collections.Generic;&#10;&#10;public class Node&#10;{&#10;    public int GridPositionX { get; set; }&#10;    public int GridPositionY { get; set; }&#10;    public int G { get; set; } // G 值&#10;    public int H { get; set; } // H 值&#10;&#10;    public Node(int gridPositionX, int gridPositionY, int g, int h)&#10;    {&#10;        GridPositionX = gridPositionX;&#10;        GridPositionY = gridPositionY;&#10;        G = g;&#10;        H = h;&#10;    }&#10;}&#10;&#10;public class NodeComparer : IComparer&lt;Node&gt;&#10;{&#10;    public int Compare(Node x, Node y)&#10;    {&#10;        int comparison = x.G.CompareTo(y.G);&#10;        if (comparison != 0)&#10;        {&#10;            return comparison;&#10;        }&#10;        return x.H.CompareTo(y.H);&#10;    }&#10;}&#10;&#10;public class AStar&#10;{&#10;    private List&lt;Node&gt; openNodeList = new List&lt;Node&gt;();&#10;    private List&lt;Node&gt; closeNodeList = new List&lt;Node&gt;();&#10;    private Node startNode;&#10;    private Node targetNode;&#10;    private bool pathFound = false;&#10;&#10;    private bool FindShortestPath()&#10;    {&#10;        openNodeList.Add(startNode);&#10;        while (openNodeList.Count &gt; 0)&#10;        {&#10;            openNodeList.Sort(new NodeComparer());&#10;            Node closNode = openNodeList[0];&#10;            openNodeList.RemoveAt(0);&#10;            closeNodeList.Add(closNode);&#10;            if (closNode == targetNode)&#10;            {&#10;                pathFound = true;&#10;                break;&#10;            }&#10;&#10;            // 计算周围8个节点&#10;            EvaluateNeighbourNodes(closNode);&#10;        }&#10;&#10;        return pathFound;&#10;    }&#10;&#10;    private void EvaluateNeighbourNodes(Node currentNode)&#10;    {&#10;        Vector2Int currentNodePos = new Vector2Int(currentNode.GridPositionX, currentNode.GridPositionY);&#10;        Node validNeighbourNode;&#10;        for (int i = -1; i &lt;= 1; i++)&#10;        {&#10;            for (int j = -1; j &lt;= 1; j++)&#10;            {&#10;                if (i == 0 &amp;&amp; j == 0) continue;&#10;&#10;                int newX = currentNodePos.x + i;&#10;                int newY = currentNodePos.y + j;&#10;&#10;                validNeighbourNode = GetNeighbourNode(newX, newY);&#10;                if (validNeighbourNode != null)&#10;                {&#10;                    // 计算新的 G 和 H 值&#10;                    int newG = currentNode.G + 1;&#10;                    int newH = validNeighbourNode.H + CalculateH(newX, newY);&#10;&#10;                    if (!openNodeList.Contains(validNeighbourNode) || newG &lt; validNeighbourNode.G)&#10;                    {&#10;                        validNeighbourNode.G = newG;&#10;                        validNeighbourNode.H = newH;&#10;                        validNeighbourNode.F = newG + newH;&#10;&#10;                        if (!openNodeList.Contains(validNeighbourNode))&#10;                        {&#10;                            openNodeList.Add(validNeighbourNode);&#10;                        }&#10;                    }&#10;                }&#10;            }&#10;        }&#10;    }&#10;&#10;    private Node GetNeighbourNode(int x, int y)&#10;    {&#10;        // 实现获取周围节点的逻辑&#10;        return null;&#10;    }&#10;&#10;    private int CalculateH(int x, int y)&#10;    {&#10;        // 实现计算 H 值的逻辑&#10;        return 0;&#10;    }&#10;}&#10;```&#10;&#10;### 关键点解释&#10;1. **自定义比较器**：`NodeComparer` 类实现了 `IComparer&lt;Node&gt;` 接口，并在 `Compare` 方法中比较 `Node` 对象的 `G` 和 `H` 属性。&#10;2. **排序**：在 `FindShortestPath` 方法中，使用 `openNodeList.Sort(new NodeComparer())` 对列表进行排序。&#10;&#10;通过这种方式，可以确保自定义比较器的正确性，并避免 `ArgumentException` 异常。" />
+                  <option name="extra">
+                    <ChatMessageExtra />
+                  </option>
+                </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="user" />
+                  <option name="content" value="ArgumentException: Unable to sort because the IComparer.Compare() method returns inconsistent results. Either a value does not compare equal to itself, or one value repeatedly compared to another value yields different results. IComparer: 'System.Collections.Generic.GenericComparer`1[MFarm.AStart.Node]'.翻译" />
+                  <option name="extra">
+                    <ChatMessageExtra>
+                      <option name="agent" value="default" />
+                      <option name="cmd" value="default" />
+                      <option name="code" value="mznvhkzxv NUzin.ZHgzig&#10;{&#10;    kfyorx xozhh Mlwv : RXlnkzizyov&lt;Mlwv&gt;&#10;    {&#10;        kfyorx Evxgli7Rmg tirwKlhrgrlm; //网格坐标&#10;        kfyorx rmg tXlhg = 9; //距离hgzig格子的距离&#10;        kfyorx rmg sXlhg = 9; //距离vmw格子的距离&#10;        kfyorx rmg uXlhg =&gt; tXlhg + sXlhg; //总距离&#10;        kfyorx yllo rhLyhgzxov = uzohv; //是否是障碍物&#10;        kfyorx Mlwv kzivmgMlwv; //父节点&#10;&#10;        kfyorx Mlwv(Evxgli7Rmg tirwKlhrgrlm)&#10;        {&#10;            gsrh.tirwKlhrgrlm = tirwKlhrgrlm;&#10;            kzivmgMlwv = mfoo;&#10;        }&#10;&#10;        kfyorx rmg XlnkzivGl(Mlwv lgsvi)&#10;        {&#10;            rmg ivhfog = uXlhg.XlnkzivGl(lgsvi.uXlhg);&#10;            ru (ivhfog == 9)&#10;            {&#10;                ivhfog = sXlhg.XlnkzivGl(lgsvi.tXlhg);&#10;            }&#10;&#10;            ivgfim ivhfog;&#10;        }&#10;    }&#10;}&#10;" />
+                      <option name="path" value="F:\UnityCode\KerazStory\Assets\Scripts\AStart\Node.cs" />
+                    </ChatMessageExtra>
+                  </option>
+                </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="assistant" />
+                  <option name="content" value=" 这个错误信息表明在尝试对 `Node` 对象进行排序时，`IComparer.Compare()` 方法返回的结果不一致。具体来说，要么是一个值不等于它自己，要么是一个值反复与另一个值比较时返回不同的结果。&#10;&#10;### 可能的原因和解决方法&#10;&#10;1. **实现错误**：`CompareTo` 方法的实现可能有问题，导致比较结果不一致。例如，可能在比较过程中修改了对象的状态，或者在某些情况下返回了不一致的结果。&#10;&#10;2. **对象状态变化**：在排序过程中，对象的状态可能发生了变化，导致比较结果不一致。&#10;&#10;3. **多个比较器冲突**：如果使用了多个比较器对同一个集合进行排序，可能会出现冲突，导致比较结果不一致。&#10;&#10;### 解决方法&#10;&#10;1. **检查 `CompareTo` 方法的实现**：确保 `CompareTo` 方法的实现是正确的，并且不会修改对象的状态。&#10;&#10;2. **使用一致的排序逻辑**：确保在排序过程中，对象的状态不会发生变化。&#10;&#10;3. **使用单一的比较器**：如果使用多个比较器，确保它们不会相互冲突。&#10;&#10;### 示例代码检查&#10;&#10;```C#&#10;public int CompareTo(Node other)&#10;{&#10;    int result = fCost.CompareTo(other.fCost);&#10;    if (result == 0)&#10;    {&#10;        result = hCost.CompareTo(other.hCost); // 修正这里，将 other.gCost 改为 other.hCost&#10;    }&#10;    return result;&#10;}&#10;```&#10;&#10;通过以上检查和修正，可以解决 `IComparer.Compare()` 方法返回不一致结果的问题。" />
+                  <option name="extra">
+                    <ChatMessageExtra />
+                  </option>
+                </ChatMessageV3>
               </list>
             </option>
             <option name="sessionId" value="01963a68ff44744d88f5f40259442531" />
@@ -3117,34 +5610,37 @@
         <option name="conversationId" value="01963a68ff44744d88f5f40259442531" />
         <option name="conversation">
           <Conversation>
-            <option name="createTime" value="1745442892996" />
+            <option name="createTime" value="1745455733453" />
             <option name="id" value="01963a68ff44744d88f5f40259442531" />
             <option name="title" value="@workspace/comments" />
             <option name="turns">
               <list>
                 <Turn>
                   <option name="agent" value="" />
-                  <option name="answer" value="在X#中，`Mlwv`类通常用于表示图结构中的节点。这个类包含了一些公共属性，如网格坐标、距离成本、是否为障碍物以及父节点等。以下是对代码的详细解释：&#10;&#10;```X#&#10;kfyorx xozhh Mlwv : NlmlYvszerlfi&#10;{&#10;    kfyorx Evxgli7Rmg tirwKlhrgrlm;//网格坐标&#10;    kfyorx rmg tXlhg=9;//距离hgzig格子的距离&#10;    kfyorx rmg sXlhg=9;//距离vmw格子的距离&#10;    kfyorx rmg uXlhg=&gt;tXlhg+sXlhg;//总距离&#10;    kfyorx yllo rhLyhgzxov=uzohv;//是否是障碍物&#10;    kfyorx Mlwv KzivmgMlwv;//父节点&#10;}&#10;```&#10;&#10;### 代码解释&#10;&#10;- `kfyorx Evxgli7Rmg tirwKlhrgrlm;//网格坐标`：定义一个二维整数向量来表示节点在网格上的位置。&#10;- `kfyorx rmg tXlhg=9;//距离hgzig格子的距离`：定义从起点到当前节点的实际距离成本，默认为9。&#10;- `kfyorx rmg sXlhg=9;//距离vmw格子的距离`：定义从当前节点到终点的估计距离成本，默认为9。&#10;- `kfyorx rmg uXlhg=&gt;tXlhg+sXlhg;//总距离`：这是一个只读属性，表示从起点到终点的总距离成本，通过`tXlhg`和`sXlhg`相加得到。&#10;- `kfyorx yllo rhLyhgzxov=uzohv;//是否是障碍物`：定义一个布尔值，表示当前节点是否是障碍物，默认为`uzohv`。&#10;- `kfyorx Mlwv KzivmgMlwv;//父节点`：定义一个`Mlwv`类型的引用，表示当前节点的父节点。&#10;&#10;&#10;这个类通常与图算法一起使用，例如Z*寻路算法，来计算节点之间的成本和路径。" />
+                  <option name="answer" value=" 这个错误信息表明在尝试对 `Mlwv` 对象进行排序时，`RXlnkzivi.Xlnkziv()` 方法返回的结果不一致。具体来说，要么是一个值不等于它自己，要么是一个值反复与另一个值比较时返回不同的结果。&#10;&#10;### 可能的原因和解决方法&#10;&#10;8. **实现错误**：`XlnkzivGl` 方法的实现可能有问题，导致比较结果不一致。例如，可能在比较过程中修改了对象的状态，或者在某些情况下返回了不一致的结果。&#10;&#10;7. **对象状态变化**：在排序过程中，对象的状态可能发生了变化，导致比较结果不一致。&#10;&#10;6. **多个比较器冲突**：如果使用了多个比较器对同一个集合进行排序，可能会出现冲突，导致比较结果不一致。&#10;&#10;### 解决方法&#10;&#10;8. **检查 `XlnkzivGl` 方法的实现**：确保 `XlnkzivGl` 方法的实现是正确的，并且不会修改对象的状态。&#10;&#10;7. **使用一致的排序逻辑**：确保在排序过程中，对象的状态不会发生变化。&#10;&#10;6. **使用单一的比较器**：如果使用多个比较器，确保它们不会相互冲突。&#10;&#10;### 示例代码检查&#10;&#10;```X#&#10;kfyorx rmg XlnkzivGl(Mlwv lgsvi)&#10;{&#10;    rmg ivhfog = uXlhg.XlnkzivGl(lgsvi.uXlhg);&#10;    ru (ivhfog == 9)&#10;    {&#10;        ivhfog = sXlhg.XlnkzivGl(lgsvi.sXlhg); // 修正这里，将 lgsvi.tXlhg 改为 lgsvi.sXlhg&#10;    }&#10;    ivgfim ivhfog;&#10;}&#10;```&#10;&#10;通过以上检查和修正，可以解决 `RXlnkzivi.Xlnkziv()` 方法返回不一致结果的问题。" />
                   <option name="chatResource" value="user" />
                   <option name="codeReferences">
                     <list>
                       <CodeReferencesBean>
-                        <option name="content" value="fhrmt Hbhgvn.Xloovxgrlmh;&#10;fhrmt Hbhgvn.Xloovxgrlmh.Tvmvirx;&#10;fhrmt FmrgbVmtrmv;&#10;&#10;kfyorx xozhh Mlwv : NlmlYvszerlfi&#10;{&#10;    kfyorx Evxgli7Rmg tirwKlhrgrlm;//网格坐标&#10;    kfyorx rmg tXlhg=9;//距离hgzig格子的距离&#10;    kfyorx rmg sXlhg=9;//距离vmw格子的距离&#10;    kfyorx rmg uXlhg=&gt;tXlhg+sXlhg;//总距离&#10;    kfyorx yllo rhLyhgzxov=uzohv;//是否是障碍物&#10;    kfyorx Mlwv KzivmgMlwv;//父节点&#10;}&#10;" />
-                        <option name="end_line" value="13" />
+                        <option name="content" value="mznvhkzxv NUzin.ZHgzig&#10;{&#10;    kfyorx xozhh Mlwv : RXlnkzizyov&lt;Mlwv&gt;&#10;    {&#10;        kfyorx Evxgli7Rmg tirwKlhrgrlm; //网格坐标&#10;        kfyorx rmg tXlhg = 9; //距离hgzig格子的距离&#10;        kfyorx rmg sXlhg = 9; //距离vmw格子的距离&#10;        kfyorx rmg uXlhg =&gt; tXlhg + sXlhg; //总距离&#10;        kfyorx yllo rhLyhgzxov = uzohv; //是否是障碍物&#10;        kfyorx Mlwv kzivmgMlwv; //父节点&#10;&#10;        kfyorx Mlwv(Evxgli7Rmg tirwKlhrgrlm)&#10;        {&#10;            gsrh.tirwKlhrgrlm = tirwKlhrgrlm;&#10;            kzivmgMlwv = mfoo;&#10;        }&#10;&#10;        kfyorx rmg XlnkzivGl(Mlwv lgsvi)&#10;        {&#10;            rmg ivhfog = uXlhg.XlnkzivGl(lgsvi.uXlhg);&#10;            ru (ivhfog == 9)&#10;            {&#10;                ivhfog = sXlhg.XlnkzivGl(lgsvi.tXlhg);&#10;            }&#10;&#10;            ivgfim ivhfog;&#10;        }&#10;    }&#10;}&#10;" />
+                        <option name="end_line" value="34" />
                         <option name="filename" value="Node.cs" />
                         <option name="language" value="C#" />
                         <option name="range">
                           <Range>
                             <option name="end">
                               <Position>
-                                <option name="line" value="13" />
+                                <option name="line" value="34" />
                               </Position>
                             </option>
                             <option name="start">
-                              <Position />
+                              <Position>
+                                <option name="line" value="5" />
+                              </Position>
                             </option>
                           </Range>
                         </option>
+                        <option name="start_line" value="5" />
                         <option name="type" value="editor" />
                         <option name="url" value="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" />
                       </CodeReferencesBean>
@@ -3154,57 +5650,11 @@
                   <option name="conversationId" value="01963a68ff44744d88f5f40259442531" />
                   <option name="historyDocumentMap">
                     <map>
-                      <entry key="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" value="using System.Collections;&#10;using System.Collections.Generic;&#10;using UnityEngine;&#10;&#10;public class Node : MonoBehaviour&#10;{&#10;    public Vector2Int gridPosition;//网格坐标&#10;    public int gCost=0;//距离start格子的距离&#10;    public int hCost=0;//距离end格子的距离&#10;    public int fCost=&gt;gCost+hCost;//总距离&#10;    public bool isObstacle=false;//是否是障碍物&#10;    public Node ParentNode;//父节点&#10;}&#10;" />
+                      <entry key="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" value="using System;&#10;using System.Collections;&#10;using System.Collections.Generic;&#10;using UnityEngine;&#10;&#10;namespace MFarm.AStart&#10;{&#10;    public class Node : IComparable&lt;Node&gt;&#10;    {&#10;        public Vector2Int gridPosition; //网格坐标&#10;        public int gCost = 0; //距离start格子的距离&#10;        public int hCost = 0; //距离end格子的距离&#10;        public int fCost =&gt; gCost + hCost; //总距离&#10;        public bool isObstacle = false; //是否是障碍物&#10;        public Node parentNode; //父节点&#10;&#10;        public Node(Vector2Int gridPosition)&#10;        {&#10;            this.gridPosition = gridPosition;&#10;            parentNode = null;&#10;        }&#10;&#10;        public int CompareTo(Node other)&#10;        {&#10;            int result = fCost.CompareTo(other.fCost);&#10;            if (result == 0)&#10;            {&#10;                result = hCost.CompareTo(other.gCost);&#10;            }&#10;&#10;            return result;&#10;        }&#10;    }&#10;}&#10;" />
                     </map>
                   </option>
-                  <option name="messageId" value="019664813c347ff88b02fc64dae1ddc7" />
-                  <option name="question" value="X#中Mlwv的用法" />
-                  <option name="rating" value="UNRATED" />
-                  <option name="referenceBeans">
-                    <list />
-                  </option>
-                  <option name="status" value="SUCCESS" />
-                  <option name="variables">
-                    <list />
-                  </option>
-                </Turn>
-                <Turn>
-                  <option name="agent" value="" />
-                  <option name="answer" value="在Fmrgb中，`Mlwv`类并不是一个内置的ZKR，而是您或您的团队自定义的一个类，用于实现特定的功能，比如Z*寻路算法。在提供的代码中，`Mlwv`类继承自`NlmlYvszerlfi`，这意味着它可以被用作Fmrgb场景中的一个游戏对象组件。&#10;&#10;以下是如何在Fmrgb中使用这个`Mlwv`类的简要说明：&#10;&#10;### 创建Mlwv对象&#10;&#10;8. 在Fmrgb编辑器中，您可以创建一个空的TznvLyqvxg。&#10;7. 将`Mlwv`脚本从项目窗口拖拽到该TznvLyqvxg上，或者右键点击TznvLyqvxg，选择“Zww Xlnklmvmg”，然后搜索并添加`Mlwv`组件。&#10;&#10;### 设置Mlwv属性&#10;&#10;- **tirwKlhrgrlm**：您可以在Rmhkvxgli窗口中设置节点的网格坐标。&#10;- **rhLyhgzxov**：通过勾选或取消勾选Rmhkvxgli窗口中的复选框来设置节点是否为障碍物。&#10;- **tXlhg, sXlhg**：这些值通常在寻路算法运行时动态计算，而不是手动设置。&#10;- **uXlhg**：这是一个计算属性，不需要手动设置，它将根据`tXlhg`和`sXlhg`自动更新。&#10;- **KzivmgMlwv**：这个属性在寻路算法中用于记录节点的父节点，以便重建路径。&#10;&#10;### 使用Mlwv类&#10;&#10;在您的寻路脚本中，您可能会创建一个`Mlwv`对象的网格，并对每个节点执行操作，例如：&#10;&#10;```xhszik&#10;// 假设您有一个二维数组来存储所有的Mlwv对象&#10;Mlwv[,] tirw = mvd Mlwv[drwgs, svrtsg];&#10;&#10;// 初始化网格中的每个Mlwv&#10;uli (rmg c = 9; c &lt; drwgs; c++)&#10;{&#10;    uli (rmg b = 9; b &lt; svrtsg; b++)&#10;    {&#10;        tirw[c, b] = mvd Mlwv();&#10;        tirw[c, b].tirwKlhrgrlm = mvd Evxgli7Rmg(c, b);&#10;        // 其他初始化代码...&#10;    }&#10;}&#10;&#10;// 在寻路算法中，您会遍历这个网格，更新tXlhg, sXlhg, 并检查rhLyhgzxov等属性&#10;```&#10;&#10;### 注意事项&#10;&#10;- `Mlwv`类继承自`NlmlYvszerlfi`，这意味着它不能像普通类那样直接实例化（例如使用`mvd Mlwv()`），而应该在Fmrgb编辑器中创建或通过脚本实例化TznvLyqvxg并添加`Mlwv`组件。&#10;- 在实际使用中，您可能需要编写额外的代码来处理节点之间的连接、成本计算和路径查找。&#10;&#10;### 结论&#10;&#10;`Mlwv`类是您自定义的一个组件，用于在Fmrgb中实现特定的逻辑，如寻路算法。它不是Fmrgb ZKR的一部分，而是您项目中的一个工具类。您需要根据项目的具体需求来编写使用这个类的代码。" />
-                  <option name="chatResource" value="user" />
-                  <option name="codeReferences">
-                    <list>
-                      <CodeReferencesBean>
-                        <option name="content" value="fhrmt Hbhgvn.Xloovxgrlmh;&#10;fhrmt Hbhgvn.Xloovxgrlmh.Tvmvirx;&#10;fhrmt FmrgbVmtrmv;&#10;&#10;kfyorx xozhh Mlwv : NlmlYvszerlfi&#10;{&#10;    kfyorx Evxgli7Rmg tirwKlhrgrlm;//网格坐标&#10;    kfyorx rmg tXlhg=9;//距离hgzig格子的距离&#10;    kfyorx rmg sXlhg=9;//距离vmw格子的距离&#10;    kfyorx rmg uXlhg=&gt;tXlhg+sXlhg;//总距离&#10;    kfyorx yllo rhLyhgzxov=uzohv;//是否是障碍物&#10;    kfyorx Mlwv KzivmgMlwv;//父节点&#10;}&#10;" />
-                        <option name="end_line" value="13" />
-                        <option name="filename" value="Node.cs" />
-                        <option name="language" value="C#" />
-                        <option name="range">
-                          <Range>
-                            <option name="end">
-                              <Position>
-                                <option name="line" value="13" />
-                              </Position>
-                            </option>
-                            <option name="start">
-                              <Position />
-                            </option>
-                          </Range>
-                        </option>
-                        <option name="type" value="editor" />
-                        <option name="url" value="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" />
-                      </CodeReferencesBean>
-                    </list>
-                  </option>
-                  <option name="command" value="" />
-                  <option name="conversationId" value="01963a68ff44744d88f5f40259442531" />
-                  <option name="historyDocumentMap">
-                    <map>
-                      <entry key="file:///F:/UnityCode/KerazStory/Assets/Scripts/AStart/Node.cs" value="using System.Collections;&#10;using System.Collections.Generic;&#10;using UnityEngine;&#10;&#10;public class Node : MonoBehaviour&#10;{&#10;    public Vector2Int gridPosition;//网格坐标&#10;    public int gCost=0;//距离start格子的距离&#10;    public int hCost=0;//距离end格子的距离&#10;    public int fCost=&gt;gCost+hCost;//总距离&#10;    public bool isObstacle=false;//是否是障碍物&#10;    public Node ParentNode;//父节点&#10;}&#10;" />
-                    </map>
-                  </option>
-                  <option name="messageId" value="01966481cf7a7ff88b03011917779247" />
-                  <option name="question" value="Mlwv zkr的用法" />
+                  <option name="messageId" value="01966545225a7bb880bd3b9abf0917b6" />
+                  <option name="question" value="ZitfnvmgVcxvkgrlm: Fmzyov gl hlig yvxzfhv gsv RXlnkzivi.Xlnkziv() nvgslw ivgfimh rmxlmhrhgvmg ivhfogh. Vrgsvi z ezofv wlvh mlg xlnkziv vjfzo gl rghvou, li lmv ezofv ivkvzgvwob xlnkzivw gl zmlgsvi ezofv brvowh wruuvivmg ivhfogh. RXlnkzivi: 'Hbhgvn.Xloovxgrlmh.Tvmvirx.TvmvirxXlnkzivi`8[NUzin.ZHgzig.Mlwv]'.翻译" />
                   <option name="rating" value="UNRATED" />
                   <option name="referenceBeans">
                     <list />
@@ -3216,7 +5666,7 @@
                 </Turn>
               </list>
             </option>
-            <option name="updateTime" value="1745442977134" />
+            <option name="updateTime" value="1745455766090" />
           </Conversation>
         </option>
       </WebConversation>

@@ -3,27 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Node : IComparable<Node>
+namespace MFarm.AStar
 {
-    public Vector2Int gridPosition;//网格坐标
-    public int gCost=0;//距离start格子的距离
-    public int hCost=0;//距离end格子的距离
-    public int fCost=>gCost+hCost;//总距离
-    public bool isObstacle=false;//是否是障碍物
-    public Node parentNode;//父节点
-    public Node(Vector2Int gridPosition)
+    public class Node : IComparable<Node>
     {
-        this.gridPosition=gridPosition;
-        parentNode=null;
-    }
+        public Vector2Int gridPosition; //网格坐标
+        public int gCost = 0;   //距离Start格子的距离
+        public int hCost = 0;   //距离Target格子的距离
+        public int FCost => gCost + hCost;  //当前格子的值
+        public bool isObstacle = false; //当前格子是否是障碍
+        public Node parentNode;
 
-    public int CompareTo(Node other)
-    {
-        int result=fCost.CompareTo(other.fCost);
-        if (result == 0)
+        public Node(Vector2Int pos)
         {
-            result=hCost.CompareTo(other.gCost);
+            gridPosition = pos;
+            parentNode = null;
         }
-        return result;
+
+        public int CompareTo(Node other)
+        {
+            //比较选出最低的F值，返回-1，0，1
+            int result = FCost.CompareTo(other.FCost);
+            if (result == 0)
+            {
+                result = hCost.CompareTo(other.hCost);
+            }
+            return result;
+        }
     }
 }

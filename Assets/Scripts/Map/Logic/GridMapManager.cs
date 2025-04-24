@@ -245,7 +245,7 @@ namespace MFarm.Map
         /// </summary>
         /// <param name="key">瓷砖详细信息的唯一键。</param>
         /// <returns>如果找到，则返回对应的TileDetails对象；否则返回null。</returns>
-        private TileDetails GetTileDetails(string key)
+        public TileDetails GetTileDetails(string key)
         {
             // 检查字典中是否包含给定键的瓷砖详细信息
             if (tileDetailsDict.ContainsKey(key))
