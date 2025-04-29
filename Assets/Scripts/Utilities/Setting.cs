@@ -29,5 +29,9 @@ namespace Utilities
         public const float fadeDuration = 1.5f;
         //割草数量限制
         public const int reapAmount = 2;
+        //NPC移动速度
+        public const float gridCellSize = 1.0f;
+        //斜方向的速度
+        public const float gridCellDiagonalSize=1.41f;
     }
 }

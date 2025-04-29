@@ -10,7 +10,7 @@ using Utilities;
 */
 
 
-public class TimeManager : MonoBehaviour
+public class TimeManager : Singleton<TimeManager>
 {
     // 游戏时间变量
     private int gameSecond, gameMinute, gameHour, gameDay, gameMonth, gameYear;
@@ -21,10 +21,12 @@ public class TimeManager : MonoBehaviour
     public bool gameClockPause;
     // 用于累计时间的变量
     private float tikTime;
+    public TimeSpan GameTime=> new TimeSpan(gameHour,gameMinute,gameSecond);
 
     // 在脚本实例化时调用，用于初始化游戏时间
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         NewGameTime();
     }
 
